@@ -1,0 +1,24 @@
+@use "sass:math";
+
+$max-screen-size: 1920px;
+
+@function funcVW($px, $width: $max-screen-size) {
+	$w: math.div(1, math.div($width, 1px)) * 100;
+	$vws: null;
+
+	@each $v in $px {
+		@if type-of($v) == number {
+			$px: math.div($v, 1px);
+			$vw: $px * $w;
+			$vws: append($vws, if($vw == 0, 0, $vw + vw));
+		} @else {
+			$vws: append($vws, $v);
+		}
+	}
+
+	@return $vws;
+}
+
+@function mobVW($px) {
+	@return funcVW($px, 767px);
+}

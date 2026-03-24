@@ -1,0 +1,90 @@
+.hse-area{padding-top: vw(w,160);}
+.hse-area .common-tab-looking-a-wrap{margin-bottom: vw(w,80);}
+html[lang=en] .hse-area .common-tab-looking-a-wrap .tab-looking-a{flex-wrap: wrap; gap: vw(w, 32);}
+.hse-area .common-grid{margin-bottom: 0;}
+.hse-area .common-grid .desc>p{line-height: 1.68;}
+.hse-area .graph-txt{position: absolute;top: 0;font-size: 0;}
+.hse-area picture{position: relative;width: 100%;height: 100%;}
+.hse-area picture img{width: 100%;height: 100%;display: block;object-fit: contain;}
+.hse-area .content-box + .content-box{margin-top: vw(w,200);}
+// .hse-area sup{font-size: vw(w,16);}
+//common - point
+.hse-area .point-wrap{margin-top: vw(w,120);position: relative;width: vw(w,1020);margin-left: auto;margin-right: auto;padding: vw(w,50) vw(w,130);box-sizing: border-box; display: flex;justify-content: center; background-color: $gray-7;border-radius:vw(w,210);}
+.hse-area .point-wrap .point{display: flex;flex-direction: column;text-align: center;}
+.hse-area .point-wrap .point:nth-child(2){margin: 0 vw(w,80)}
+.hse-area .point-wrap .point .icon{position: relative; width: vw(w,200);height: vw(w,200);background-color: #fff;border:1px solid $gray-6;border-radius: 100%;}
+.hse-area .point-wrap .point .txt-wrap{margin-top: vw(w,19);color:$gray-2;}
+//common - card
+.hse-area .card-wrap{position: relative;width: 100%;display: flex;justify-content: space-between;}
+.hse-area .card-wrap .card{display: flex;flex-direction: column;}
+.hse-area .card-wrap .card .tit{background-color: $key-color;color:#fff;text-align: center;border:1px solid $key-color;border-radius:vw(w,4) vw(w,4) 0 0;display: flex;flex-direction: column;align-items: center;justify-content: center;}
+.hse-area .card-wrap .card .info{position: relative; width: 100%; flex-grow: 1; padding: vw(w,20);box-sizing:border-box;border: 1px solid $default-color;border-radius: 0 0 vw(w,4) vw(w,4);border-top: none;}
+//accordion
+.hse-area .common-accordion-list ul li:last-child{border-bottom: 1px solid #F5F5F5;}
+.hse-area .common-accordion-list .head .tit .hash{color:$gray-4;display: inline-block;margin-right:vw(w,8) ;}
+.hse-area .common-accordion-list .body{width: vw(w,672);}
+.hse-area .common-accordion-list .body .desc{padding-bottom: vw(w,40);color:$gray-2;font-weight: 300;}
+.hse-area .common-accordion-list .slide{width: vw(w,528);margin: 0;}
+.hse-area .common-accordion-list .slide .swiper-pagination{text-align: center;}
+.hse-area .common-accordion-list .slide .swiper-pagination-bullet{position: relative; display: inline-block; width:vw(w,48);height:vw(w,2);padding: vw(w,28) 0;cursor: pointer;background-color:transparent;}
+.hse-area .common-accordion-list .slide .swiper-pagination-bullet:nth-child(n+2){margin-left: vw(w,8);}
+.hse-area .common-accordion-list .slide .swiper-pagination-bullet::after{content: '';position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);width: 100%;height: vw(w,2);background-color: $gray-4;}
+.hse-area .common-accordion-list .slide .swiper-pagination-bullet-active::after{background-color: $default-color;}
+
+//table
+.hse-area .common-table th.or,
+.hse-area .common-table td.or{color:$key-color}
+
+@include blind;
+
+@include tablet-only {
+  .hse-area{padding-top: 100px;}
+  .hse-area .common-grid{margin-top: 0;}
+  .hse-area .common-tab-looking-a-wrap{margin-bottom: 50px;}
+  html[lang=en] .hse-area .common-tab-looking-a-wrap .tab-looking-a{gap: 20px;}
+  .hse-area .content-box + .content-box{margin-top: 126px;}
+  //common - point
+  .hse-area .point-wrap{margin-top: 76px;width: 642px;padding: 31px 82px;border-radius:132px;}
+  .hse-area .point-wrap .point:nth-child(2){margin: 0 50px}
+  .hse-area .point-wrap .point .icon{width: 126px;height: 126px;}
+  .hse-area .point-wrap .point .txt-wrap{margin-top: 12px;}
+  //common - card
+  .hse-area .card-wrap .card .tit{border-radius:3px 3px 0 0;}
+  .hse-area .card-wrap .card .info{padding: 12px;border-radius: 0 0 3px 3px;}
+  //accordion
+  .hse-area .common-accordion-list .head .tit .hash{margin-right:5px ;}
+  .hse-area .common-accordion-list .body{width: 100%;}
+  .hse-area .common-accordion-list .body .desc{padding-bottom: 26px;}
+  .hse-area .common-accordion-list .slide{width: 320px; max-width: 100%;}
+  .hse-area .common-accordion-list .slide .swiper-pagination-bullet{width:30px;height:2px;padding: 18px 0;}
+  .hse-area .common-accordion-list .slide .swiper-pagination-bullet:nth-child(n+2){margin-left: 5px;}
+  .hse-area .common-accordion-list .slide .swiper-pagination-bullet::after{height: 2px;}
+}
+@include mobile {
+  .hse-area{padding-top: 60px;}
+  .hse-area .common-tab-looking-a-wrap{margin-bottom: 40px;}
+  html[lang=en] .hse-area .common-tab-looking-a-wrap .tab-looking-a{flex-wrap: nowrap; gap: 20px;}
+  .hse-area .content-box + .content-box{margin-top: 60px;}
+  .hse-area .common-grid .desc>p{line-height: 1.72;}
+  //common - point
+  .hse-area .point-wrap{margin-top: 60px;width: 1020px;padding: 50px 130px;border-radius:210px;}
+  .hse-area .point-wrap .point:nth-child(2){margin: 0 80px}
+  .hse-area .point-wrap .point .icon{width: 200px;height: 200px;}
+  .hse-area .point-wrap .point .txt-wrap{margin-top: 19px;}
+  //common - card
+  .hse-area .card-wrap .card .tit{border-radius:4px 4px 0 0;}
+  .hse-area .card-wrap .card .info{padding: 20px;border-radius: 0 0 4px 4px;}
+  //accordion
+  .hse-area .common-accordion-list .head .tit .hash{margin-right:8px;}
+  .hse-area .common-accordion-list .body{width: 100%;}
+  .hse-area .common-accordion-list .body .desc{padding-bottom: 20px;}
+  .hse-area .common-accordion-list .slide{position: relative; width: 255px; max-width: 80%; margin: 0 auto;}
+  .hse-area .common-accordion-list .slide .swiper-pagination-bullet{width:40px;height:2px;padding: 20px 0;}
+  .hse-area .common-accordion-list .slide .swiper-pagination-bullet:nth-child(n+2){margin-left: 4px;}
+  .hse-area .common-accordion-list .slide .swiper-pagination-bullet::after{height: 2px;}
+  .hse-area .common-accordion-list .slide .swiper-button-prev,
+  .hse-area .common-accordion-list .slide .swiper-button-next{position: absolute; top: calc(50% - 52px); z-index: 2; width: 40px; height: 40px; background: url("#{$image-path}hse/hse_slider_arrow.svg") no-repeat center / contain;}
+  .hse-area .common-accordion-list .slide .swiper-button-disabled{opacity: 0.4;}
+  .hse-area .common-accordion-list .slide .swiper-button-prev{left: -40px; transform: rotate(-180deg);}
+  .hse-area .common-accordion-list .slide .swiper-button-next{right: -40px;}
+}

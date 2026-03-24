@@ -1,0 +1,607 @@
+<!-- //공통레이아웃 -header를 include  -->
+<%- include('./src/include/header.ejs', { title: '' }) %>
+
+<%- include('./src/include/common-floating.ejs') %>
+
+<!-- //공통레이아웃 - main 태그와 id, class 값 -->
+<main id="COMMON" class="common" data-landscape="true">
+  <!-- //공통레이아웃 - div.main-inner    -->
+  <div class="main-inner">
+    <!-- //공통레이아웃 - section.sub_container -->
+    <section class="sub_container">
+      <!-- //공통레이아웃 - div.sec_inner(양 옆 커먼 패딩 들어감) -->
+
+      
+      <!-- ============= in_sec_copy ============= -->
+      <div class="trash-title in_sec_copy">텍스트 페이드인 모션 ".in_sec_copy"</div>
+
+      <!-- ============= txt_ef_up ============= -->
+      <div class="trash-background">
+        <div class="in_sec_copy txt_ef_up">
+          br을 기준으로 텍스트를 자르고 <br class="pc"><br class="mobile">
+          (br에 pc 혹은 mobile 클래스 필수!, main 태그 내부에서 사용가능합니다.) <br class="pc">
+          span태그로 감싼뒤<br class="pc">
+          또 p태그로 감싸주는<br class="pc"><br class="mobile">
+          ".txt_ef_up" 클래스입니다
+        </div>
+      </div>
+
+      <div class="sec_inner" style="margin-top: 40px;">
+        <div class="in_sec_copy txt_ef_up">
+          '.in_sec_copy' 클래스와 함께 쓰면 (.in_sec_copy .txt_ef_up)해당 텍스트가 window 아래에서 20%보일 때 쯤 텍스트 인터랙션이 실행됩니다. <br class="pc"> <br class="mobile">
+          스크롤 기반이 아닌, 원하는 타이밍에 텍스트 인터렉션을 실행시키고 싶다면 .in_sec_copy를 빼고 해당 타이밍에 '.txt_ef_up' 에 '.active'를 붙여주세요.
+        </div>
+      </div>
+
+
+
+      <!-- ============= common-navigator ============= -->
+      <!-- data-section 의 타겟이 되는 섹션에 같은 값의 id와 class="nav-target"를 넣어주세요 -->
+      <div class="trash-title">common-navigator</div>
+
+      <div class="common-navigator">
+        <ol class="navigation">
+          <li><a href="javascript:void(0)" data-section="common-tab" class="active"><span>common-tab</span></a></li>
+          <li><a href="javascript:void(0)" data-section="common-grid"><span>common-grid</span></a></li>
+          <li><a href="javascript:void(0)" data-section="common-fixed-img"><span>common-fixed-img</span></a></li>
+          <li><a href="javascript:void(0)" data-section="common-table"><span>common-table</span></a></li>
+          <li><a href="javascript:void(0)" data-section="common-accordion"><span>common-accordion</span></a></li>
+          <li><a href="javascript:void(0)" data-section="common-odometer"><span>common-odometer</span></a></li>
+          <li><a href="javascript:void(0)" data-section="common-list"><span>common-list</span></a></li>
+          <li><a href="javascript:void(0)" data-section="common-chart"><span>common-chart</span></a></li>
+        </ol>
+      </div>
+
+      <!-- ============= common-tab ============= -->
+
+      <section class="nav-target" id="common-tab">
+      <div class="trash-title">common-tab</div>
+
+        <!-- sec_inner부터 복사하면 됨 -->
+          <div class="common-tab-looking-a-wrap">
+            <div class="tab-looking-a line-tab">
+              <a href="/whoweare/ig/facilities/#igFacilTabContent" class="active tab-item">Facilities</a>
+              <a href="/whoweare/ig/ship/#igShipTabContent" class="tab-item">Build a Ship</a>
+              <a href="/whoweare/ig/plant/#igPlantTabContent" class="tab-item">Build a Plant</a>
+            </div>
+          </div>
+
+      </section>
+
+
+      <!-- ============= common-grid ============= -->
+
+    
+      <section class="nav-target" id="common-grid">
+      <div class="trash-title">common-grid</div>
+
+        <!-- sec_inner부터 복사하면 됨 -->
+        <div class="sec_inner " style="background: #f5f5f5">
+          <div class="common-grid" >
+            <div class="title-wrap">
+              <div class="title">
+                <h4 class="m_h3">HSE 경영</h4>
+                <h4 class="m_h6">HSE 경영</h4>
+                <p><span class="m_hanwhaR">한화오션</span>은 '안전·보건·환경(이하 HSE)'을 경영의 최우선 가치로 <br class="tablet">여기고 <br class="pc">
+                  전 구성원의 안전보건과 행복을 지키기 위해 <br class="pc"><br class="tablet">
+                  아래사항을 반드시 실천하겠습니다.
+                  </p>
+                <p>
+                  <span class="m_hanwhaR">한화오션</span>은 지구와 생명의 근원인 대양을 통해 <br>
+                  인류의 삶을 더욱 풍요롭게 만들어 나갈 것입니다. <br>
+                  지속가능한 미래를 위해 <span class="m_hanwhaR">한화오션</span>이 함께 합니다.
+                </p>
+              </div>
+
+              <div class="desc">
+
+                <!-- ====== 순서가 없는 경우 (item 나열) ===== -->
+                <div class="item">
+                  <p>지속 가능한 발전과 공정한 사회 구축을 위해 협력회사와의 동반 성장을 추구하고 
+                    있습니다. 이를 위해 협력회사에 대한 금융, 교육, 기술, 등 다양한 방면의 지원을 통해 건전한 
+                    거래 관행을 확립하고, 협력회사의 경쟁력을 향상시키기 위한 노력을 기울이고 있습니다. 이러한 지원을 통해 한화오션은 협력회사와 함께 성장하는 건강한 기업 생태계의 발전을 목표로 하고 있습니다.</p>
+                </div>
+
+                <div class="item">
+                  <strong class="m_h7">공급망 관리 체계</strong>
+                  <p>‘경쟁력 있는 기업 생태계 조성’을 비전으로 지속가능한 공급망을 구축하고자 합니다. 이를 위해 핵심 협력사를 선별하고 전체 협력사 중 리스크가 높은 협력사를 관리하기 위해 공급망 관리체계를 운영하고 있습니다. 사업 특성을 고려한 공급망 관리를 위해 각 사업부 내 구매 부서를 두어 효율적인 공급망 관리를 추진하고 있으며, 거제조선소 내 노사상생협력실(전무급 임원)을 두어 사내/외 블록 제조 협력업체와의 공정하고 합리적인 비즈니스 파트너십 형성에 최선을 다하고 있습니다.</p>
+                </div>
+
+                <div class="item"></div>
+
+                <!-- ====== 순서 리스트의 경우 (ol) ===== -->
+                <ol>
+                  <li class="item">
+                    <span class="m_caption">01</span>
+                    <strong class="m_h7">HSE 최우선 문화</strong>
+                    <p>HSE를 두고 그 무엇과도 타협하지 않습니다.</p>
+                  </li>
+                  <li class="item">
+                    <span class="m_caption">02</span>
+                    <strong class="m_h7">법령과 규정 준수</strong>
+                    <p>HSE 관계 법령 및 규정을 준수할 수 있는 체계를 구축하고 적극 이행합니다.</p>
+                  </li>
+                  <li class="item">
+                    <span class="m_caption">03</span>
+                    <strong class="m_h7">위험요인 지속적 제거</strong>
+                    <p>모든 구성원은 HSE위험요인을 지속적으로 제거하고, <br class="pc">
+                      경영진은 이에 필요한 모든 자원을 적극 지원합니다.</p>
+                  </li>
+                  <li class="item">
+                    <span class="m_caption">04</span>
+                    <strong class="m_h7">권리와 의무</strong>
+                    <!-- rowan 0627 텍스트 수정 -->
+                    <p>모든 구성원은 안전하게 일하고 적법하게 치료받을 권리와 <br class="pc">
+                      회사에서 정한 안전 수칙을 준수할 의무가 있습니다.
+                      </p>
+                  </li>
+                  <li class="item">
+                    <span class="m_caption">05</span>
+                    <strong class="m_h7">소통 및 상생</strong>
+                    <p>직원 및 협력회사, 고객, 지역주민 등 <br>
+                      이해관계자와의 적극적인 소통으로 HSE 협력체계를 강화합니다.</p>
+                  </li>
+                  <li class="item">
+                    <span class="m_caption">06</span>
+                    <strong class="m_h7">지속가능 친환경 경영</strong>
+                    <p>지속가능한 친환경 경영을 통해 글로벌 해양 및 <br>
+                      에너지 리더 기업으로서의 사회적 책무를 다합니다.</p>
+                  </li>
+                </ol>
+
+              </div>
+
+              
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
+      <!-- ============= common-fixed-img ============= -->
+      <section class="nav-target" id="common-fixed-img">
+        <div class="trash-title">common-fixed-img</div>
+      
+        <div class="common-fixed-wrap">
+          <div class="core">
+            <picture>
+              <source media="(min-width:769px)" srcset="/resources/images/main/main_zoomin_01.png">
+              <source media="(max-width:768px)" srcset="/resources/images/main/main_zoomin_01.png">
+              <img src="/resources/images/main/main_zoomin_01.png">
+            </picture>
+          </div>
+        </div>
+      
+      </section>
+
+      <!-- ============= common-table ============= -->
+      <section class="nav-target" id="common-table">
+        <div class="trash-title">common-table</div>
+      
+        <!-- common-table-wrap부터 복사하면 됨
+            (모바일 스크롤 우측 여백을 없애기 위해 가능한 sec_inner 외부에 추가합니다) -->
+        <div class="common-table-wrap">
+          <table class="common-table">
+            <caption>common-table 가이드</caption>
+
+            <thead>
+              <tr>
+                <th colspan="2" class="p-l-44 left">참고</th>
+                <th class="left p-l-84">left</th>
+                <th class="center">center</th>
+                <th class="right p-r-84">right</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th class="p-l-44 left">tbody 안 th태그는<br>우측 보더 자동 생성</th>
+                <td class="p-l-84">정렬</td>
+                <td class="left p-l-84">좌측정렬</td>
+                <td class="center">중앙정렬</td>
+                <td class="right p-r-84">우측정렬</td>
+              </tr>
+
+              <tr>
+                <th rowspan="3" class="p-l-44 left">MO버전 table에<br>min-width 지정 필수</th>
+                <td class="p-l-84">참고 클래스</td>
+                <td class="left p-l-84">p-l-84 클래스로<br>좌측 여백 부여</td>
+                <td class="center">중앙정렬은<br>필요 시 여백 추가</td>
+                <td class="right p-r-84">p-r-84 클래스로<br>우측 여백 부여</td>
+              </tr>
+
+              <tr>
+                <td class="p-l-84">좌측 패딩 클래스 종류<br>PC기준, 반응형 완료</td>
+                <td class="left p-l-84">p-l-84</td>
+                <td class="center">p-l-44</td>
+                <td class="right p-r-84">p-l-32</td>
+              </tr>
+
+              <tr>
+                <td class="p-l-84">우측 패딩 클래스 종류<br>PC기준, 반응형 완료</td>
+                <td class="left p-l-84">p-r-84</td>
+                <td class="center">p-r-44</td>
+                <td class="right p-r-84">p-r-32</td>
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+      
+      </section>
+
+
+      <!-- ============= common-accordion ============= -->
+      <section class="nav-target" id="common-accordion">
+        <div class="trash-title">common-accordion</div>
+
+        <div class="sec_inner" style="background: #f5f5f5;">
+
+          <div class="common-accordion-list">
+            <h4 class="title m_h6" style="margin-bottom: 20px;">아코디언 메뉴</h4>
+            <div class="all-control">
+              <button type="button" class="toggle-switch all-toggle-btn" style="margin-right: 10px;"></button>
+              <span>전체 열기</span>
+            </div>
+        
+            <ul>
+              <li>
+                <div class="head">
+                  <span class="m_h8">1. accordion.js 불러오기</span>
+                  <button type="button" class="accordion-toggle-btn"></button>
+                </div>
+                <div class="body">
+                  <p class="desc">
+                    import { accordion } from './accordion.js'; <br>
+                    import { accordion } from './accordion.js';<br>
+                    import { accordion } from './accordion.js';<br>
+                    import { accordion } from './accordion.js';<br>
+                    import { accordion } from './accordion.js';<br>
+                    import { accordion } from './accordion.js';<br>
+                    import { accordion } from './accordion.js';<br>
+                    import { accordion } from './accordion.js';<br>
+                    import { accordion } from './accordion.js';<br>
+                    
+                  </p>
+                </div>
+              </li>
+        
+              <li>
+                <div class="head">
+                  <span class="m_h8">2. 아코디언 컨테이너 요소 선택</span>
+                  <button type="button" class="accordion-toggle-btn"></button>
+                </div>
+                <div class="body">
+                  <p class="desc">const $accordion = document.querySelector('.common-accordion-list');
+                  </p>
+                </div>
+              </li>
+        
+              <li>
+                <div class="head">
+                  <span class="m_h8">3. new accordion 생성</span>
+                  <button type="button" class="accordion-toggle-btn"></button>
+                </div>
+                <div class="body">
+                  <p class="desc">new accordion({ accordionElem: $accordion })
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="head">
+                  <span class="m_h8">'전체 열기'에 사용된 스위치 토글 별도 사용 가능</span>
+                  <button type="button" class="accordion-toggle-btn"></button>
+                </div>
+                <div class="body">
+                  <p class="desc">
+                    button type="button" class="toggle-switch" (active 클래스로 제어합니다)
+                  </p>
+                </div>
+              </li>
+        
+            </ul>
+          </div>
+        </div>
+      </section>
+
+       <!-- ============= common-odometer ============= -->
+       <section class="nav-target" id="common-odometer">
+        <div class="trash-title">common-odometer</div>
+
+        <div class="sec_inner" style="background: #f5f5f5;">
+          <div class="odometer-list">
+            <h4 class="title m_h6" style="margin-bottom: 20px;">odometer</h4>
+            <!-- 
+                odometer-auto-theme -> odometer-tobe 까지의 숫자가 이동합니다 
+                dometer-auto-theme :: 카운트 시작될 숫자
+                odometer-tobe :: 카운트 끝나는 숫자(결과)
+                odometer-unit :: 단위가 있는 경우 사용
+
+                odometerBase();//스크립트 호출시 해당 js에 넣어주세요
+                odometerInit("common-odometer",true);//오도미터,활성화 
+                odometerInit("common-odometer",false);//오도미터,초기화
+              
+            -->
+            <!-- 숫자타입 - 정수 -->
+            <div class="common-odometer">
+              <div class="odometer-wrap">
+                <div class="odometer odometer-auto-theme">0</div>
+                <div class="odometer-tobe">100</div>
+                <span class="odometer-unit">점</span>
+              </div>
+            </div>
+            <div class="common-odometer">
+              <div class="odometer-wrap">
+                <div class="odometer odometer-auto-theme">0</div>
+                <div class="odometer-tobe">5</div>
+                <span class="odometer-unit">건</span>
+              </div>
+            </div>
+            <!-- 숫자타입 - 실수 -->
+             <div class="common-odometer">
+              <div class="odometer-wrap">
+                <div class="odometer odometer-auto-theme">0</div>
+                <div class="odometer-tobe">2.27햣 </div>
+              </div>
+            </div>
+            <!-- 숫자타입 - 실수 :: 실수의 정수가 0일때만 odometer-float 클래스 붙여주세요 -->
+            <div class="common-odometer">
+              <div class="odometer-wrap odometer-float"><!--클래스 추가-->
+                <div class="odometer-zero">0</div><!--odometer-zero 마크업 추가 :: 0 으로 해주세요-->
+                <div class="odometer odometer-auto-theme">0</div>
+                <div class="odometer-tobe">0.172</div>
+                <span class="odometer-unit">%</span>
+              </div>
+            </div>
+            <!-- 문자타입 ::  문자일경우 odometer-txt 클래스 붙여주세요-->
+             <div class="common-odometer">
+              <div class="odometer-wrap odometer-txt">
+                <div class="odometer odometer-auto-theme">0</div>
+                <div class="odometer-tobe">ZERO</div>
+              </div>
+            </div>
+        
+          </div>
+        </div>
+      </section>
+
+      <!-- ============= common-list ============= -->
+      <section class="nav-target" id="common-list">
+        <div class="trash-title">common-list</div>
+
+        <div class="sec_inner m_desc" style="background: #f5f5f5;">
+        
+        <div class="common-table-wrap">
+          <table class="common-table">
+            <tbody>
+              <tr>
+                <th class="left p-l-84">
+                    <!-- 클래스만 붙이면 됩니다 -->
+                    <ul class="common-circle-list">
+                      <li><strong>common-circle-list</strong></li>
+                      <li>기호가 서클인 리스트입니다.
+                      </li>
+                      <li>m_desc에 맞추어 있습니다.
+                      </li>
+                    </ul>
+                </th>
+                <td class="left p-l-84">
+                     <!-- 클래스만 붙이면 됩니다 -->
+                    <ul class="common-line-list">
+                      <li><strong>common-line-list</strong></li>
+                      <li>기호가 라인인 리스트입니다.
+                      </li>
+                      <li>m_desc에 맞추어 있습니다.
+                      </li>
+                    </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+          <div class="common-caption-text">
+            <p>캡션 텍스트 샘플입니다.</p>
+          </div>
+        
+        </div>
+      </section>
+
+      <!-- ============= common-chart ============= -->
+      <section class="nav-target" id="common-chart">
+        <div class="trash-title">common-chart</div>
+        <div class="sec_inner">
+
+          <!-- .common-chart-wrap 부터 복사-->
+          <div class="common-chart-wrap">
+            <div class="chart-tit m_h8">스크롤시 chart 애니메이션 실행</div>
+            <div class="chart-info">
+              <div class="info">
+                <div class="gray m_etc">.gray 클래스 추가</div>
+                <div class="or m_etc">.or 클래스 추가</div>
+              </div>
+              <div class="unit m_desc">단위 : <abbr>억 원</abbr></div>
+            </div>
+            <div class="chart-graph"><!-- css 에서 height 값 필수-->
+              <div class="board-box">
+                <div class="values">
+                  <!--
+                    1.data-value 와 값 맞춰주세요.
+                    2.최대 값인 경우 .val-max 클래스 추가
+                  -->
+                  <div class="val" data-value="0"><span>0</span></div>
+                  <div class="val" data-value="100,000"><span>100,000</span></div>
+                  <div class="val" data-value="200,000"><span>200,000</span></div>
+                  <div class="val" data-value="300,000"><span>300,000</span></div>
+                  <div class="val" data-value="400,000"><span>400,000</span></div>
+                  <div class="val val-max" data-value="500,000"><span>500,000</span></div>
+                </div>
+              </div>
+              <ol class="data-box">
+                <!-- .graph 클래스 영역에 .lego 클래스 추가-->
+                <li class="data-wrap">
+                  <div class="year m_etc">2021</div>
+                  <div class="graph lego">
+                    <div class="box gray">
+                      <strong class="count">101,295</strong>
+                      <span class="bar"></span>
+                    </div>
+                    <div class="box or">
+                      <strong class="count">195,471</strong>
+                      <span class="bar"></span>
+                    </div>
+                    <div class="max">296,766</div>
+                  </div>                    
+                </li>
+                <li class="data-wrap">
+                  <div class="year m_etc">2022</div>
+                  <div class="graph lego">
+                    <div class="box gray">
+                      <strong class="count">122,529</strong>
+                      <span class="bar"></span>
+                    </div>
+                    <div class="box or">
+                      <strong class="count">195,198</strong>
+                      <span class="bar"></span>
+                    </div>
+                    <div class="max">371,725</div>
+                  </div>                    
+                </li>
+                <li class="data-wrap">
+                  <div class="year m_etc">2023</div>
+                  <div class="graph lego">
+                    <div class="box gray">
+                      <strong class="count">187,855</strong>
+                      <span class="bar"></span>
+                    </div>
+                    <div class="box or">
+                      <strong class="count">228,824</strong>
+                      <span class="bar"></span>
+                    </div>
+                    <div class="max">416,679</div>
+                  </div>                    
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <br><br>
+
+
+          <div class="common-chart-wrap">
+            <div class="chart-tit m_h8">
+              클릭시 chart 애니메이션 실행
+              <button class="re-btn" type="button m_etc">RESTART</button><!--common 전용-->
+            </div>
+            <div class="chart-info">
+              <div class="info">
+                <div class="dark m_etc">.dark 클래스 추가</div>
+                <div class="gray m_etc">.gray 클래스 추가</div>
+                <div class="or m_etc">.or 클래스 추가</div>
+              </div>
+              <div class="unit m_desc">단위 : <abbr>명</abbr></div>
+            </div>
+            <div class="chart-graph"><!-- css 에서 height 값 필수-->
+              <div class="board-box">
+                <div class="values">
+                  <!--
+                    1.data-value 와 값 맞춰주세요.
+                    2.최대 값인 경우 .val-max 클래스 추가
+                  -->
+                  <div class="val" data-value="0"><span>0</span></div>
+                  <div class="val" data-value="2,000"><span>2,000</span></div>
+                  <div class="val" data-value="4,000"><span>4,000</span></div>
+                  <div class="val" data-value="6,000"><span>6,000</span></div>
+                  <div class="val" data-value="8,000"><span>8,000</span></div>
+                  <div class="val val-max" data-value="10,000"><span>10,000</span></div>
+                </div>
+              </div>
+              <ol class="data-box">
+                <!-- .graph 클래스 영역에 .domino 클래스 추가-->
+                <li class="data-wrap">
+                  <div class="year m_etc">2021</div>
+                  <div class="graph domino">
+                    <div class="box dark">
+                      <strong class="count">8,808</strong>
+                      <span class="bar"></span>
+                    </div>
+                    <div class="box gray">
+                      <strong class="count">8,484</strong>
+                      <span class="bar"></span>
+                    </div>
+                    <div class="box or">
+                      <strong class="count">374</strong>
+                      <span class="bar"></span>
+                    </div>
+                  </div>                    
+                </li>
+                <li class="data-wrap">
+                  <div class="year m_etc">2022</div>
+                  <div class="graph domino">
+                    <div class="box dark">
+                      <strong class="count">8,635</strong>
+                      <span class="bar"></span>
+                    </div>
+                    <div class="box gray">
+                      <strong class="count">8,234</strong>
+                      <span class="bar"></span>
+                    </div>
+                    <div class="box or">
+                      <strong class="count">401</strong>
+                      <span class="bar"></span>
+                    </div>
+                  </div>                    
+                </li>
+                <li class="data-wrap">
+                  <div class="year m_etc">2023</div>
+                  <div class="graph domino">
+                    <div class="box dark">
+                      <strong class="count">8,900</strong>
+                      <span class="bar"></span>
+                    </div>
+                    <div class="box gray">
+                      <strong class="count">8,488</strong>
+                      <span class="bar"></span>
+                    </div>
+                    <div class="box or">
+                      <strong class="count">412</strong>
+                      <span class="bar"></span>
+                    </div>
+                  </div>                    
+                </li>
+              </ol>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============= common-chart ============= -->
+      <div class="trash-title">sr-only 클래스 : 접근성을 위해 통 이미지 내부 텍스트 Html에 코드로 남기고 그것을 숨길 때 필요</div>
+      <div class="sec_inner">
+        .sr-only{
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          clip-path: inset(50%);
+          white-space: nowrap;
+          border: 0;
+        }
+      </div>
+
+
+
+
+    </section>
+  </div>
+</main>
+
+<!-- //공통레이아웃 - footer를 include -->
+<%- include('./src/include/footer.ejs') %>

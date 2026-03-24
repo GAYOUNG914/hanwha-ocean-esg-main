@@ -1,0 +1,22 @@
+<%- include('./src/include/header.ejs', { title: '' }) %>
+
+<main id="ERRORSERVICE" class="ocean_error error_service">
+  <div class="main-inner">
+    <section>
+      <div class="err_copy in_sec_box_area">
+        <h2 class="m_h6 err_tit in_sec_box">서비스를 이용할 수 없습니다.</h2>
+        <p class="err_txt in_sec_box">서버에 일시적인 오류가 발생했습니다. <br>불편을 드려 죄송합니다. <br class="mobile">잠시 후 다시 시도해 주세요.</p>
+      </div>
+      <div class="err_btn in_sec_box_area">
+        <button onclick="history.back();" class="m_btn in_sec_box" data-btntype="button" hover="ripple" size="m" line="round" color="white">
+          <span class="txt">이전으로 이동</span>
+        </button>
+        <a href="/" class="m_btn in_sec_box" data-btntype="button" hover="ripple" size="m" line="round" color="black">
+          <span class="txt">메인으로 이동</span>
+        </a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<%- include('./src/include/footer.ejs') %>

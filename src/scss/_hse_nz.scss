@@ -1,0 +1,76 @@
+// rt
+.rt .rt-area .infogram-wrap{margin-top: vw(w,120);}
+.rt .rt-area .infogram-wrap .infogram .tit-wrap{margin-bottom: vw(w,20);display: flex;justify-content: space-between;align-items: end;}
+.rt .rt-area .infogram-wrap .infogram .tit-wrap .unit{color:$gray-3;font-weight: 300;}
+.rt .rt-area .infogram-wrap .infogram .tit-wrap .unit sub{vertical-align: baseline; margin: 0 1px; font-size: 0.5em; font-weight: 800;}
+.rt .rt-area .infogram-wrap .infogram .graph-img{width: 100%;height:vw(w,894); /* background: url("#{$image-path}hse/nz/nz_rd_infogram_roadmap.webp") no-repeat center center / contain; */}
+.rt .rt-area .infogram-wrap .table{margin-top: vw(w,81);}
+.rt .rt-area .infogram-wrap .table tr th:first-child{border-right:none;width: vw(w,384);}
+.rt .rt-area .infogram-wrap .table tr th{width: vw(w,432);}
+.rt .infogram{overflow-x: hidden !important;}
+html[lang=en] .rt .rt-area .infogram-wrap .table tr th:first-child{width: vw(w,544);}
+@include tablet-only{
+  .rt .rt-area .infogram-wrap{margin-top: 76px;}
+  .rt .rt-area .infogram-wrap .infogram .tit-wrap{margin-bottom: 12px;}
+  // .rt .rt-area .infogram-wrap .infogram .graph-img{height:564px;}
+  .rt .rt-area .infogram-wrap .table{margin-top: 50px;}
+  .rt .rt-area .infogram-wrap .table tr th:first-child{width: 242px;}
+  .rt .rt-area .infogram-wrap .table tr th{width: 272px;}
+  html[lang=en] .rt .rt-area .infogram-wrap .table tr th:first-child{width: calc((100% / 12 * 4) - (100% / 70 * 2));}
+}
+@include mobile{
+  .rt .rt-area .content-box .m_h3{font-size: 24px !important;}
+  .rt .rt-area .infogram-wrap{margin-top: 60px;}
+  .rt .rt-area .infogram-wrap .infogram .tit-wrap{margin-bottom: 20px;}
+  .rt .rt-area .infogram-wrap .infogram .graph-img{ width: auto; height: auto; background: none; }
+  .rt .rt-area .infogram-wrap .infogram .graph-img picture{width: 1680px;}
+  .rt .rt-area .infogram-wrap .common-table{ min-width: 0; }
+  .rt .rt-area .infogram-wrap .table{margin-top: 80px;}
+  .rt .rt-area .infogram-wrap .table tr th,
+  .rt .rt-area .infogram-wrap .table tr td{ padding: 20px 8px; line-height: 1.4; }
+  .rt .rt-area .infogram-wrap .table tr th:first-child{width: 107px;}
+  .rt .rt-area .infogram-wrap .table tr th{width: 72px;}
+  html[lang=en] .rt .rt-area .infogram-wrap .infogram .tit-wrap{flex-direction: column;}
+  html[lang=en] .rt .rt-area .infogram-wrap .infogram .tit-wrap .tit{width: 100%;text-align: left;margin-bottom: 20px;}
+  html[lang=en] .rt .rt-area .infogram-wrap .table tr th:first-child{width:auto;min-width: 107px;}
+}
+
+// rd
+.rd .rd-area .point-wrap .point .icon{border:none}
+.rd .rd-area .point-wrap .point:nth-child(1) .icon{ background: url("#{$image-path}hse/nz/nz_point_ic_01-pc.webp") no-repeat center center / contain;}
+.rd .rd-area .point-wrap .point:nth-child(2) .icon{ background: url("#{$image-path}hse/nz/nz_point_ic_02-pc.webp") no-repeat center center / contain;}
+.rd .rd-area .point-wrap .point:nth-child(3) .icon{ background: url("#{$image-path}hse/nz/nz_point_ic_03-pc.webp") no-repeat center center / contain;}
+.rd .rd-area .card-wrap{width: 100%;}
+.rd .rd-area .card-wrap .card{width:vw(w,320); height: vw(w,582);}
+.rd .rd-area .card-wrap .card .tit{height: vw(w,182);padding: vw(w,20);box-sizing: border-box;}
+.rd .rd-area .card-wrap .card .tit span{display: contents;}
+.rd .rd-area .card-wrap .card .info>p{color:$gray-2;font-weight: 300;}
+.rd .rd-area .sub-wrap{position: relative; width: vw(w,1361);margin: 0 auto;display: flex;justify-content: center;}
+.rd .rd-area .sub-wrap::after{content: '';width: 100%;height: vw(w,200);position: absolute;top: 0;left: 0; background: url("#{$image-path}hse/nz/nz_solution_line.svg") no-repeat center center / contain;z-index: -1;}
+.rd .rd-area .sub-wrap .tit{ position: relative; display: inline-block;margin: vw(w,50) 0 vw(w,60);padding: vw(w,8) vw(w,10); text-align: center;background-color: #fff; font-weight: 300;}
+html[lang=en] .rd .rd-area .card-wrap .card{height: vw(w,798);}
+html[lang=en] .rd .rd-area .card-wrap .card .tit{height: vw(w,296);}
+@include tablet-only{
+  .rd .rd-area .card-wrap{flex-wrap: wrap; justify-content: center; width: 668px; margin: 0 auto;}
+  .rd .rd-area .card-wrap .card{width:202px; height: 366px; margin: 5px;}
+  .rd .rd-area .card-wrap .card .tit{flex: none; height: 120px;padding: 12px; font-size: 15px !important;}
+  .rd .rd-area .card-wrap .card .info{font-size: 13px !important;}
+  .rd .rd-area .sub-wrap{position: relative; width: 100%;}
+  .rd .rd-area .sub-wrap::after{height: 126px; background: url("#{$image-path}hse/nz/nz_solution_line-ta.svg") no-repeat center center / contain;}
+  .rd .rd-area .sub-wrap .tit{margin: 31px 0 38px;padding: 5px 6px;}
+  html[lang=en] .rd .rd-area .card-wrap .card{height:auto;}
+  html[lang=en] .rd .rd-area .card-wrap .card .tit{height:234px;}
+}
+@include mobile{
+  .rd .rd-area .in_mob_scr{overflow-y: hidden;}
+  .rd .rd-area .in_mob_scr .picture{ width: 1680px; padding: 0 20px; }
+  .rd .rd-area .card-wrap .m_h3{ font-size: 24px !important; }
+  .rd .rd-area .card-wrap .card{width:320px; height: 582px;}
+  .rd .rd-area .card-wrap .card .tit{height: 182px;padding: 20px}
+  .rd .rd-area .sub-wrap{position: relative; width: 1361px;}
+  .rd .rd-area .sub-wrap::after{height: 200px; }
+  .rd .rd-area .sub-wrap .tit{margin: 50px 0 60px;padding: 8px 10px;}
+  html[lang=en] .rd .rd-area .card-wrap .card{height:798px;}
+  html[lang=en] .rd .rd-area .card-wrap .card .tit{height:296px}
+
+}

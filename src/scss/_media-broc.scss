@@ -1,0 +1,55 @@
+.broc .sub_container,
+.broc .sec_inner{background-color: transparent;}
+    
+.broc .brochure-ct{ margin-top:vw(w,80);padding:0 vw(w,144);box-sizing: border-box;}
+.broc .brochure-ct .brochure-list .brochure-item{display: flex;justify-content: space-between;}
+.broc .brochure-ct .brochure-list .brochure-item .txt-wrap{display: flex;flex-direction: column;justify-content: space-between}
+.broc .brochure-ct .brochure-list .brochure-item .txt-wrap .title-box{margin-top: vw(w,35.87);}
+.broc .brochure-ct .brochure-list .brochure-item .txt-wrap .title-box .title{font-weight: 300;}
+.broc .brochure-ct .brochure-list .brochure-item .txt-wrap .title-box .desc{margin-top: vw(w,60);}
+.broc .brochure-ct .brochure-list .brochure-item .txt-wrap .title-box .desc p{font-weight: 300;margin-top:vw(w,12);color:#4B4B4B}
+.broc .brochure-ct .brochure-list .brochure-item .txt-wrap .down-box{display: flex;}
+.broc .brochure-ct .brochure-list .brochure-item .txt-wrap .down-box>a:nth-child(n+2){margin-left: vw(w, 80);}
+.broc .brochure-ct .brochure-list .brochure-item .txt-wrap .down-box .icon::before,
+.broc .brochure-ct .brochure-list .brochure-item .txt-wrap .down-box .icon::after{width: vw(w, 16);height:vw(w, 16);top: calc(50% - vw(w, 8));left: calc(50% - vw(w, 8)); background-image: url('#{$image-path}common/icon_download_line.svg');}
+.broc .brochure-ct .brochure-list .brochure-item .txt-wrap .down-box .icon::after{filter: invert(54%) sepia(98%) saturate(3838%) hue-rotate(359deg) brightness(102%) contrast(110%);}
+.broc .brochure-ct .brochure-list .brochure-item .img-wrap{position: relative;width: vw(w, 360);aspect-ratio: 360 / 499;}
+.broc .brochure-ct .brochure-list .brochure-item .img-wrap img{width: 100%;height: 100%;display: block;object-fit:contain;}
+
+#BROC .m_btn[data-btntype=text][hover=underline] span.txt{font-size: vw(w, 20); line-height: vw(w, 20*1.68); font-weight: 300;}
+#BROC .m_btn[data-btntype=text][hover=underline] span.icon{width: vw(w, 28); height: vw(w, 28);margin-right: 0; margin-left: vw(w, 12);}
+
+@include tablet{
+    .broc .brochure-ct{ margin-top:28px;padding:0 calc(100% / 12* 1);}
+    .broc .brochure-ct .brochure-list .brochure-item .txt-wrap .title-box{margin-top:0px;}
+    .broc .brochure-ct .brochure-list .brochure-item .txt-wrap .title-box .desc{margin-top:16px;}
+    .broc .brochure-ct .brochure-list .brochure-item .txt-wrap .title-box .desc p{margin-top:8px;}
+    .broc .brochure-ct .brochure-list .brochure-item .txt-wrap .down-box>a:nth-child(n+2){margin-left:calc(100% / 12* 1);}
+    .broc .brochure-ct .brochure-list .brochure-item .img-wrap{width:calc(100% / 12* 3);}
+
+    .broc .brochure-ct .brochure-list .brochure-item .txt-wrap .down-box .icon::before,
+    .broc .brochure-ct .brochure-list .brochure-item .txt-wrap .down-box .icon::after{width:10px;height:10px;top: calc(50% - 5px);left: calc(50% - 5px);}
+    #BROC .m_btn[data-btntype=text][hover=underline] span.icon{width: 16px !important; height:16px !important;margin-right: 0 !important; margin-left: 7.41px !important;}
+}
+@include mobile{
+
+.broc .brochure-ct{ margin-top:60px;padding:0;}
+.broc .brochure-ct .brochure-list .brochure-item{flex-direction: column-reverse;}
+.broc .brochure-ct .brochure-list .brochure-item .txt-wrap .title-box{margin-top:60px;}
+.broc .brochure-ct .brochure-list .brochure-item .txt-wrap .title-box .title{font-size: 36px !important;line-height: 54.72px !important;font-weight: 400;}
+.broc .brochure-ct .brochure-list .brochure-item .txt-wrap .title-box .sub-tit{font-size: 24px !important;line-height:1.52 !important;}
+.broc .brochure-ct .brochure-list .brochure-item .txt-wrap .title-box .desc{margin-top:40px;}
+.broc .brochure-ct .brochure-list .brochure-item .txt-wrap .title-box .desc p{font-size: 16px;line-height:27.52px; margin-top:20px;font-weight: 400;}
+.broc .brochure-ct .brochure-list .brochure-item .txt-wrap .down-box{margin-top: 48px;}
+.broc .brochure-ct .brochure-list .brochure-item .txt-wrap .down-box>a:nth-child(n+2){margin-left: 32px;}
+.broc .brochure-ct .brochure-list .brochure-item .txt-wrap .down-box .icon::before,
+.broc .brochure-ct .brochure-list .brochure-item .txt-wrap .down-box .icon::after{width:14px;height:14px;top: calc(50% - 7px);left: calc(50% - 7px);}
+.broc .brochure-ct .brochure-list .brochure-item .img-wrap{width: 180px;margin: 0 auto;}
+
+#BROC .m_btn[data-btntype=text][hover=underline] span.txt{font-size: 16px !important;line-height:24px !important;font-weight: 400;}
+#BROC .m_btn[data-btntype=text][hover=underline] span.icon{width:24px !important; height: 24px !important; margin-left:8px !important;}
+
+
+}
+
+@include blind;

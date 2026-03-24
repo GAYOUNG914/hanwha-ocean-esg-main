@@ -1,0 +1,349 @@
+<%- include('./src/include/header.ejs', { title: '최신 활동 뉴스' }) %>
+
+<main id="NEWS" class="news">
+  <div class="main-inner" data-path="news">
+    <div class="sub_top top_txt">
+      <div class="top_tit_area">
+        <div class="top_tit-inner">
+          <h2 class="sub_top_tit m_h2">최신 활동 뉴스</h2>
+        </div>
+      </div>
+    </div>
+    <section class="sub_container">
+      <div class="sec_inner">
+        <div class="news-area">
+            <div class="news-tab common-tab-looking-a-wrap">
+                <ul class="tab-list line-tab">
+                  <li class="active tab-item in_sec_copy">
+                    <a href=""><span class="m_h7">전체</span></a>
+                  </li>
+                  <li class="tab-item in_sec_copy">
+                    <a href=""><span class="m_h7">사외</span></a>
+                  </li>
+                  <li class="tab-item in_sec_copy">
+                    <a href=""><span class="m_h7">사내</span></a>
+                  </li>
+                </ul>
+            </div>
+            <div class="news-feed">
+                <div class="feed-ct">
+                  <div class="feed-search">
+                    <!-- 검색시 일치하는 게시물이 있는 경우 ::: .search-num 영역에 .active  추가시 검색결과 숫자가 나타닙니다-->
+                    <div class="search-num">
+                      <!-- 검색시 일치하는 게시물이 있는 경우 ::: .total 클래스에 데이터 추가 -->
+                      <div class="num-box">총 <span class="total">6</span>건</div>
+                    </div>
+                    <div class="search">
+                      <input data-btntype="text" placeholder="검색어를 입력해 주세요" title="검색" class="search-bar" value="" >
+                      <button type="button" class="search-btn">
+                        <span class="blind">검색</span>
+                      </button>
+                    </div> 
+                  </div>
+                  <!-- 게시물이 있는 경우 ::: .none 클래스 추가시 영역이 숨겨집니다 -->
+                  <div class="feed-wrapper">
+                    <ul class="feed-list in_sec_box_area">
+                      <!-- 이미지가 없는 경우  -->
+                      <li class="feed-item in_sec_box">
+                        <a href="../news10/" class="link-viewer" id="linkViewer">
+                          <!-- .img-wrap 영역 ::: default 클래스 추가해주세요, Default 이미지 적용 -->
+                          <div class="img-wrap default">
+                            <picture>
+                              <source media="(min-width:1024px)" src="/resources/images/common/hanwha_default.webp">
+                              <source media="(min-width:768px) and (max-width:1023px)" src="/resources/images/common/hanwha_default.webp">
+                              <source media="(min-width:0px) and (max-width:767px)" src="/resources/images/common/hanwha_default.webp">
+                              <img src="/resources/images/common/hanwha_default.webp" alt="Images" />
+                            </picture>
+                          </div>
+                          <!-- //.img-wrap 영역 ::: default 클래스 추가해주세요, Default 이미지 적용 -->
+                          <div class="txt-wrap">
+                            <div class="info-box">
+                              <span class="topic m_desc">사외</span>
+                              <span class="date m_desc">2024.06.12</span>
+                            </div>
+                            <div class="info-tit m_h9">
+                              <span>한화오션, 국내 조선업계 최초 국제 <br class="pc">안전경영시스템 도입</span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <!-- 이미지가 있는 경우 - 이미지 두개 -->
+                      <li class="feed-item in_sec_box">
+                        <a href="../news10/" class="link-viewer" id="linkViewer">
+                          <!-- .img-wrap 영역 ::: .swiper .newFeedSwiper 클래스 추가해주세요-->
+                          <div class="img-wrap swiper newFeedSwiper">
+                            <!--  해당 영역 추가  -->
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <picture>
+                                  <source media="(min-width:1024px)" src="/resources/images/osa/news-content-02-pc.webp">
+                                  <source media="(min-width:768px) and (max-width:1023px)" src="/resources/images/osa/news-content-02-pc.webp"/>
+                                  <source media="(min-width:0px) and (max-width:767px)" src="/resources/images/osa/news-content-02-pc.webp"/>
+                                  <img src="/resources/images/osa/news-content-02-pc.webp" alt="Images" />
+                                </picture>
+                              </div>
+                              <div class="swiper-slide">
+                                <picture>
+                                  <source media="(min-width:1024px)" src="/resources/images/osa/news-content-05-pc.webp">
+                                  <source media="(min-width:768px) and (max-width:1023px)" src="/resources/images/osa/news-content-05-pc.webp"/>
+                                  <source media="(min-width:0px) and (max-width:767px)" src="/resources/images/osa/news-content-05-pc.webp"/>
+                                  <img src="/resources/images/osa/news-content-05-pc.webp" alt="Images" />
+                                </picture>
+                              </div>
+                            </div>
+                              <!-- // 해당 영역 추가  -->
+                          </div>
+                          <!-- //.img-wrap 영역 ::: .swiper .newFeedSwiper 클래스 추가해주세요 -->
+                          <div class="txt-wrap">
+                            <div class="info-box">
+                              <span class="topic m_desc">사내</span>
+                              <span class="date m_desc">2024.06.12</span>
+                            </div>
+                            <div class="info-tit m_h9">
+                              <span>한화오션, 국내 조선업계 최초 국제 <br class="pc">안전경영시스템 도입</span>
+                            </div>
+                          </div>
+                        </a>
+                     </li>
+                      <!-- 이미지가 있는 경우 - 이미지 세개(최대) -->
+                      <li class="feed-item in_sec_box">
+                        <a href="../news10/" class="link-viewer" id="linkViewer">
+                          <!-- .img-wrap 영역 ::: .swiper .newFeedSwiper 클래스 추가해주세요 -->
+                          <div class="img-wrap swiper newFeedSwiper">
+                            <!--  해당 영역 추가  -->
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <picture>
+                                  <source media="(min-width:1024px)" src="/resources/images/osa/news-content-03-pc.webp">
+                                  <source media="(min-width:768px) and (max-width:1023px)" src="/resources/images/osa/news-content-03-pc.webp"/>
+                                  <source media="(min-width:0px) and (max-width:767px)" src="/resources/images/osa/news-content-03-pc.webp"/>
+                                  <img src="/resources/images/osa/news-content-03-pc.webp" alt="Images" />
+                                </picture>
+                              </div>
+                              <div class="swiper-slide">
+                                <picture>
+                                  <source media="(min-width:1024px)" src="/resources/images/osa/news-content-04-pc.webp">
+                                  <source media="(min-width:768px) and (max-width:1023px)" src="/resources/images/osa/news-content-04-pc.webp"/>
+                                  <source media="(min-width:0px) and (max-width:767px)" src="/resources/images/osa/news-content-04-pc.webp"/>
+                                  <img src="/resources/images/osa/news-content-04-pc.webp" alt="Images" />
+                                </picture>
+                              </div>
+                              <div class="swiper-slide">
+                                <picture>
+                                  <source media="(min-width:1024px)" src="/resources/images/osa/news-content-01-pc.webp">
+                                  <source media="(min-width:768px) and (max-width:1023px)" src="/resources/images/osa/news-content-01-pc.webp"/>
+                                  <source media="(min-width:0px) and (max-width:767px)" src="/resources/images/osa/news-content-01-pc.webp"/>
+                                  <img src="/resources/images/osa/news-content-01-pc.webp" alt="Images" />
+                                </picture>
+                              </div>
+                            </div>
+                            <!--  해당 영역 추가  -->
+                          </div>
+                          <!-- // .img-wrap 영역 ::: .swiper .newFeedSwiper 클래스 추가해주세요 -->
+                          <div class="txt-wrap">
+                            <div class="info-box">
+                              <span class="topic m_desc">사내</span>
+                              <span class="date m_desc">2024.06.12</span>
+                            </div>
+                            <div class="info-tit m_h9">
+                              <span>한화오션, 국내 조선업계 최초 국제 <br class="pc">안전경영시스템 도입</span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                     
+                      <li class="feed-item in_sec_box">
+                        <a href="../news10/" class="link-viewer" id="linkViewer">
+                          <div class="img-wrap">
+                            <picture>
+                              <source media="(min-width:1024px)" src="/resources/images/osa/news-content-04-pc.webp">
+                              <source media="(min-width:768px) and (max-width:1023px)" src="/resources/images/osa/news-content-04-pc.webp"/>
+                              <source media="(min-width:0px) and (max-width:767px)" src="/resources/images/osa/news-content-04-pc.webp"/>
+                              <img src="/resources/images/osa/news-content-04-pc.webp" alt="Images" />
+                            </picture>
+                          </div>
+                          <div class="txt-wrap">
+                            <div class="info-box">
+                              <span class="topic m_desc">사외</span>
+                              <span class="date m_desc">2024.06.12</span>
+                            </div>
+                            <div class="info-tit m_h9">
+                              <span>한화오션, 국내 조선업계 최초 국제 <br class="pc">안전경영시스템 도입</span>
+                              
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="feed-item in_sec_box">
+                        <a href="../news10/" class="link-viewer" id="linkViewer">
+                          <div class="img-wrap">
+                            <picture>
+                              <source media="(min-width:1024px)" src="/resources/images/osa/news-content-01-pc.webp">
+                              <source media="(min-width:768px) and (max-width:1023px)" src="/resources/images/osa/news-content-01-pc.webp"/>
+                              <source media="(min-width:0px) and (max-width:767px)" src="/resources/images/osa/news-content-01-pc.webp"/>
+                              <img src="/resources/images/osa/news-content-01-pc.webp" alt="Images" />
+                            </picture>
+                          </div>
+                          <div class="txt-wrap">
+                            <div class="info-box">
+                              <span class="topic m_desc">사내</span>
+                              <span class="date m_desc">2024.06.12</span>
+                            </div>
+                            <div class="info-tit m_h9">
+                              <span>한화오션, 국내 조선업계 최초 국제 <br class="pc">안전경영시스템 도입</span>
+                              
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="feed-item in_sec_box">
+                        <a href="../news10/" class="link-viewer" id="linkViewer">
+                          <div class="img-wrap">
+                            <picture>
+                              <source media="(min-width:1024px)" src="/resources/images/osa/news-content-02-pc.webp">
+                              <source media="(min-width:768px) and (max-width:1023px)" src="/resources/images/osa/news-content-02-pc.webp"/>
+                              <source media="(min-width:0px) and (max-width:767px)" src="/resources/images/osa/news-content-02-pc.webp"/>
+                              <img src="/resources/images/osa/news-content-02-pc.webp" alt="Images" />
+                            </picture>
+                          </div>
+                          <div class="txt-wrap">
+                            <div class="info-box">
+                              <span class="topic m_desc">사외</span>
+                              <span class="date m_desc">2024.06.12</span>
+                            </div>
+                            <div class="info-tit m_h9">
+                              <span>한화오션, 국내 조선업계 최초 국제 <br class="pc">안전경영시스템 도입</span>
+                              
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="feed-item in_sec_box">
+                        <a href="../news10/" class="link-viewer" id="linkViewer">
+                          <div class="img-wrap">
+                            <picture>
+                              <source media="(min-width:1024px)" src="/resources/images/osa/news-content-05-pc.webp">
+                              <source media="(min-width:768px) and (max-width:1023px)" src="/resources/images/osa/news-content-05-pc.webp"/>
+                              <source media="(min-width:0px) and (max-width:767px)" src="/resources/images/osa/news-content-05-pc.webp"/>
+                              <img src="/resources/images/osa/news-content-05-pc.webp" alt="Images" />
+                            </picture>
+                          </div>
+                          <div class="txt-wrap">
+                            <div class="info-box">
+                              <span class="topic m_desc">사내</span>
+                              <span class="date m_desc">2024.06.12</span>
+                            </div>
+                            <div class="info-tit m_h9">
+                              <span>한화오션, 국내 조선업계 최초 국제 <br class="pc">안전경영시스템 도입</span>
+                              
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="feed-item in_sec_box">
+                        <a href="../news10/" class="link-viewer" id="linkViewer">
+                          <div class="img-wrap">
+                            <picture>
+                              <source media="(min-width:1024px)" src="/resources/images/osa/news-content-04-pc.webp">
+                              <source media="(min-width:768px) and (max-width:1023px)" src="/resources/images/osa/news-content-04-pc.webp"/>
+                              <source media="(min-width:0px) and (max-width:767px)" src="/resources/images/osa/news-content-04-pc.webp"/>
+                              <img src="/resources/images/osa/news-content-04-pc.webp" alt="Images" />
+                            </picture>
+                          </div>
+                          <div class="txt-wrap">
+                            <div class="info-box">
+                              <span class="topic m_desc">사내</span>
+                              <span class="date m_desc">2024.06.12</span>
+                            </div>
+                            <div class="info-tit m_h9">
+                              <span>한화오션, 국내 조선업계 최초 국제 <br class="pc">안전경영시스템 도입</span>
+                              
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="feed-item in_sec_box">
+                        <a href="../news10/" class="link-viewer" id="linkViewer">
+                          <div class="img-wrap">
+                            <picture>
+                              <source media="(min-width:1024px)" src="/resources/images/osa/news-content-01-pc.webp">
+                              <source media="(min-width:768px) and (max-width:1023px)" src="/resources/images/osa/news-content-01-pc.webp"/>
+                              <source media="(min-width:0px) and (max-width:767px)" src="/resources/images/osa/news-content-01-pc.webp"/>
+                              <img src="/resources/images/osa/news-content-01-pc.webp" alt="Images" />
+                            </picture>
+                          </div>
+                          <div class="txt-wrap">
+                            <div class="info-box">
+                              <span class="topic m_desc">사내</span>
+                              <span class="date m_desc">2024.06.12</span>
+                            </div>
+                            <div class="info-tit m_h9">
+                              <span>한화오션, 국내 조선업계 최초 국제 <br class="pc">안전경영시스템 도입</span>
+                              
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+      
+                    <div class="feed-paginate">
+                      <!-- 첫번째 페이지일 경우 ::: .prev-box 영역에 .disable 클래스 추가(비활성화 css코드) -->
+                      <div class="nev-box prev-box disable"> 
+                        <button class="prev all" type="button">
+                          <span class="blind">이전 페이지</span>
+                        </button>
+                        <button class="prev" type="button">
+                          <span class="blind">이전 페이지</span>
+                        </button>
+                      </div>
+                      <div class="page-box">
+                       <!-- 숫자 클릭시 ::: .active 클래스 추가(활성화 css코드) -->
+                        <button type="button" class="m_etc page-num active" data-pagin-num="1"><span>1</span></button>
+                        <button type="button" class="m_etc page-num" data-pagin-num="2"><span>2</span></button>
+                        <button type="button" class="m_etc page-num" data-pagin-num="3"><span>3</span></button>
+                        <button type="button" class="m_etc page-num" data-pagin-num="4"><span>4</span></button>
+                        <button type="button" class="m_etc page-num" data-pagin-num="5"><span>5</span></button>
+                      </div>
+                      <!-- 마지막 페이지일 경우 ::: .next-box 영역에 .disable 클래스 추가(비활성화 css코드) -->
+                      <div class="nev-box next-box"> 
+                        <button class="next" type="button">
+                          <span class="blind">이전 페이지</span>
+                        </button>
+                        <button class="next all" type="button">
+                          <span class="blind">이전 페이지</span>
+                        </button>
+                      </div>
+                    </div>
+      
+                    <div class="feed-more none">
+                      <button class="load" type="button">
+                        <span class="txt">LOAD MORE</span>
+                        <span class="icon"></span>
+                      </button>
+      
+                    </div>
+                  </div>
+      
+                  <!-- 게시물이 없는 경우 ::: .none 클래스 제거시 영역이 나타납니다  -->
+                  <div class="feed-empty noDate none in_sec_box">
+                    <div class="empty-box in_sec_copy">
+                      <span class="m_h9 ">게시물이 없습니다.</span>
+                    </div>
+                  </div>
+      
+                  <!-- 검색시 일치하는 게시물이 없는 경우 ::: .none 클래스 제거시 영역이 나타납니다 -->
+                  <div class="feed-empty noMatch none in_sec_box">
+                    <div class="empty-box in_sec_copy">
+                      <span class="m_h9">일치하는 검색 결과가 없습니다.</span>
+                    </div>
+                  </div>
+               
+                </div>
+              </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<%- include('./src/include/footer.ejs') %>

@@ -1,0 +1,964 @@
+<%- include('./src/include/header-en.ejs', { title: 'Social' }) %>
+
+<main id="SO" class="dl pd so">
+  <div class="main-inner" data-path="env">
+    
+    <div class="sub_top top_img">
+      <div class="top_tit_area sticky">
+
+        <div class="top_tit-inner static">
+          <h2 class="sub_top_tit m_h2">Performance Data</h2>
+        </div>
+
+        <div class="top_tit-inner absol">
+          <h2 class="sub_top_tit m_h2">Performance Data</h2>
+        </div>
+
+      </div>
+   
+      <div class="overflow-ct">
+        <div class="top_kv_area">
+          <div class="core-wrap">
+            <picture class="core-wrap-inner dim">
+                <source media="(min-width: 769px)" srcset="/resources/images/dl/kv.webp">
+                <source media="(max-width: 768px)" srcset="/resources/images/dl/kv.webp">
+                <img class="core" src="/resources/images/dl/kv.webp" alt="Key Visual">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="sub_container">
+      <div class="sec_inner">
+          <div class="dl-area so-area" id="pdSo">
+              <div class="so-con">
+                  <div class="common-tab-looking-a-wrap">
+                      <div class="tab-looking-a line-tab">
+                          <a href="/en/dl/pd/env/#pdEvn" class="tab-item">Environment</a>
+                          <a href="/en/dl/pd/so/#pdSo" class="active tab-item">Social</a>
+                          <a href="/en/dl/pd/gov/#pdGov" class="tab-item">Governance</a>
+                      </div>
+                  </div>
+                  <div class="content-box in_sec_box_area">
+                    <h3 class="title m_h3 in_sec_copy">Safety and Health</h3>
+                    <div class="gt-wrap gt01 in_sec_box_area">
+                      <div class="gt-tit m_h5 in_sec_box">Safety Management</div>
+                      <div class="gt-tablist in_sec_box" role="tablist" aria-label="Tabs">
+                        <div class="tabs">
+                          <button role="tab" aria-selected="true" aria-controls="aData" id="aTab" class="tab-button active m_etc">Employees</button>
+                          <button role="tab" aria-selected="false" aria-controls="bData" id="bTab" class="tab-button m_etc">Suppliers</button>
+                        </div>
+                      </div>
+                      <div id="aData" role="tabpanel" aria-labelledby="aTab" class="tab-con active in_sec_box_area">
+                        <picture class="chart-img in_sec_box">
+                            <source media="(min-width: 769px)" srcset="/resources/images/dl/en_dl_so_gt_01-1-pc.webp">
+                            <source media="(max-width: 768px)" srcset="/resources/images/dl/en_dl_so_gt_01-1-mo.webp">
+                            <img class="core" src="/resources/images/dl/en_dl_so_gt_01-1-pc.webp" alt="Graph">
+                        </picture>
+                        <!-- <div class="common-chart-wrap">
+                          <div class="chart-info">
+                            <div class="info">
+                              <div class="blank m_etc">업무관련 사망</div>
+                              <div class="or m_etc">근로손실재해율(LTIFR)</div>
+                            </div>
+                            <div class="unit m_desc">
+                              <span>Unit : Persons</span>
+                              <span>Unit : 건/20만 근로Hours</span>
+                            </div>
+                          </div>
+                          <div class="chart-graph">
+                            <div class="board-box">
+                              <div class="values">
+                                <div class="val" data-value="0"><span>0</span></div>
+                                <div class="val" data-value="1"><span>1</span></div>
+                                <div class="val val-max" data-value="2"><span>2</span></div>
+                              </div>
+                            </div>
+                            <ol class="data-box">
+                              <li class="data-wrap">
+                                <div class="year m_etc">2021</div>
+                              </li>
+                              <li class="data-wrap">
+                                <div class="year m_etc">2022</div>
+                              </li>
+                              <li class="data-wrap">
+                                <div class="year m_etc">2023</div>
+                              </li>
+                            </ol>
+                            <div class="line-box">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="801" height="246" viewBox="0 0 801 246" fill="none"><path stroke="#4B4B4B" stroke-width="2" d="m0 244.5 400 .5L800 1.5"/></svg>
+                                <ul>
+                                  <li><span>0</span></li>
+                                  <li><span>0</span></li>
+                                  <li><span>1</span></li>
+                                </ul>
+                              </div>
+                              <div class="or">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="801" height="26" viewBox="0 0 801 26" fill="none"><path stroke="#F60" stroke-width="2" d="m1 1 400 22 400 2"/></svg>
+                                <ul>
+                                  <li><span>0.28</span></li>
+                                  <li><span>0.21</span></li>
+                                  <li><span>0.19</span></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div> -->
+                      </div>
+                      <div id="bData" role="tabpanel" aria-labelledby="bTab" class="tab-con in_sec_box_area">
+                        <picture class="chart-img in_sec_box">
+                            <source media="(min-width: 769px)" srcset="/resources/images/dl/en_dl_so_gt_01-2-pc.webp">
+                            <source media="(max-width: 768px)" srcset="/resources/images/dl/en_dl_so_gt_01-2-mo.webp">
+                            <img class="core" src="/resources/images/dl/en_dl_so_gt_01-2-pc.webp" alt="Graph">
+                        </picture>
+                        <!-- <div class="common-chart-wrap">
+                          <div class="chart-info">
+                            <div class="info">
+                              <div class="blank m_etc">업무관련 사망</div>
+                              <div class="or m_etc">근로손실재해율(LTIFR)</div>
+                            </div>
+                            <div class="unit m_desc">
+                              <span>Unit : Persons</span>
+                              <span>Unit : 건/20만 근로Hours</span>
+                            </div>
+                          </div>
+                          <div class="chart-graph">
+                            <div class="board-box">
+                              <div class="values">
+                                <div class="val" data-value="0"><span>0</span></div>
+                                <div class="val" data-value="2"><span>2</span></div>
+                                <div class="val val-max" data-value="4"><span>4</span></div>
+                              </div>
+                            </div>
+                            <ol class="data-box">
+                              <li class="data-wrap">
+                                <div class="year m_etc">2021</div>
+                              </li>
+                              <li class="data-wrap">
+                                <div class="year m_etc">2022</div>
+                              </li>
+                              <li class="data-wrap">
+                                <div class="year m_etc">2023</div>
+                              </li>
+                            </ol>
+                            <div class="line-box">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="802" height="357" viewBox="0 0 802 357" fill="none"><path stroke="#4B4B4B" stroke-width="2" d="m1 355.5 400-354 400 354"/></svg>
+                                <ul>
+                                  <li><span>0</span></li>
+                                  <li><span>3</span></li>
+                                  <li><span>0</span></li>
+                                </ul>
+                              </div>
+                              <div class="or">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="802" height="35" viewBox="0 0 802 35" fill="none"><path stroke="#F60" stroke-width="2" d="m1 34 400-23L801 1"/></svg>
+                                <ul>
+                                  <li><span>0.13</span></li>
+                                  <li><span>0.18</span></li>
+                                  <li><span>0.20</span></li>
+                                </ul>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div> -->
+                      </div>
+                      <div class="gt-table in_sec_box">
+                        <div class="table-tit narrow m_h8">Safety and Health Training</div>
+                        <div class="common-table-wrap">
+                          <table class="common-table">
+                            <caption>Safety and Health Training</caption>
+                            <thead>
+                              <tr>
+                                <th colspan="2" class="center">Indicator</th>
+                                <th class="center tb-unit">Unit</th>
+                                <th class="right p-r-84">2021</th>
+                                <th class="right p-r-84">2022</th>
+                                <th class="right p-r-84 or">2023</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th rowspan="4" class="center">Employees</th>
+                                <td class="p-l-44 left">Participants</td>
+                                <td class="center tb-unit">Persons</td>
+                                <td class="p-r-84 right">8,684</td>
+                                <td class="p-r-84 right">8,375</td>
+                                <td class="p-r-84 right or">8,833</td>
+                              </tr>
+  
+                              <tr>
+                                <td class="p-l-44 left">Training hours</td>
+                                <td class="center tb-unit">Hours</td>
+                                <td class="p-r-84 right">202,810</td>
+                                <td class="p-r-84 right">169,858</td>
+                                <td class="p-r-84 right or">179,892</td>
+                              </tr>
+                              <tr>
+                                <td class="p-l-44 left">Training hours <br>per employee</td>
+                                <td class="center tb-unit">Hours</td>
+                                <td class="p-r-84 right">23</td>
+                                <td class="p-r-84 right">20</td>
+                                <td class="p-r-84 right or">22</td>
+                              </tr>
+                              <tr>
+                                <td class="p-l-44 left">Participation rate</td>
+                                <td class="center tb-unit">%</td>
+                                <td class="p-r-84 right">100</td>
+                                <td class="p-r-84 right">100</td>
+                                <td class="p-r-84 right or">99</td>
+                              </tr>
+                              <tr>
+                                <th rowspan="2" class="center">Suppliers</th>
+                                <td class="p-l-44 left">Participants</td>
+                                <td class="center tb-unit">Persons</td>
+                                <td class="p-r-84 right">10,424</td>
+                                <td class="p-r-84 right">12,056</td>
+                                <td class="p-r-84 right or">15,574</td>
+                              </tr>
+                              <tr>
+                                <td class="p-l-44 left">Training hours</td>
+                                <td class="center tb-unit">Hours</td>
+                                <td class="p-r-84 right">290,166</td>
+                                <td class="p-r-84 right">355,214</td>
+                                <td class="p-r-84 right or">515,292</td>
+                              </tr>
+                            
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-box in_sec_box_area">
+                    <h3 class="title m_h3 in_sec_copy">Talent Management</h3>
+                    <div class="gt-wrap gt02 in_sec_box_area">
+                      <div class="gt-tit m_h5 in_sec_box">Employee Status</div>
+                      <div class="gt-tablist in_sec_box" role="tablist" aria-label="Tabs">
+                        <div class="tabs">
+                          <button role="tab" aria-selected="true" aria-controls="aData" id="aTab" class="tab-button active m_h9">Composition of Employees</button>
+                          <button role="tab" aria-selected="false" aria-controls="bData" id="bTab" class="tab-button m_h9">Recruitment and Retention</button>
+                          <button role="tab" aria-selected="false" aria-controls="cData" id="cTab" class="tab-button m_h9">Employee Education</button>
+                        </div>
+                      </div>
+                      <div id="aData" role="tabpanel" aria-labelledby="aTab" class="tab-con active in_sec_box_area">
+                        <picture class="chart-img in_sec_box">
+                          <source media="(min-width: 769px)" srcset="/resources/images/dl/en_dl_so_gt_02-1-pc.webp">
+                          <source media="(max-width: 768px)" srcset="/resources/images/dl/en_dl_so_gt_02-1-mo.webp">
+                          <img class="core" src="/resources/images/dl/en_dl_so_gt_02-1-pc.webp" alt="Graph">
+                      </picture>
+                        <!-- <div class="common-chart-wrap">
+                          <div class="chart-info">
+                            <div class="info">
+                              <div class="dark m_etc">전체 Employees 수</div>
+                              <div class="gray m_etc">Male</div>
+                              <div class="or m_etc">Female</div>
+                            </div>
+                            <div class="unit m_desc">Unit : Persons</div>
+                          </div>
+                          <div class="chart-graph">
+                            <div class="board-box">
+                              <div class="values">
+                                <div class="val" data-value="0"><span>0</span></div>
+                                <div class="val" data-value="2,000"><span>2,000</span></div>
+                                <div class="val" data-value="4,000"><span>4,000</span></div>
+                                <div class="val" data-value="6,000"><span>6,000</span></div>
+                                <div class="val" data-value="8,000"><span>8,000</span></div>
+                                <div class="val val-max" data-value="10,000"><span>10,000</span></div>
+                              </div>
+                            </div>
+                            <ol class="data-box">
+                              <li class="data-wrap">
+                                <div class="year m_etc">2021</div>
+                                <div class="graph domino">
+                                  <div class="box dark">
+                                    <strong class="count">8,808</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                  <div class="box gray">
+                                    <strong class="count">8,484</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                  <div class="box or">
+                                    <strong class="count">374</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                </div>                    
+                              </li>
+                              <li class="data-wrap">
+                                <div class="year m_etc">2022</div>
+                                <div class="graph domino">
+                                  <div class="box dark">
+                                    <strong class="count">8,635</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                  <div class="box gray">
+                                    <strong class="count">8,234</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                  <div class="box or">
+                                    <strong class="count">401</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                </div>                    
+                              </li>
+                              <li class="data-wrap">
+                                <div class="year m_etc">2023</div>
+                                <div class="graph domino">
+                                  <div class="box dark">
+                                    <strong class="count">8,900</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                  <div class="box gray">
+                                    <strong class="count">8,488</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                  <div class="box or">
+                                    <strong class="count">412</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                </div>                    
+                              </li>
+                            </ol>
+                          </div>
+                        </div> -->
+                        <div class="common-table-wrap in_sec_box">
+                          <table class="common-table">
+                            <caption>Employees Status</caption>
+                            <thead>
+                              <tr>
+                                <th colspan="2" class="center">Indicator</th>
+                                <th class="center tb-unit">Unit</th>
+                                <th class="right p-r-84">2021</th>
+                                <th class="right p-r-84">2022</th>
+                                <th class="right p-r-84 or">2023</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th class="p-l-44 left">Total</th>
+                                <td class="p-l-44 left">No. of employees</td>
+                                <td class="center tb-unit">Persons</td>
+                                <td class="p-r-84 right">8,808¹⁾</td>
+                                <td class="p-r-84 right">8,635¹⁾</td>
+                                <td class="p-r-84 right or">8,900²⁾</td>
+                              </tr>
+
+                              <tr>
+                                <th rowspan="3" class="p-l-44 left">By age</th>
+                                <td class="p-l-44 left">Below 30</td>
+                                <td class="center tb-unit">Persons</td>
+                                <td class="p-r-84 right">539¹⁾</td>
+                                <td class="p-r-84 right">605¹⁾</td>
+                                <td class="p-r-84 right or">598</td>
+                              </tr>
+                              <tr>
+                                <td class="p-l-44 left">30-49</td>
+                                <td class="center tb-unit">Persons</td>
+                                <td class="p-r-84 right">5,599¹⁾</td>
+                                <td class="p-r-84 right">5,203¹⁾</td>
+                                <td class="p-r-84 right or">5,265</td>
+                              </tr>
+                              <tr>
+                                <td class="p-l-44 left">50 or older</td>
+                                <td class="center tb-unit">Persons</td>
+                                <td class="p-r-84 right">2,670¹⁾</td>
+                                <td class="p-r-84 right">2,827¹⁾</td>
+                                <td class="p-r-84 right or">3,037</td>
+                              </tr>
+                              
+                              <tr>
+                                <th rowspan="6" class="p-l-44 left">By employment type</th>
+                                <td class="p-l-44 left">Regular employees </td>
+                                <td class="center tb-unit">Persons</td>
+                                <td class="p-r-84 right">8,662¹⁾</td>
+                                <td class="p-r-84 right">8,315¹⁾</td>
+                                <td class="p-r-84 right or">8,423</td>
+                              </tr>
+                              <tr class="bgEm">
+                                <td class="p-l-84 left">Male</td>
+                                <td class="center tb-unit">Persons</td>
+                                <td class="p-r-84 right">8,364</td>
+                                <td class="p-r-84 right">8,008</td>
+                                <td class="p-r-84 right or">8,107</td>
+                              </tr>
+                              <tr class="bgEm">
+                                <td class="p-l-84 left">Female</td>
+                                <td class="center tb-unit">Persons</td>
+                                <td class="p-r-84 right">298</td>
+                                <td class="p-r-84 right">307</td>
+                                <td class="p-r-84 right or">316</td>
+                              </tr>
+                              <tr>
+                                <td class="p-l-44 left">Non-regular employees</td>
+                                <td class="center tb-unit">Persons</td>
+                                <td class="p-r-84 right">146¹⁾</td>
+                                <td class="p-r-84 right">320¹⁾</td>
+                                <td class="p-r-84 right or">477</td>
+                              </tr>
+                              <tr class="bgEm">
+                                <td class="p-l-84 left">Male</td>
+                                <td class="center tb-unit">Persons</td>
+                                <td class="p-r-84 right">70</td>
+                                <td class="p-r-84 right">226</td>
+                                <td class="p-r-84 right or">381</td>
+                              </tr>
+                              <tr class="bgEm">
+                                <td class="p-l-84 left">Female</td>
+                                <td class="center tb-unit">Persons</td>
+                                <td class="p-r-84 right">76</td>
+                                <td class="p-r-84 right">94</td>
+                                <td class="p-r-84 right or">96</td>
+                              </tr>
+                            
+                            </tbody>
+                          </table>
+                        </div>
+                        <ol class="refer in_sec_box">
+                          <li class="m_desc">1 &#41; Data modified due to changes in calculation criteria.</li>
+                          <li class="m_desc">2 &#41; Including 8,892 people, 3 inside directors, and 5 outside directors based on the 2023 business report.</li>
+                        </ol>
+                      </div>
+                      <div id="bData" role="tabpanel" aria-labelledby="bTab" class="tab-con in_sec_box_area">
+                        <picture class="chart-img in_sec_box">
+                          <source media="(min-width: 769px)" srcset="/resources/images/dl/en_dl_so_gt_02-2-pc.webp">
+                          <source media="(max-width: 768px)" srcset="/resources/images/dl/en_dl_so_gt_02-2-mo.webp">
+                          <img class="core" src="/resources/images/dl/en_dl_so_gt_02-2-pc.webp" alt="Graph">
+                      </picture>
+                        <!-- <div class="common-chart-wrap">
+                          <div class="chart-info">
+                            <div class="info">
+                              <div class="blank m_etc">평균 근속연수</div>
+                              <div class="or m_etc">채용-전체</div>
+                            </div>
+                            <div class="unit m_desc">
+                              <span>Unit : Persons</span>
+                              <span>Unit : Years</span>
+                            </div>
+                          </div>
+                          <div class="chart-graph">
+                            <div class="board-box">
+                              <div class="values">
+                                <div class="val" data-value="0"><span>0</span></div>
+                                <div class="val" data-value="200"><span>200</span></div>
+                                <div class="val" data-value="400"><span>400</span></div>
+                                <div class="val" data-value="600"><span>600</span></div>
+                                <div class="val val-max" data-value="800"><span>800</span></div>
+                              </div>
+                              <div class="line-values">
+                                <div class="val"><span>15</span></div>
+                                <div class="val"><span>16</span></div>
+                                <div class="val"><span>17</span></div>
+                                <div class="val"><span>18</span></div>
+                                <div class="val"><span>19</span></div>
+                                <div class="val"><span>20</span></div>
+                              </div>
+                            </div>
+                            <ol class="data-box">
+                              <li class="data-wrap">
+                                <div class="year m_etc">2021</div>
+                                <div class="graph lego">
+                                  <div class="box or">
+                                    <strong class="count">141</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                </div>                    
+                              </li>
+                              <li class="data-wrap">
+                                <div class="year m_etc">2022</div>
+                                <div class="graph lego">
+                                  <div class="box or">
+                                    <strong class="count">574</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                </div>                    
+                              </li>
+                              <li class="data-wrap">
+                                <div class="year m_etc">2023</div>
+                                <div class="graph lego">
+                                  <div class="box or">
+                                    <strong class="count">326</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                </div>                    
+                              </li>
+                            </ol>
+                            <div class="line-box">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="801" height="53" viewBox="0 0 801 53" fill="none"><path stroke="#4B4B4B" stroke-width="2" d="M0 1h400l400 50.5"/></svg>
+                              <ul>
+                                <li><span>19</span></li>
+                                <li><span>19</span></li>
+                                <li><span>18.5</span></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div> -->
+                        <div class="common-table-wrap in_sec_box">
+                          <table class="common-table">
+                            <caption>Employees Status</caption>
+                            <thead>
+                              <tr>
+                                <th colspan="2" class="center">Indicator</th>
+                                <th class="center tb-unit">Unit</th>
+                                <th class="right p-r-84">2021</th>
+                                <th class="right p-r-84">2022</th>
+                                <th class="right p-r-84 or">2023</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th class="p-l-44 left">Employment</th>
+                                <td class="p-l-44 left">Total</td>
+                                <td class="center tb-unit">Persons</td>
+                                <td class="p-r-84 right">141</td>
+                                <td class="p-r-84 right">574</td>
+                                <td class="p-r-84 right or">326</td>
+                              </tr>
+                              <tr>
+                                <th rowspan="2" class="p-l-44 left">Employee turnover</th>
+                                <td class="p-l-44 left">Total number of employee turnover</td>
+                                <td class="center tb-unit">Persons</td>
+                                <td class="p-r-84 right">392</td>
+                                <td class="p-r-84 right">663</td>
+                                <td class="p-r-84 right or">371</td>
+                              </tr>
+                              <tr>
+                                <td class="p-l-44 left">Voluntary turnover</td>
+                                <td class="center tb-unit">Persons</td>
+                                <td class="p-r-84 right">109</td>
+                                <td class="p-r-84 right">469</td>
+                                <td class="p-r-84 right or">172</td>
+                              </tr>
+                              <tr>
+                                <th class="p-l-44 left">Retention</th>
+                                <td class="p-l-44 left">Average employee tenure </td>
+                                <td class="center tb-unit">Years</td>
+                                <td class="p-r-84 right">19</td>
+                                <td class="p-r-84 right">19</td>
+                                <td class="p-r-84 right or">18.5</td>
+                              </tr>
+
+                           
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div id="cData" role="tabpanel" aria-labelledby="bTab" class="tab-con in_sec_box_area">
+                        <div class="common-table-wrap in_sec_box">
+                          <table class="common-table">
+                            <caption>Employee Status</caption>
+                            <thead>
+                              <tr>
+                                <th class="center">Indicator</th>
+                                <th class="center tb-unit">Unit</th>
+                                <th class="right p-r-84">2021</th>
+                                <th class="right p-r-84">2022</th>
+                                <th class="right p-r-84 or">2023</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th class="p-l-44 left">Training hours per employee</th>
+                                <td class="center tb-unit">Hours</td>
+                                <td class="p-r-84 right">45</td>
+                                <td class="p-r-84 right">87.02</td>
+                                <td class="p-r-84 right or">28.00</td>
+                              </tr>
+                              <tr>
+                                <th class="p-l-44 left">Training cost per employee</th>
+                                <td class="center tb-unit">KRW 1,000</td>
+                                <td class="p-r-84 right">246</td>
+                                <td class="p-r-84 right">323</td>
+                                <td class="p-r-84 right or">319</td>
+                              </tr>
+                              <tr>
+                                <th class="p-l-44 left">Satisfaction</th>
+                                <td class="center tb-unit">Points</td>
+                                <td class="p-r-84 right">4.41</td>
+                                <td class="p-r-84 right">4.49</td>
+                                <td class="p-r-84 right or">4.65</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-box in_sec_box_area">
+                    <h3 class="title m_h3 in_sec_copy">Supply Chain Management <br>and Shared Growth</h3>
+                    <div class="gt-wrap gt03 in_sec_box_area">
+                      <div class="gt-graph in_sec_box">
+                        <div class="chart-tit m_h8">Supply Chain Management</div>
+                        <picture class="chart-img">
+                            <source media="(min-width: 769px)" srcset="/resources/images/dl/en_dl_so_gt_03-pc.webp">
+                            <source media="(max-width: 768px)" srcset="/resources/images/dl/en_dl_so_gt_03-mo.webp">
+                            <img class="core" src="/resources/images/dl/en_dl_so_gt_03-pc.webp" alt="Graph">
+                        </picture>
+                        <!-- <div class="common-chart-wrap">
+                          <div class="chart-tit m_h8">공급망 관리</div>
+                          <div class="chart-info">
+                            <div class="info">
+                              <div class="gray m_etc">전체 협력사</div>
+                              <div class="or m_etc">신규등록 협력사</div>
+                            </div>
+                            <div class="unit m_desc">Unit : Companies</div>
+                          </div>
+                          <div class="chart-graph">
+                            <div class="board-box">
+                              <div class="values">
+                                <div class="val" data-value="0"><span>0</span></div>
+                                <div class="val" data-value="50"><span>50</span></div>
+                                <div class="val" data-value="100"><span>100</span></div>
+                                <div class="val" data-value="150"><span>150</span></div>
+                                <div class="val" data-value="200"><span>200</span></div>
+                                <div class="val val-max" data-value="250"><span>250</span></div>
+                              </div>
+                            </div>
+                            <ol class="data-box">
+                              <li class="data-wrap">
+                                <div class="year m_etc">2021</div>
+                                <div class="graph domino">
+                                  <div class="box gray">
+                                    <strong class="count">178</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                  <div class="box or">
+                                    <strong class="count">13</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                </div>                    
+                              </li>
+                              <li class="data-wrap">
+                                <div class="year m_etc">2022</div>
+                                <div class="graph domino">
+                                  <div class="box gray">
+                                    <strong class="count">194</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                  <div class="box or">
+                                    <strong class="count">46</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                </div>                      
+                              </li>
+                              <li class="data-wrap">
+                                <div class="year m_etc">2023</div>
+                                <div class="graph domino">
+                                  <div class="box gray">
+                                    <strong class="count">191</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                  <div class="box or">
+                                    <strong class="count">31</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                </div>                   
+                              </li>
+                            
+                            </ol>
+                          </div>
+                        </div> -->
+                      </div>
+                      <div class="gt-table in_sec_box" data-table="1">
+                        <div class="table-tit m_h8">Supplier Management</div>
+                        <div class="common-table-wrap">
+                          <table class="common-table">
+                            <caption>Supplier Management</caption>
+                            <thead>
+                              <tr>
+                                <th colspan="2" class="center">Indicator</th>
+                                <th class="center tb-unit">Unit</th>
+                                <th class="right p-r-84">2021</th>
+                                <th class="right p-r-84">2022</th>
+                                <th class="right p-r-84 or">2023</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th rowspan="3" class="p-l-44 left">Total suppliers</th>
+                                <td class="p-l-44 left">Total suppliers </td>
+                                <td class="center tb-unit">Companies</td>
+                                <td class="p-r-84 right">178</td>
+                                <td class="p-r-84 right">194</td>
+                                <td class="p-r-84 right or">191</td>
+                              </tr>
+                              <tr class="bgEm">
+                                <td class="p-l-84 left">Internal suppliers</td>
+                                <td class="center tb-unit">Companies</td>
+                                <td class="p-r-84 right">108</td>
+                                <td class="p-r-84 right">118</td>
+                                <td class="p-r-84 right or">127</td>
+                              </tr>
+                              <tr class="bgEm">
+                                <td class="p-l-84 left">External suppliers</td>
+                                <td class="center tb-unit">Companies</td>
+                                <td class="p-r-84 right">70</td>
+                                <td class="p-r-84 right">76</td>
+                                <td class="p-r-84 right or">64</td>
+                              </tr>
+                              <tr>
+                                <th rowspan="3" class="p-l-44 left">Newly <br>registered suppliers</th>
+                                <td class="p-l-44 left">Newly registered suppliers</td>
+                                <td class="center tb-unit">Companies</td>
+                                <td class="p-r-84 right">13</td>
+                                <td class="p-r-84 right">46</td>
+                                <td class="p-r-84 right or">31</td>
+                              </tr>
+                              <tr class="bgEm">
+                                <td class="p-l-84 left">Internal suppliers</td>
+                                <td class="center tb-unit">Companies</td>
+                                <td class="p-r-84 right">6</td>
+                                <td class="p-r-84 right">19</td>
+                                <td class="p-r-84 right or">10</td>
+                              </tr>
+                              <tr class="bgEm">
+                                <td class="p-l-84 left">External suppliers</td>
+                                <td class="center tb-unit">Companies</td>
+                                <td class="p-r-84 right">7</td>
+                                <td class="p-r-84 right">27</td>
+                                <td class="p-r-84 right or">21</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="gt-table in_sec_box" data-table="2">
+                        <div class="table-tit m_h8">Supplier ESG Support</div>
+                        <div class="common-table-wrap">
+                          <table class="common-table">
+                            <caption>Supplier ESG Support</caption>
+                            <thead>
+                              <tr>
+                                <th colspan="2" class="center">Indicator</th>
+                                <th class="center tb-unit">Unit</th>
+                                <th class="right p-r-84">2021</th>
+                                <th class="right p-r-84">2022</th>
+                                <th class="right p-r-84 or">2023</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th class="p-l-44 left">Support <br class="pc"><br class="tablet">amount</th>
+                                <td class="p-l-44 left">Financing and funding</td>
+                                <td class="center tb-unit">KRW 100 <br class="pc"><br class="tablet">million</td>
+                                <td class="p-r-84 right">60</td>
+                                <td class="p-r-84 right">10</td>
+                                <td class="p-r-84 right or">20</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-box in_sec_box_area">
+                    <h3 class="title m_h3 in_sec_copy">Coexistence with Local Communities</h3>
+                    <div class="gt-wrap gt04 in_sec_box_area">
+                      <div class="gt-tit m_h5 in_sec_box">Social Contribution</div>
+                      <div class="gt-tablist in_sec_box" role="tablist" aria-label="Tabs">
+                        <div class="tabs">
+                          <button role="tab" aria-selected="true" aria-controls="aData" id="aTab" class="tab-button active m_h9">Donation</button>
+                          <button role="tab" aria-selected="false" aria-controls="bData" id="bTab" class="tab-button m_h9">Employee Volunteering Activities</button>
+                        </div>
+                      </div>
+                      <div id="aData" role="tabpanel" aria-labelledby="aTab" class="tab-con active in_sec_box_area">
+                        <div class="chart-tit m_h8 in_sec_box">Scholarship Total</div>
+                        <picture class="chart-img in_sec_box">
+                          <source media="(min-width: 769px)" srcset="/resources/images/dl/en_dl_so_gt_04-1-pc.webp">
+                          <source media="(max-width: 768px)" srcset="/resources/images/dl/en_dl_so_gt_04-1-mo.webp">
+                          <img class="core" src="/resources/images/dl/en_dl_so_gt_04-1-pc.webp" alt="Graph">
+                        </picture>
+                        <!-- <div class="common-chart-wrap">
+                          <div class="chart-tit m_h8">장학금 기부 합계</div>
+                          <div class="chart-info">
+                            <div class="info">
+                              <div class="or m_etc">합계</div>
+                            </div>
+                            <div class="unit m_desc">Unit : 천 원</div>
+                          </div>
+                          <div class="chart-graph">
+                            <div class="board-box">
+                              <div class="values">
+                                <div class="val val-min" data-value="10,000"><span>10,000</span></div>
+                                <div class="val" data-value="11,000"><span>11,000</span></div>
+                                <div class="val" data-value="12,000"><span>12,000</span></div>
+                                <div class="val val-max" data-value="13,000"><span>13,000</span></div>
+                              </div>
+                            </div>
+                            <ol class="data-box">
+                              <li class="data-wrap">
+                                <div class="year m_etc">2021</div>
+                                <div class="graph lego">
+                                  <div class="box or">
+                                    <strong class="count">11,800</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                </div>                    
+                              </li>
+                              <li class="data-wrap">
+                                <div class="year m_etc">2022</div>
+                                <div class="graph lego">
+                                  <div class="box or">
+                                    <strong class="count">12,000</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                </div>                    
+                              </li>
+                              <li class="data-wrap">
+                                <div class="year m_etc">2023</div>
+                                <div class="graph lego">
+                                  <div class="box or">
+                                    <strong class="count">11,800</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                </div>                    
+                              </li>
+                            
+                            </ol>
+                          </div>
+                        </div> -->
+                        <div class="common-table-wrap in_sec_box">
+                          <table class="common-table">
+                            <caption>장학금 기부 합계 표</caption>
+                            <thead>
+                              <tr>
+                                <th class="center">Indicator</th>
+                                <th class="center tb-unit">Unit</th>
+                                <th class="right p-r-84">2021</th>
+                                <th class="right p-r-84">2022</th>
+                                <th class="right p-r-84 or">2023</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="p-l-44 left">Scholarship Total</td>
+                                <td class="center tb-unit">KRW <br class="pc">1,000</td>
+                                <td class="p-r-84 right">11,800</td>
+                                <td class="p-r-84 right">12,000</td>
+                                <td class="p-r-84 right or">11,800</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div id="bData" role="tabpanel" aria-labelledby="bTab" class="tab-con in_sec_box_area">
+                        <picture class="chart-img in_sec_box">
+                          <source media="(min-width: 769px)" srcset="/resources/images/dl/en_dl_so_gt_04-2-pc.webp">
+                          <source media="(max-width: 768px)" srcset="/resources/images/dl/en_dl_so_gt_04-2-mo.webp">
+                          <img class="core" src="/resources/images/dl/en_dl_so_gt_04-2-pc.webp" alt="Graph">
+                        </picture>
+                        <!-- <div class="common-chart-wrap">
+                          <div class="chart-info">
+                            <div class="info">
+                              <div class="or m_etc">참여Hours</div>
+                              <div class="blank m_etc">1인당 봉사Hours</div>
+                            </div>
+                            <div class="unit m_desc">Unit : Hours</div>
+                          </div>
+                          <div class="chart-graph">
+                            <div class="board-box">
+                              <div class="values">
+                                <div class="val" data-value="0"><span>0</span></div>
+                                <div class="val" data-value="2,000"><span>2,000</span></div>
+                                <div class="val" data-value="4,000"><span>4,000</span></div>
+                                <div class="val" data-value="6,000"><span>6,000</span></div>
+                                <div class="val" data-value="8,000"><span>8,000</span></div>
+                                <div class="val val-max" data-value="10,000"><span>10,000</span></div>
+                              </div>
+                              <div class="line-values">
+                                <div class="val"><span>4</span></div>
+                                <div class="val"><span>4.5</span></div>
+                                <div class="val"><span>5</span></div>
+                                <div class="val"><span>5.5</span></div>
+                              </div>
+                            </div>
+                            <ol class="data-box">
+                              <li class="data-wrap">
+                                <div class="year m_etc">2021</div>
+                                <div class="graph lego">
+                                  <div class="box or">
+                                    <strong class="count">6,275</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                </div>                    
+                              </li>
+                              <li class="data-wrap">
+                                <div class="year m_etc">2022</div>
+                                <div class="graph lego">
+                                  <div class="box or">
+                                    <strong class="count">3,910</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                </div>                    
+                              </li>
+                              <li class="data-wrap">
+                                <div class="year m_etc">2023</div>
+                                <div class="graph lego">
+                                  <div class="box or">
+                                    <strong class="count">4,205</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                </div>                    
+                              </li>
+                            </ol>
+                            <div class="line-box">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="802" height="127" viewBox="0 0 802 127" fill="none"><path stroke="#4B4B4B" stroke-width="2" d="m1 1 400 125 400-19.5"/></svg>
+                              <ul>
+                                <li><span>5.4</span></li>
+                                <li><span>5.0</span></li>
+                                <li><span>5.1</span></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div> -->
+                        <div class="common-table-wrap in_sec_box">
+                          <table class="common-table">
+                            <caption>Social Contribution</caption>
+                            <thead>
+                              <tr>
+                                <th class="center">Indicator</th>
+                                <th class="center tb-unit">Unit</th>
+                                <th class="right p-r-84">2021</th>
+                                <th class="right p-r-84">2022</th>
+                                <th class="right p-r-84 or">2023</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th class="p-l-44 left">No. of participating employees</th>
+                                <td class="center tb-unit">Persons</td>
+                                <td class="p-r-84 right">1,167</td>
+                                <td class="p-r-84 right">785</td>
+                                <td class="p-r-84 right or">830</td>
+                              </tr>
+                              <tr>
+                                <th class="p-l-44 left">Total volunteering hours</th>
+                                <td class="center tb-unit">Hours</td>
+                                <td class="p-r-84 right">6,275</td>
+                                <td class="p-r-84 right">3,910</td>
+                                <td class="p-r-84 right or">4,205</td>
+                              </tr>
+                              <tr>
+                                <th class="p-l-44 left">Volunteering hours per employee</th>
+                                <td class="center tb-unit">Hours</td>
+                                <td class="p-r-84 right">5.4</td>
+                                <td class="p-r-84 right">5</td>
+                                <td class="p-r-84 right or">5.1</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<%- include('./src/include/footer-en.ejs') %>

@@ -1,0 +1,22 @@
+<%- include('./src/include/header-en.ejs', { title: '' }) %>
+
+<main id="ERRORPAGE" class="ocean_error error_page">
+  <div class="main-inner">
+    <section>
+      <div class="err_copy in_sec_box_area">
+        <h2 class="m_h6 err_tit in_sec_box">Page not found or inaccessible.</h2>
+        <p class="err_txt in_sec_box">Sorry, the requested page does not exist, or you do not have permission to access it.<br>Please check the address of the page again.</p>
+      </div>
+      <div class="err_btn in_sec_box_area">
+        <button onclick="history.back();" class="m_btn in_sec_box" type="button" hover="ripple" size="m" line="round" color="white">
+          <span class="txt">Back</span>
+        </button>
+        <a href="/" class="m_btn in_sec_box" type="button" hover="ripple" size="m" line="round" color="black">
+          <span class="txt">Main</span>
+        </a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<%- include('./src/include/footer-en.ejs') %>

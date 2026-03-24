@@ -1,0 +1,364 @@
+#CE{
+  .sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+  }
+  .common-tab-looking-a-wrap{
+    padding-top: vw(w, 160);
+  }
+  .common-grid{
+    margin-bottom: 0;
+    .desc.mt-none{
+      margin-top: 0;
+    }
+  }
+  .dot_list li{
+    display: flex;
+    align-items: center;
+    border: none;
+    &:before{
+      width: vw(w, 4); height: vw(w, 4);
+    }
+  }
+  .table_img{
+    display: block;
+    margin-bottom: vw(w, 200);
+    img{width: 100%;}
+  }
+  .process_img{
+    display: block;
+    margin-top: vw(w, 120);
+    img{width: 100%;}
+  }
+  .m_btn.download_btn {
+    margin-top: vw(w, 40);
+    &:first-of-type{margin-right: vw(w, 80);}
+    &:hover .txt-wrap{
+      background-size: 100% 1px;
+    }
+    span.txt{font-size: vw(w, 20); line-height: 1.68; font-weight: 300;}
+    span.icon{margin-left: vw(w, 12); margin-right: 0;}
+    span.icon::after, span.icon::before{background-image: url('#{$image-path}common/icon-download.svg');width: vw(w, 16);height: vw(w, 16); left: calc(50% - vw(w, 8)); top: calc(50% - vw(w, 8))}
+
+    span.icon::before{background-image: url('#{$image-path}common/icon-download_w_11x11.svg')}
+  }
+  .section-ce{
+    margin-bottom: vw(w, 200);
+    &:last-child{
+      margin-bottom: 0;
+    }
+    &.sec-1{
+      .common-grid:first-child{
+        margin-bottom: vw(w, 100);
+      }
+      .common-grid .title-wrap > .desc > .item .m_h6 + p{
+        margin-top: vw(w, 24);
+      }
+      .common-grid .title-wrap > .desc > .item .num_ol{
+        margin-top: vw(w, 80);
+        li{
+          p{
+            margin-top: vw(w, 8);
+          }
+        }
+      }
+      strong.mgt-200{
+        display: block;
+        margin-top: vw(w, 200);
+      }
+    }
+    &.sec-2{
+      .common-accordion-list{
+        margin-top: vw(w, 80);
+        .desc{
+          font-size: vw(w, 20);
+          font-weight: 300;
+        }
+        .big_num_list{
+          margin-bottom: vw(w, 32);
+          li{
+            display: flex;
+            align-items: center;
+            padding: vw(w, 44);
+            border-bottom: 1px solid #e5e5e5;
+            border-top: none;
+            &:first-child{
+              border-top: 1px solid #151515;
+            }
+            & > span{
+              padding-right: vw(w, 44);
+            }
+            & > p{
+              margin-left: vw(w, 16);
+              font-weight: 300;
+            }
+          }
+        }
+        .common-table-wrap{
+          margin-bottom: vw(w, 32);
+        }
+      }
+    }
+    &.sec-4{
+      .common-table-wrap{
+        margin-top: vw(w, 120);
+      }
+    }
+    &.sec-5{
+      .common-table-wrap{
+        margin-top: vw(w, 86);
+        span.refer{
+          display: block;
+          margin-top: vw(w, 16);
+          font-size: vw(w, 16);
+          line-height: 1.5;
+          color: #999;
+        }
+      }
+    }
+    &.sec-6{
+
+    }
+  }
+
+  .process-conts{
+    margin-top: vw(w,120);
+    img{width: 100%;}
+    .process_pic{
+      display: block;
+      margin-top: vw(w, 60);
+    }
+    .m_h8:nth-of-type(2){
+      display: block;
+      margin-top: vw(w, 120);
+    }
+  }
+
+
+  @include tablet{
+    .common-tab-looking-a-wrap{
+      padding-top: 100px !important;
+    }
+    .dot_list li{
+      &:before{
+        width: 4px; height: 4px;
+      }
+    }
+    .process_img{
+      margin-top: 76px;
+    }
+    .table_img{
+      margin-bottom: 126px;
+    }
+    .section-ce{
+      margin-bottom: 126px;
+      &.sec-1{
+        .common-grid:first-child{
+          margin-bottom: 63px;
+        }
+        .common-grid .title-wrap > .desc > .item .m_h6 + p{
+          margin-top: 15px;
+        }
+        .common-grid .title-wrap > .desc > .item .num_ol{
+          margin-top: 50px;
+          li{
+            p{
+              margin-top: 5px;
+            }
+          }
+        }
+        strong.mgt-200{
+          margin-top: 126px;
+        }
+      }
+      &.sec-2{
+        .common-accordion-list{
+          margin-top: 50px;
+          .desc{ font-size: 12px;}
+          .big_num_list{
+            margin-bottom: 20px;
+            li{
+              padding: 28px;
+              & > span{ padding-right: 28px;}
+              & > p{ margin-left: 10px; }
+            }
+          }
+          .common-table-wrap{
+            margin-bottom: 20px;
+          }
+        }
+      }
+      &.sec-4{
+        .common-table-wrap{
+          margin-top: 76px;
+        }
+      }
+      &.sec-5{
+        .common-table-wrap{
+          margin-top: 54px;
+          span.refer{
+            margin-top: 10px;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+    .m_btn.download_btn {
+      margin-top: 26px;
+      &:first-of-type{margin-right: 50px}
+      span.icon::after, span.icon::before{width: 10px; height: 10px; left: calc(50% - 5px); top: calc(50% - 5px)}
+    }
+
+    .process-conts{
+      margin-top: 76px;
+      .process_pic{
+        margin-top: 38px;
+      }
+      .m_h8:nth-child(2){
+        margin-top: 76px;
+      }
+    }
+  }
+  @include mobile {
+    .common-table{width: max-content;}
+    .common-tab-looking-a-wrap{
+      padding-top: 60px !important;
+    }
+    .common-table thead th:first-child{
+      width: 220px;
+    }
+    .title-wrap > .title{
+      font-size: 24px !important;
+    }
+    .table_img{
+      max-width: 335px; margin-bottom: 60px;
+    }
+    .section-ce{
+      margin-bottom: 80px;
+      &.sec-1{
+        .common-grid:first-child{
+          margin-bottom: 60px;
+        }
+      }
+    }
+    .btn-wrap{
+      display: flex; flex-flow: column; margin-top: 8px;
+    }
+    .m_btn.download_btn {
+      margin-top: 16px;
+      &:first-of-type{margin-right: 0}
+      span.icon::after, span.icon::before{width: 16px; height: 16px; left: calc(50% - 8px); top: calc(50% - 8px)}
+      .txt{font-size: 16px !important;}
+    }
+    .section-ce{
+      margin-bottom: 80px;
+      &.sec-1{
+        strong.mgt-200{
+          margin-top: 0;
+        }
+        .common-grid .title-wrap > .desc > .item .num_ol{
+          margin-top: 40px;
+          li{
+            .m_caption{font-size: 14px !important;}
+            p{margin-top: 16px;}
+          }
+        }
+      }
+      &.sec-2{
+        .common-accordion-list{
+          margin-top: 60px;
+          .desc{ font-size: 16px;}
+          .list_wrap{
+            overflow-x: auto;
+            &::-webkit-scrollbar{
+              height: 3px;
+            }
+            &::-webkit-scrollbar-thumb{
+              background-color: $gray-6;
+              border-radius: 10px;
+            }
+            &::-webkit-scrollbar-track { margin-left: 20px; margin-right: 20px; }
+            .big_num_list{
+              margin-bottom: 0; min-width: 670px;
+              li{
+                padding: 20px;
+                & > span{ padding-right: 25px;}
+                & > p{ margin-left: 20px; font-size: 14px;}
+              }
+            }
+          }
+          .common-table-wrap{
+            margin-bottom: 20px;
+          }
+        }
+      }
+      &.sec-5{
+        .common-table-wrap{
+          margin-top: 60px;
+          span.refer{
+            margin-top: 4px;
+            font-size: 14px;
+          }
+          .common-table thead th:first-child{
+            width: 320px;
+          }
+        }
+      }
+    }
+    .process_img{
+      margin-top: 60px; max-width: 335px;
+    }
+    .process-conts{
+      margin-top: 60px;
+      img{width:335px;}
+      .process_pic{
+        text-align: center;
+        margin-top: 40px;
+      }
+      .m_h8:nth-of-type(2){
+        margin-top: 60px;
+      }
+    }
+  }
+}
+
+html[lang=en] #CE .sec-2 .common-table tbody tr>td:nth-child(1){width: vw(w,480);}
+html[lang=en] #CE .sec-2 .common-table tbody tr>td{padding-right: vw(w,44);}
+html[lang=en] #CE .sec-4 .common-table tbody tr>td:nth-child(1){width: vw(w,400);}
+html[lang=en] #CE .sec-5 .common-table tbody tr:nth-child(1) td:nth-child(1){width: vw(w,300);}
+html[lang=en] #CE .sec-5 .common-table tbody tr:nth-child(1) td:nth-child(2){width: vw(w,240);}
+html[lang=en] #CE .sec-5 .common-table tbody tr td{padding-right: vw(w,44);}
+
+#CE .section-ce.sec-2 .common-accordion-list .desc{padding-right: vw(w, 184);}
+@include tablet{
+  html[lang=en] #CE .sec-2 .common-table tbody tr>td:nth-child(1){width:calc((100% / 12 * 3) + (100% / 70 * 2))}
+  html[lang=en] #CE .sec-2 .common-table tbody tr>td{padding-right:28px;}
+  html[lang=en] #CE .sec-4 .common-table tbody tr>td:nth-child(1){width:calc((100% / 12 * 3) - (100% / 70 * 2))}
+  html[lang=en] #CE .sec-5 .common-table tbody tr:nth-child(1) td:nth-child(1){width:calc(100% / 12 * 3)}
+  html[lang=en] #CE .sec-5 .common-table tbody tr:nth-child(1) td:nth-child(2){width:calc((100% / 12 * 2) - (100% / 70 * 2))}
+  html[lang=en] #CE .sec-5 .common-table tbody tr td{padding-right: 28px;}
+
+  #CE .section-ce.sec-2 .common-accordion-list .desc{padding-right: 116px;}
+}
+@include mobile{
+  html[lang=en] #CE .sec-2 .common-table tbody tr>td:nth-child(1){width:220px;}
+  html[lang=en] #CE .sec-2 .common-table tbody tr>td{padding-right:20px;}
+  html[lang=en] #CE .sec-4 .common-table tbody tr>td:nth-child(1){width:220px}
+  html[lang=en] #CE .sec-5 .common-table tbody tr:nth-child(1) td:nth-child(1){width:180px}
+  html[lang=en] #CE .sec-5 .common-table tbody tr:nth-child(1) td:nth-child(2){width:140px}
+  html[lang=en] #CE .sec-5 .common-table tbody tr td{padding-right: 32px;}
+
+  html[lang=en] #CE .process-conts img{width: 100%; max-width: 335px;}
+  html[lang=en] #CE .title-wrap > .title{padding-right: 20px;}
+  html[lang=en] #CE .title-wrap > .desc > .item .m_h6{padding-right: 20px;}
+
+  #CE .section-ce.sec-2 .common-accordion-list .desc{padding-right: 0;}
+}

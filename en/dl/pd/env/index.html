@@ -1,0 +1,1079 @@
+<%- include('./src/include/header-en.ejs', { title: 'Environment' }) %>
+
+<main id="ENV" class="dl pd env">
+  <div class="main-inner" data-path="env">
+    
+    <div class="sub_top top_img">
+      <div class="top_tit_area sticky">
+
+        <div class="top_tit-inner static">
+          <h2 class="sub_top_tit m_h2">Performance Data</h2>
+        </div>
+
+        <div class="top_tit-inner absol">
+          <h2 class="sub_top_tit m_h2">Performance Data</h2>
+        </div>
+
+      </div>
+   
+      <div class="overflow-ct">
+        <div class="top_kv_area">
+          <div class="core-wrap">
+            <picture class="core-wrap-inner dim">
+                <source media="(min-width: 769px)" srcset="/resources/images/dl/kv.webp">
+                <source media="(max-width: 768px)" srcset="/resources/images/dl/kv.webp">
+                <img class="core" src="/resources/images/dl/kv.webp" alt="Key Visual">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="sub_container">
+      <div class="sec_inner">
+          <div class="dl-area env-area" id="pdEvn">
+              <div class="env-con">
+                  <div class="common-tab-looking-a-wrap">
+                      <div class="tab-looking-a line-tab">
+                          <a href="/en/dl/pd/env/#pdEvn" class="active tab-item">Environment</a>
+                          <a href="/en/dl/pd/so/#pdSo" class="tab-item">Social</a>
+                          <a href="/en/dl/pd/gov/#pdGov" class="tab-item">Governance</a>
+                      </div>
+                  </div>
+                  <div class="content-box in_sec_box_area">
+                    <h3 class="title m_h3 in_sec_copy">Climate Action</h3>
+                    <div class="gt-wrap gt01 in_sec_box_area">
+                      <div class="gt-tit m_h5 in_sec_box">Greenhouse Gas Management</div>
+                      <div class="gt-tablist in_sec_box" role="tablist" aria-label="Tabs">
+                        <div class="tabs">
+                          <button role="tab" aria-selected="true" aria-controls="aData" id="aTab" class="tab-button active m_h9">Scope 1&2</button>
+                          <button role="tab" aria-selected="false" aria-controls="bData" id="bTab" class="tab-button m_h9">Scope 3</button>
+                        </div>
+                      </div>
+                      <div id="aData" role="tabpanel" aria-labelledby="aTab" class="tab-con active in_sec_box_area">
+                        <div class="chart-tit m_h8 in_sec_box">Total Emissions (Scope 1 & 2)</div>
+                        <picture class="chart-img in_sec_box">
+                            <source media="(min-width: 769px)" srcset="/resources/images/dl/en_dl_env_gt_01-pc.webp">
+                            <source media="(max-width: 768px)" srcset="/resources/images/dl/en_dl_env_gt_01-mo.webp">
+                            <img class="core" src="/resources/images/dl/en_dl_env_gt_01-pc.webp" alt="Graph">
+                        </picture>
+                        <!-- <div class="common-chart-wrap">
+                          <div class="chart-tit m_h8">총 에너지 사용량</div>
+                          <div class="chart-info">
+                            <div class="info">
+                              <div class="gray m_etc">직접 배출량(Scope 1)</div>
+                              <div class="or m_etc">간접 배출량(Scope 2)</div>
+                            </div>
+                            <div class="unit m_desc th-unit">단위 : tCO<sub>2</sub>eq</div>
+                          </div>
+                          <div class="chart-graph">
+                            <div class="board-box">
+                              <div class="values">
+                                <div class="val" data-value="0"><span>0</span></div>
+                                <div class="val" data-value="100,000"><span>100,000</span></div>
+                                <div class="val" data-value="200,000"><span>200,000</span></div>
+                                <div class="val" data-value="300,000"><span>300,000</span></div>
+                                <div class="val" data-value="400,000"><span>400,000</span></div>
+                                <div class="val val-max" data-value="500,000"><span>500,000</span></div>
+                              </div>
+                            </div>
+                            <ol class="data-box">
+                              <li class="data-wrap">
+                                <div class="year m_etc">2021</div>
+                                <div class="graph lego">
+                                  <div class="box gray">
+                                    <strong class="count">101,295</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                  <div class="box or">
+                                    <strong class="count">195,471</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                  <div class="max">296,766</div>
+                                </div>                    
+                              </li>
+                              <li class="data-wrap">
+                                <div class="year m_etc">2022</div>
+                                <div class="graph lego">
+                                  <div class="box gray">
+                                    <strong class="count">122,529</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                  <div class="box or">
+                                    <strong class="count">195,198</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                  <div class="max">371,725</div>
+                                </div>                    
+                              </li>
+                              <li class="data-wrap">
+                                <div class="year m_etc">2023</div>
+                                <div class="graph lego">
+                                  <div class="box gray">
+                                    <strong class="count">187,855</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                  <div class="box or">
+                                    <strong class="count">228,824</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                  <div class="max">416,679</div>
+                                </div>                    
+                              </li>
+                            </ol>
+                          </div>
+                        </div> -->
+                        <div class="common-table-wrap in_sec_box">
+                          <table class="common-table">
+                            <caption>Greenhouse Gas Management Table</caption>
+                            <thead>
+                              <tr>
+                                <th class="center">Indicator</th>
+                                <th class="center tb-unit">Unit</th>
+                                <th class="right p-r-84">2021</th>
+                                <th class="right p-r-84">2022</th>
+                                <th class="right p-r-84 or">2023</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th class="p-l-44 left">Total emissions (Scope 1 & 2)</th>
+                                <td class="center tb-unit">tCO<sub>2</sub>eq</td>
+                                <td class="p-r-84 right">296,766</td>
+                                <td class="p-r-84 right">317,725</td>
+                                <td class="p-r-84 right or">416,679</td>
+                              </tr>
+                              <tr class="bgEm">
+                                <th class="p-l-84 left">Direct (Scope 1) emissions</th>
+                                <td class="center tb-unit">tCO<sub>2</sub>eq</td>
+                                <td class="p-r-84 right">101,295</td>
+                                <td class="p-r-84 right">122,529</td>
+                                <td class="p-r-84 right or">187,855</td>
+                              </tr>
+                              <tr class="bgEm">
+                                <th class="p-l-84 left">Indirect (Scope 2) emissions</th>
+                                <td class="center tb-unit">tCO<sub>2</sub>eq</td>
+                                <td class="p-r-84 right">195,471</td>
+                                <td class="p-r-84 right">195,198</td>
+                                <td class="p-r-84 right or">228,824</td>
+                              </tr>
+                              <tr>
+                                <th class="p-l-44 left">GHG emissions intensity</th>
+                                <td class="center tb-unit">tCO<sub>2</sub>eq/<br>KRW 100 <br>million</td>
+                                <td class="p-r-84 right">6.61</td>
+                                <td class="p-r-84 right">6.54</td>
+                                <td class="p-r-84 right or">5.61</td>
+                              </tr>
+                              <tr>
+                                <th class="p-l-44 left">Reduction rate (intensity)</th>
+                                <td class="center tb-unit">%</td>
+                                <td class="p-r-84 right">-29.03</td>
+                                <td class="p-r-84 right">1.17</td>
+                                <td class="p-r-84 right or">14.22</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div id="bData" role="tabpanel" aria-labelledby="bTab" class="tab-con in_sec_box_area">
+                        <div class="common-table-wrap in_sec_box">
+                          <table class="common-table">
+                            <caption>Greenhouse Gas Management</caption>
+                            <thead>
+                              <tr>
+                                <th class="center">Indicator</th>
+                                <th class="center tb-unit">Unit</th>
+                                <th class="right p-r-84">2021</th>
+                                <th class="right p-r-84">2022</th>
+                                <th class="right p-r-84 or">2023</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th class="p-l-44 left">Total (Scope 3) emissions</th>
+                                <td class="p-l-32 center tb-unit">tCO<sub>2</sub>eq</td>
+                                <td class="p-r-84 right">134,519</td>
+                                <td class="p-r-84 right">20,606,295</td>
+                                <td class="p-r-84 right or">29,030,930</td>
+                              </tr>
+                              <tr class="bgEm">
+                                <th class="p-l-84 left">Purchased goods and services</th>
+                                <td class="p-l-32 center tb-unit">tCO<sub>2</sub>eq</td>
+                                <td class="p-r-84 right">-</td>
+                                <td class="p-r-84 right">3,176,178</td>
+                                <td class="p-r-84 right or">2,952,151</td>
+                              </tr>
+                              <tr class="bgEm">
+                                <th class="p-l-84 left">Capital goods</th>
+                                <td class="p-l-32 center tb-unit">tCO<sub>2</sub>eq</td>
+                                <td class="p-r-84 right">873</td>
+                                <td class="p-r-84 right">4,201</td>
+                                <td class="p-r-84 right or">6,413</td>
+                              </tr>
+                              <tr class="bgEm">
+                                <th class="p-l-84 left">Fuel- and energy-related activities</th>
+                                <td class="p-l-32 center tb-unit">tCO<sub>2</sub>eq</td>
+                                <td class="p-r-84 right">13,004</td>
+                                <td class="p-r-84 right">28,351</td>
+                                <td class="p-r-84 right or">27,215</td>
+                              </tr>
+                              <tr class="bgEm">
+                                <th class="p-l-84 left">Upstream transportation and distribution</th>
+                                <td class="p-l-32 center tb-unit">tCO<sub>2</sub>eq</td>
+                                <td class="p-r-84 right">34,828</td>
+                                <td class="p-r-84 right">41,846</td>
+                                <td class="p-r-84 right or">39,697</td>
+                              </tr>
+                              <tr class="bgEm">
+                                <th class="p-l-84 left">Waste generated in operations</th>
+                                <td class="p-l-32 center tb-unit">tCO<sub>2</sub>eq</td>
+                                <td class="p-r-84 right">52,777</td>
+                                <td class="p-r-84 right">54,898</td>
+                                <td class="p-r-84 right or">57,601</td>
+                              </tr>
+                              <tr class="bgEm">
+                                <th class="p-l-84 left">Business trips</th>
+                                <td class="p-l-32 center tb-unit">tCO<sub>2</sub>eq</td>
+                                <td class="p-r-84 right">3,056</td>
+                                <td class="p-r-84 right">2,180</td>
+                                <td class="p-r-84 right or">3,616</td>
+                              </tr>
+                              <tr class="bgEm">
+                                <th class="p-l-84 left">Employee commuting</th>
+                                <td class="p-l-32 center tb-unit">tCO<sub>2</sub>eq</td>
+                                <td class="p-r-84 right">2,461</td>
+                                <td class="p-r-84 right">3,930</td>
+                                <td class="p-r-84 right or">3,886</td>
+                              </tr>
+                              <tr class="bgEm">
+                                <th class="p-l-84 left">Use of sold products</th>
+                                <td class="p-l-32 center tb-unit">tCO<sub>2</sub>eq</td>
+                                <td class="p-r-84 right">-</td>
+                                <td class="p-r-84 right">17,234,930</td>
+                                <td class="p-r-84 right or">25,870,819</td>
+                              </tr>
+                              <tr class="bgEm">
+                                <th class="p-l-84 left">End of life treatment of sold products</th>
+                                <td class="p-l-32 center tb-unit">tCO<sub>2</sub>eq</td>
+                                <td class="p-r-84 right">-</td>
+                                <td class="p-r-84 right">2,454</td>
+                                <td class="p-r-84 right or">4,072</td>
+                              </tr>
+                              <tr class="bgEm">
+                                <th class="p-l-84 left">Investments</th>
+                                <td class="p-l-32 center tb-unit">tCO<sub>2</sub>eq</td>
+                                <td class="p-r-84 right">28,393</td>
+                                <td class="p-r-84 right">57,327</td>
+                                <td class="p-r-84 right or">65,460</td>
+                              </tr>
+                            
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="gt-wrap gt02 in_sec_box_area">
+                        <div class="gt-tit m_h5 in_sec_box">Energy Management</div>
+                        <div class="gt-con in_sec_box">
+                          <div class="chart-tit m_h8">Total Energy Consumption</div>
+                          <picture class="chart-img">
+                              <source media="(min-width: 769px)" srcset="/resources/images/dl/en_dl_env_gt_02-pc.webp">
+                              <source media="(max-width: 768px)" srcset="/resources/images/dl/en_dl_env_gt_02-mo.webp">
+                              <img class="core" src="/resources/images/dl/en_dl_env_gt_02-pc.webp" alt="Graph">
+                          </picture>
+                          <!-- <div class="common-chart-wrap">
+                            <div class="chart-tit m_h8">총 에너지 사용량</div>
+                            <div class="chart-info">
+                              <div class="info">
+                                <div class="gray m_etc">직접에너지 사용량</div>
+                                <div class="or m_etc">간접에너지 사용량</div>
+                              </div>
+                              <div class="unit m_desc">단위 : TJ</div>
+                            </div>
+                            <div class="chart-graph">
+                              <div class="board-box">
+                                <div class="values">
+                                  <div class="val" data-value="0.0"><span>0.0</span></div>
+                                  <div class="val" data-value="2000.0"><span>2000.0</span></div>
+                                  <div class="val" data-value="4000.0"><span>4000.0</span></div>
+                                  <div class="val" data-value="6000.0"><span>6000.0</span></div>
+                                  <div class="val val-max" data-value="8000.0"><span>8000.0</span></div>
+                                </div>
+                              </div>
+                              <ol class="data-box">
+                                <li class="data-wrap">
+                                  <div class="year m_etc">2021</div>
+                                  <div class="graph lego">
+                                    <div class="box gray">
+                                      <strong class="count">1,332.2</strong>
+                                      <span class="bar"></span>
+                                    </div>
+                                    <div class="box or">
+                                      <strong class="count">4,085.6</strong>
+                                      <span class="bar"></span>
+                                    </div>
+                                    <div class="max">5417.7</div>
+                                  </div>                    
+                                </li>
+                                <li class="data-wrap">
+                                  <div class="year m_etc">2022</div>
+                                  <div class="graph lego">
+                                    <div class="box gray">
+                                      <strong class="count">1,650.8</strong>
+                                      <span class="bar"></span>
+                                    </div>
+                                    <div class="box or">
+                                      <strong class="count">4,080.2</strong>
+                                      <span class="bar"></span>
+                                    </div>
+                                    <div class="max">5731</div>
+                                  </div>                    
+                                </li>
+                                <li class="data-wrap">
+                                  <div class="year m_etc">2023</div>
+                                  <div class="graph lego">
+                                    <div class="box gray">
+                                      <strong class="count">2,612.3</strong>
+                                      <span class="bar"></span>
+                                    </div>
+                                    <div class="box or">
+                                      <strong class="count">4,783</strong>
+                                      <span class="bar"></span>
+                                    </div>
+                                    <div class="max">7395.4</div>
+                                  </div>                    
+                                </li>
+                              </ol>
+                            </div>
+                          </div> -->
+                          <div class="common-table-wrap">
+                            <table class="common-table">
+                              <caption>Energy Management Table</caption>
+                              <thead>
+                                <tr>
+                                  <th class="left p-l-44">Indicator</th>
+                                  <th class="center tb-unit">Unit</th>
+                                  <th class="right p-r-84">2021</th>
+                                  <th class="right p-r-84">2022</th>
+                                  <th class="right p-r-84 or">2023</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th class="p-l-44 left">Total energy consumption</th>
+                                  <td class="center tb-unit">TJ</td>
+                                  <td class="p-r-84 right">5417.7</td>
+                                  <td class="p-r-84 right">5731</td>
+                                  <td class="p-r-84 right or">7395.4</td>
+                                </tr>
+                                <tr class="bgEm">
+                                  <th class="p-l-84 left">Direct energy <br>consumption</th>
+                                  <td class="center tb-unit">TJ</td>
+                                  <td class="p-r-84 right">1332.2</td>
+                                  <td class="p-r-84 right">1650.8</td>
+                                  <td class="p-r-84 right or">2612.3</td>
+                                </tr>
+                                <tr class="bgEm">
+                                  <th class="p-l-84 left">Indirect energy <br>consumption</th>
+                                  <td class="center tb-unit">TJ</td>
+                                  <td class="p-r-84 right">4085.6</td>
+                                  <td class="p-r-84 right">4080.2</td>
+                                  <td class="p-r-84 right or">4783.0</td>
+                                </tr>
+                                <tr>
+                                  <th class="p-l-44 left">Energy intensity(KRW)</th>
+                                  <td class="center tb-unit">TJ/ <br>KRW 100 <br>million</td>
+                                  <td class="p-r-84 right">0.121</td>
+                                  <td class="p-r-84 right">0.118</td>
+                                  <td class="p-r-84 right or">0.1</td>
+                                </tr>
+                                <tr>
+                                  <th class="p-l-44 left">Reduction rate (KRW )</th>
+                                  <td class="center tb-unit">%</td>
+                                  <td class="p-r-84 right">-31.901</td>
+                                  <td class="p-r-84 right">2.334</td>
+                                  <td class="p-r-84 right or">15.603</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="content-box in_sec_box_area">
+                    <h3 class="title m_h3 in_sec_copy">Environmental Management</h3>
+                    <div class="gt-wrap gt03 in_sec_box_area">
+                      <div class="gt-tit m_h5 in_sec_box">Water Management</div>
+                      <picture class="chart-img in_sec_box">
+                          <source media="(min-width: 769px)" srcset="/resources/images/dl/en_dl_env_gt_03-pc.webp">
+                          <source media="(max-width: 768px)" srcset="/resources/images/dl/en_dl_env_gt_03-mo.webp">
+                          <img class="core" src="/resources/images/dl/en_dl_env_gt_03-pc.webp" alt="Graph">
+                      </picture>
+                      <!-- <div class="common-chart-wrap">
+                        <div class="chart-info">
+                          <div class="info">
+                            <div class="blank m_etc">총 취수량</div>
+                            <div class="or m_etc">총 폐수 처리량</div>
+                          </div>
+                          <div class="unit m_desc">단위 : ton</div>
+                        </div>
+                        <div class="chart-graph">
+                          <div class="board-box">
+                            <div class="values">
+                              <div class="val" data-value="0"><span>0</span></div>
+                              <div class="val" data-value="5,000"><span>5,000</span></div>
+                              <div class="val" data-value="10,000"><span>10,000</span></div>
+                              <div class="val" data-value="15,000"><span>15,000</span></div>
+                              <div class="val" data-value="20,000"><span>20,000</span></div>
+                              <div class="val" data-value="25,000"><span>25,000</span></div>
+                              <div class="val" data-value="30,000"><span>30,000</span></div>
+                              <div class="val" data-value="35,000"><span>35,000</span></div>
+                              <div class="val val-max" data-value="40,000"><span>40,000</span></div>
+                            </div>
+                             <div class="line-values">
+                              <div class="val"><span>1,000,000</span></div>
+                              <div class="val"><span>1,500,000</span></div>
+                              <div class="val"><span>2,000,000</span></div>
+                              <div class="val"><span>2,500,000</span></div>
+                              <div class="val"><span>3,000,000</span></div>
+                            </div>
+                          </div>
+                          <ol class="data-box">
+                            <li class="data-wrap">
+                              <div class="year m_etc">2021</div>
+                              <div class="graph lego">
+                                <div class="box or">
+                                  <strong class="count">19,294</strong>
+                                  <span class="bar"></span>
+                                </div>
+                              </div>                    
+                            </li>
+                            <li class="data-wrap">
+                              <div class="year m_etc">2022</div>
+                              <div class="graph lego">
+                                <div class="box or">
+                                  <strong class="count">23,558</strong>
+                                  <span class="bar"></span>
+                                </div>
+                              </div>                    
+                            </li>
+                            <li class="data-wrap">
+                              <div class="year m_etc">2023</div>
+                              <div class="graph lego">
+                                <div class="box or">
+                                  <strong class="count">25,299</strong>
+                                  <span class="bar"></span>
+                                </div>
+                              </div>                    
+                            </li>
+                          
+                          </ol>
+                          <div class="line-box">
+                            <canvas id="line-chart"></canvas>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="810" height="159" viewBox="0 0 810 159" fill="none"><path stroke="#4B4B4B" stroke-width="2" d="m1 117.5 400 32 200-74 200-74"/></svg>
+                            <ul>
+                              <li><span>2,401,847</span></li>
+                              <li><span>2,318,810</span></li>
+                              <li><span>2,765,135</span></li>
+                            </ul> 
+                          </div>
+
+                        </div>
+                      </div> -->
+                      <div class="common-table-wrap in_sec_box">
+                        <table class="common-table">
+                          <caption>Water Management</caption>
+                          <thead>
+                            <tr>
+                              <th colspan="2" class="center">Indicator</th>
+                              <th class="center th-unit">Unit</th>
+                              <th class="right p-r-84">2021</th>
+                              <th class="right p-r-84">2022</th>
+                              <th class="right p-r-84 or">2023</th>
+                            </tr>
+                          </thead>
+              
+                          <tbody>
+                            <tr>
+                              <th rowspan="4" class="p-l-44 left">Water</th>
+                              <td class="p-l-44 left">Total water withdrawn¹⁾</td>
+                              <td class="center tb-unit">ton</td>
+                              <td class="p-r-84 right">2,401,847</td>
+                              <td class="p-r-84 right">2,318,810</td>
+                              <td class="p-r-84 right or">2,765,135</td>
+                            </tr>
+                            <tr class="bgEm">
+                              <td class="p-l-84 left">Service water <br>(for shipyards)</td>
+                              <td class="center tb-unit">ton</td>
+                              <td class="p-r-84 right">2,297,929</td>
+                              <td class="p-r-84 right">2,216,945</td>
+                              <td class="p-r-84 right or">2,682,168</td>
+                            </tr>
+                            <tr class="bgEm">
+                              <td class="p-l-84 left">Groundwater</td>
+                              <td class="center tb-unit">ton</td>
+                              <td class="p-r-84 right">52,013</td>
+                              <td class="p-r-84 right">66,555</td>
+                              <td class="p-r-84 right or">69,353</td>
+                            </tr>
+                            <tr class="bgEm">
+                              <td class="p-l-84 left">Service water <br>(others)</td>
+                              <td class="center tb-unit">ton</td>
+                              <td class="p-r-84 right">51,905</td>
+                              <td class="p-r-84 right">35,310</td>
+                              <td class="p-r-84 right or">13,614</td>
+                            </tr>
+                            <tr>
+                              <th rowspan="2" class="p-l-44 left">Water stress</th>
+                              <td class="p-l-44 left">Withdrawals</td>
+                              <td class="center tb-unit">ton</td>
+                              <td class="p-r-84 right">15,692</td>
+                              <td class="p-r-84 right">16,474</td>
+                              <td class="p-r-84 right or">18,197</td>
+                            </tr>
+                            <tr>
+                              <td class="p-l-44 left">Water withdrawal rate</td>
+                              <td class="center">%</td>
+                              <td class="p-r-84 right">0.7</td>
+                              <td class="p-r-84 right">0.7</td>
+                              <td class="p-r-84 right or">0.7</td>
+                            </tr>
+                            <tr>
+                              <th class="p-l-44 left">Wastewater treatment</th>
+                              <td class="p-l-44 left">Total wastewater treatment</td>
+                              <td class="center tb-unit">ton</td>
+                              <td class="p-r-84 right">19,294</td>
+                              <td class="p-r-84 right">23,558</td>
+                              <td class="p-r-84 right or">25,299</td>
+                            </tr>
+                            <tr>
+                              <th rowspan="3" class="p-l-44 left">Sewage</th>
+                              <td class="p-l-44 left">Total sewage flow</td>
+                              <td class="center tb-unit">ton</td>
+                              <td class="p-r-84 right">771,445</td>
+                              <td class="p-r-84 right">843,352</td>
+                              <td class="p-r-84 right or">1,006,056</td>
+                            </tr>
+                            <tr>
+                              <td class="p-l-44 left">Recycled sewage</td>
+                              <td class="center tb-unit">ton</td>
+                              <td class="p-r-84 right">162,025</td>
+                              <td class="p-r-84 right">89,087</td>
+                              <td class="p-r-84 right or">176,128</td>
+                            </tr>
+                            <tr>
+                              <td class="p-l-44 left">Recycled sewage rate</td>
+                              <td class="center">%</td>
+                              <td class="p-r-84 right">21</td>
+                              <td class="p-r-84 right">10.6</td>
+                              <td class="p-r-84 right or">17.5</td>
+                            </tr>
+              
+                           
+                          </tbody>
+              
+                        </table>
+                      </div>
+                      <ol class="refer in_sec_box">
+                        <li><span class="m_desc">1&#41; Total water withdrawals : Water withdrawals from Dumo Dormitory, NongsoResearch Institute, NeungpoDormitory, SeomunSports Center, and AnjeongIndustrial Complex were added alongside water withdrawals from the OkpoShipyard since 2021.</span></li>
+                      </ol>
+                    </div>
+                    <div class="gt-wrap gt04 in_sec_box_area">
+                      <div class="gt-tit m_h5 in_sec_box">Waste Management</div>
+                      <div class="chart-tit m_h8 in_sec_box">Total Waste Generated</div>
+                      <picture class="chart-img in_sec_box">
+                          <source media="(min-width: 769px)" srcset="/resources/images/dl/en_dl_env_gt_04-pc.webp">
+                          <source media="(max-width: 768px)" srcset="/resources/images/dl/en_dl_env_gt_04-mo.webp">
+                          <img class="core" src="/resources/images/dl/en_dl_env_gt_04-pc.webp" alt="Graph">
+                      </picture>
+                      <!-- <div class="common-chart-wrap">
+                        <div class="chart-tit m_h8">폐기물 총 발생량</div>
+                        <div class="chart-info">
+                          <div class="info">
+                            <div class="gray m_etc">총 일반 폐기물 처리량</div>
+                            <div class="or m_etc">총 유해 폐기물 처리량</div>
+                          </div>
+                          <div class="unit m_desc">단위 : ton</div>
+                        </div>
+                        <div class="chart-graph">
+                          <div class="board-box">
+                            <div class="values">
+                              <div class="val" data-value="0"><span>0</span></div>
+                              <div class="val" data-value="10,000"><span>10,000</span></div>
+                              <div class="val" data-value="20,000"><span>20,000</span></div>
+                              <div class="val" data-value="30,000"><span>30,000</span></div>
+                              <div class="val" data-value="40,000"><span>40,000</span></div>
+                              <div class="val val-max" data-value="50,000"><span>50,000</span></div>
+                            </div>
+                          </div>
+                          <ol class="data-box">
+                            <li class="data-wrap">
+                              <div class="year m_etc">2021</div>
+                              <div class="graph lego">
+                                <div class="box gray">
+                                  <strong class="count">30,659</strong>
+                                  <span class="bar"></span>
+                                </div>
+                                <div class="box or">
+                                  <strong class="count">3,000</strong>
+                                  <span class="bar"></span>
+                                </div>
+                                <div class="max">33,659</div>
+                              </div>                    
+                            </li>
+                            <li class="data-wrap">
+                              <div class="year m_etc">2022</div>
+                              <div class="graph lego">
+                                <div class="box gray">
+                                  <strong class="count">33,346</strong>
+                                  <span class="bar"></span>
+                                </div>
+                                <div class="box or">
+                                  <strong class="count">2,919</strong>
+                                  <span class="bar"></span>
+                                </div>
+                                <div class="max">36,264</div>
+                              </div>                    
+                            </li>
+                            <li class="data-wrap">
+                              <div class="year m_etc">2023</div>
+                              <div class="graph lego">
+                                <div class="box gray">
+                                  <strong class="count">37,686</strong>
+                                  <span class="bar"></span>
+                                </div>
+                                <div class="box or">
+                                  <strong class="count">4,783</strong>
+                                  <span class="bar"></span>
+                                </div>
+                                <div class="max">41,493</div>
+                              </div>                    
+                            </li>
+                          </ol>
+                        </div>
+                      </div> -->
+                      <div class="common-table-wrap in_sec_box">
+                        <table class="common-table">
+                          <caption>Waste Management</caption>
+                          <thead>
+                            <tr>
+                              <th colspan="2" class="center">Indicator</th>
+                              <th class="center tb-unit">Unit</th>
+                              <th class="right p-r-84">2021</th>
+                              <th class="right p-r-84">2022</th>
+                              <th class="right p-r-84 or">2023</th>
+                            </tr>
+                          </thead>
+              
+                          <tbody>
+                            <tr>
+                              <th colspan="2" class="p-l-44 left">Total waste generated¹⁾</th>
+                              <td class="center tb-unit">ton</td>
+                              <td class="p-r-84 right">33,659</td>
+                              <td class="p-r-84 right">36,264</td>
+                              <td class="p-r-84 right or">41,493</td>
+                            </tr>
+                            <tr>
+                              <th rowspan="5" class="p-l-44 left">General <br class="pc"><br class="tablet">waste <br>treatment</th>
+                              <td class="p-l-44 left">Total general waste <br>treatment</td>
+                              <td class="center tb-unit">ton</td>
+                              <td class="p-r-84 right">30,659</td>
+                              <td class="p-r-84 right">33,346</td>
+                              <td class="p-r-84 right or">37,686</td>
+                            </tr>
+                            <tr class="bgEm">
+                              <td class="p-l-84 left">Landfill</td>
+                              <td class="center tb-unit">ton</td>
+                              <td class="p-r-84 right">4,873</td>
+                              <td class="p-r-84 right">6,015</td>
+                              <td class="p-r-84 right or">7,247</td>
+                            </tr>
+                            <tr class="bgEm">
+                              <td class="p-l-84 left">Incineration <br>(heat recovery)</td>
+                              <td class="center tb-unit">ton</td>
+                              <td class="p-r-84 right">6,998</td>
+                              <td class="p-r-84 right">6,920</td>
+                              <td class="p-r-84 right or">6,655</td>
+                            </tr>
+                            <tr class="bgEm">
+                              <td class="p-l-84 left">Recycled</td>
+                              <td class="center tb-unit">ton</td>
+                              <td class="p-r-84 right">17,841</td>
+                              <td class="p-r-84 right">19,515</td>
+                              <td class="p-r-84 right or">23,021</td>
+                            </tr>
+                            <tr class="bgEm">
+                              <td class="p-l-84 left">Others & physico-<br>chemical treatment</td>
+                              <td class="center tb-unit">ton</td>
+                              <td class="p-r-84 right">946</td>
+                              <td class="p-r-84 right">895</td>
+                              <td class="p-r-84 right or">763</td>
+                            </tr>
+                            <tr>
+                              <th rowspan="5" class="p-l-44 left">Hazardous waste treatment</th>
+                              <td class="p-l-44 left">Total hazardous waste treatment (designated waste)</td>
+                              <td class="center tb-unit">ton</td>
+                              <td class="p-r-84 right">3,000</td>
+                              <td class="p-r-84 right">2,919</td>
+                              <td class="p-r-84 right or">3,807</td>
+                            </tr>
+                            <tr class="bgEm">
+                              <td class="p-l-84 left">Landfill</td>
+                              <td class="center tb-unit">ton</td>
+                              <td class="p-r-84 right">16</td>
+                              <td class="p-r-84 right">55</td>
+                              <td class="p-r-84 right or">40</td>
+                            </tr>
+                            <tr class="bgEm">
+                              <td class="p-l-84 left">Incineration (heat recovery)</td>
+                              <td class="center tb-unit">ton</td>
+                              <td class="p-r-84 right">1,136</td>
+                              <td class="p-r-84 right">1,014</td>
+                              <td class="p-r-84 right or">1,484</td>
+                            </tr>
+                            <tr class="bgEm">
+                              <td class="p-l-84 left">Recycled</td>
+                              <td class="center tb-unit">ton</td>
+                              <td class="p-r-84 right">1,846</td>
+                              <td class="p-r-84 right">1,844</td>
+                              <td class="p-r-84 right or">2,274</td>
+                            </tr>
+                            <tr class="bgEm">
+                              <td class="p-l-84 left">Others</td>
+                              <td class="center tb-unit">ton</td>
+                              <td class="p-r-84 right">2</td>
+                              <td class="p-r-84 right">6</td>
+                              <td class="p-r-84 right or">9</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <ol class="refer in_sec_box">
+                        <li><span class="m_desc">1&#41; Calculated based on Okpo, Siheung, Anjeong business sites.</span></li>
+                      </ol>
+                    </div>
+                    <div class="gt-wrap gt05 in_sec_box_area">
+                      <div class="gt-tit m_h5 in_sec_box">Pollutant Management</div>
+                      <div class="gt-table in_sec_box" data-table="1">
+                        <div class="table-tit m_h8 m-mt60">Chemical Substance Management</div>
+                        <div class="common-table-wrap">
+                          <table class="common-table">
+                            <caption>Pollutant Management</caption>
+                            <thead>
+                              <tr>
+                                <th class="p-l-44 left">Indicator</th>
+                                <th class="center tb-unit">Unit</th>
+                                <th class="right p-r-84">2021</th>
+                                <th class="right p-r-84">2022</th>
+                                <th class="right p-r-84 or">2023</th>
+                              </tr>
+                            </thead>
+                
+                            <tbody>
+                              <tr>
+                                <th class="p-l-44 left">Amount of hazardous chemicals used</th>
+                                <td class="center tb-unit">ton</td>
+                                <td class="p-r-84 right">0</td>
+                                <td class="p-r-84 right">0.05</td>
+                                <td class="p-r-84 right or">913.8</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="gt-table in_sec_box" data-table="2">
+                        <div class="table-tit m_h8">Air Pollution Management¹⁾</div>
+                        <div class="common-table-wrap">
+                          <table class="common-table">
+                            <caption>Air Pollution Management Table</caption>
+                            <thead>
+                              <tr>
+                                <th colspan="2" class="center">Indicator</th>
+                                <th class="center tb-unit">Unit</th>
+                                <th class="right p-r-84">2021</th>
+                                <th class="right p-r-84">2022</th>
+                                <th class="right p-r-84 or">2023</th>
+                              </tr>
+                            </thead>
+                
+                            <tbody>
+                              <tr>
+                                <th rowspan="2" class="p-l-44 left">NOx</th>
+                                <td class="p-l-44 left">Nitrogen oxide (NOx) emissions</td>
+                                <td class="center tb-unit">ton</td>
+                                <td class="p-r-84 right">6.896</td>
+                                <td class="p-r-84 right">8.107</td>
+                                <td class="p-r-84 right or">9.012</td>
+                              </tr>
+                              <tr>
+                                <td class="p-l-44 left">NOx emissions intensity</td>
+                                <td class="center tb-unit">tons/<br>KRW 100 million</td>
+                                <td class="p-r-84 right">0.000154</td>
+                                <td class="p-r-84 right">0.000167</td>
+                                <td class="p-r-84 right or">0.00012</td>
+                              </tr>
+                              <tr>
+                                <th rowspan="2" class="p-l-44 left">SOx</th>
+                                <td class="p-l-44 left">Sulfur oxide (SOx) emissions</td>
+                                <td class="center tb-unit">ton</td>
+                                <td class="p-r-84 right">0.023</td>
+                                <td class="p-r-84 right">0.124</td>
+                                <td class="p-r-84 right or">0.47</td>
+                              </tr>
+                              <tr>
+                                <td class="p-l-44 left">SOx emissions intensity</td>
+                                <td class="center tb-unit">tons/<br>KRW 100 million</td>
+                                <td class="p-r-84 right">0.000001</td>
+                                <td class="p-r-84 right">0.000003</td>
+                                <td class="p-r-84 right or">0.000006</td>
+                              </tr>
+                              <tr>
+                                <th rowspan="2" class="p-l-44 left">VOCs</th>
+                                <td class="p-l-44 left">Volatile organic compound (VOC) emissions</td>
+                                <td class="center tb-unit">ton</td>
+                                <td class="p-r-84 right">1871</td>
+                                <td class="p-r-84 right">1,257</td>
+                                <td class="p-r-84 right or">1,375</td>
+                              </tr>
+                              <tr>
+                                <td class="p-l-44 left">VOC emissions intensity</td>
+                                <td class="center tb-unit">tons/<br>KRW 100 million</td>
+                                <td class="p-r-84 right">0.041702</td>
+                                <td class="p-r-84 right">0.025863</td>
+                                <td class="p-r-84 right or">0.01856</td>
+                              </tr>
+                              <tr>
+                                <th rowspan="2" class="p-l-44 left">PM</th>
+                                <td class="p-l-44 left">Particulate matter (PM10) emissions</td>
+                                <td class="center tb-unit">ton</td>
+                                <td class="p-r-84 right">13.54</td>
+                                <td class="p-r-84 right">13.50</td>
+                                <td class="p-r-84 right or">13.36</td>
+                              </tr>
+                              <tr>
+                                <td class="p-l-44 left">PM10 emissions intensity</td>
+                                <td class="center tb-unit">tons/<br>KRW 100 million</td>
+                                <td class="p-r-84 right">0.000302</td>
+                                <td class="p-r-84 right">0.000278</td>
+                                <td class="p-r-84 right or">0.00018</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <ol class="refer">
+                          <li><span class="m_desc">1&#41; Calculated based on Okpo, Siheung, Anjeong business sites.</span></li>
+                        </ol>
+                      </div>
+                      <div class="gt-table in_sec_box" data-table="3">
+                        <div class="table-tit m_h8">Water Pollution Management</div>
+                        <div class="common-table-wrap m_mt-40">
+                          <table class="common-table">
+                            <caption>Water pollution management Table</caption>
+                            <thead>
+                              <tr>
+                                <th colspan="2" class="center">Indicator</th>
+                                <th class="center tb-unit">Unit</th>
+                                <th class="right p-r-84">2021</th>
+                                <th class="right p-r-84">2022</th>
+                                <th class="right p-r-84 or">2023</th>
+                              </tr>
+                            </thead>
+                
+                            <tbody>
+                              <tr>
+                                <th rowspan="2" class="p-l-44 left">TOC</th>
+                                <td class="p-l-44 left">Total organic carbon (TOC) emissions</td>
+                                <td class="center tb-unit">ton</td>
+                                <td class="p-r-84 right">0</td>
+                                <td class="p-r-84 right">0.145</td>
+                                <td class="p-r-84 right or">0.259</td>
+                              </tr>
+                              <tr>
+                                <td class="p-l-44 left">TOC emissions intensity</td>
+                                <td class="center tb-unit">tons/ <br>KRW 100 million</td>
+                                <td class="p-r-84 right">0</td>
+                                <td class="p-r-84 right">0.000003</td>
+                                <td class="p-r-84 right or">0.000003</td>
+                              </tr>
+                              <tr>
+                                <th rowspan="2" class="p-l-44 left">COD</th>
+                                <td class="p-l-44 left">Chemical oxygen demand (COD) emissions</td>
+                                <td class="center tb-unit">ton</td>
+                                <td class="p-r-84 right">0.16</td>
+                                <td class="p-r-84 right">Changed to <br>TOC</td>
+                                <td class="p-r-84 right or">Changed to <br>TOC</td>
+                              </tr>
+                              <tr>
+                                <td class="p-l-44 left">COD emissions intensity</td>
+                                <td class="center tb-unit">tons/ <br>KRW 100 million</td>
+                                <td class="p-r-84 right">0.0000036</td>
+                                <td class="p-r-84 right">Changed to <br>TOC</td>
+                                <td class="p-r-84 right or">Changed to <br>TOC</td>
+                              </tr>
+                              <tr>
+                                <th rowspan="2" class="p-l-44 left">SS</th>
+                                <td class="p-l-44 left">Suspended solid (SS) emissions</td>
+                                <td class="center tb-unit">ton</td>
+                                <td class="p-r-84 right">0.035</td>
+                                <td class="p-r-84 right">0.031</td>
+                                <td class="p-r-84 right or">0.019</td>
+                              </tr>
+                              <tr>
+                                <td class="p-l-44 left">SS emissions intensity</td>
+                                <td class="center tb-unit">tons/ <br>KRW 100 million</td>
+                                <td class="p-r-84 right">0.00000078</td>
+                                <td class="p-r-84 right">0.00000064</td>
+                                <td class="p-r-84 right or">0.00000026</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="gt-wrap gt06 in_sec_box_area">
+                      <div class="gt-tit m_h5 in_sec_box">Other Environmental Metrics</div>
+                      <div class="gt-graph in_sec_box">
+                        <div class="chart-tit m_h8">Environmental Investments</div>
+                        <picture class="chart-img">
+                            <source media="(min-width: 769px)" srcset="/resources/images/dl/en_dl_env_gt_06-pc.webp">
+                            <source media="(max-width: 768px)" srcset="/resources/images/dl/en_dl_env_gt_06-mo.webp">
+                            <img class="core" src="/resources/images/dl/en_dl_env_gt_06-pc.webp" alt="Graph">
+                        </picture>
+                        <!-- <div class="common-chart-wrap">
+                          <div class="chart-tit m_h8">환경 투자금액</div>
+                          <div class="chart-info">
+                            <div class="info">
+                              <div class="or m_etc">환경투자</div>
+                            </div>
+                            <div class="unit m_desc">단위 : KRW 100 million</div>
+                          </div>
+                          <div class="chart-graph">
+                            <div class="board-box">
+                              <div class="values">
+                                <div class="val" data-value="0.0"><span>0.0</span></div>
+                                <div class="val" data-value="100.0"><span>100.0</span></div>
+                                <div class="val" data-value="200.0"><span>200.0</span></div>
+                                <div class="val val-max" data-value="300.0"><span>300.0</span></div>
+                              </div>
+                            </div>
+                            <ol class="data-box">
+                              <li class="data-wrap">
+                                <div class="year m_etc">2021</div>
+                                <div class="graph lego">
+                                  <div class="box or">
+                                    <strong class="count">93.6</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                </div>                    
+                              </li>
+                              <li class="data-wrap">
+                                <div class="year m_etc">2022</div>
+                                <div class="graph lego">
+                                  <div class="box or">
+                                    <strong class="count">215.9</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                </div>                    
+                              </li>
+                              <li class="data-wrap">
+                                <div class="year m_etc">2023</div>
+                                <div class="graph lego">
+                                  <div class="box or">
+                                    <strong class="count">39.4</strong>
+                                    <span class="bar"></span>
+                                  </div>
+                                </div>                    
+                              </li>
+                            
+                            </ol>
+                          </div>
+                        </div> -->
+                      </div>
+                      <div class="gt-table in_sec_box" data-table="1">
+                        <div class="table-tit m_h8">Environmental Investments and Sales</div>
+                        <div class="common-table-wrap">
+                          <table class="common-table">
+                            <caption>Environmental Investments and Sales</caption>
+                            <thead>
+                              <tr>
+                                <th class="p-l-44 left mo_center">Indicator</th>
+                                <th class="center tb-unit">Unit</th>
+                                <th class="right p-r-84">2021</th>
+                                <th class="right p-r-84">2022</th>
+                                <th class="right p-r-84 or">2023</th>
+                              </tr>
+                            </thead>
+                
+                            <tbody>
+                              <tr>
+                                <th class="p-l-44 left">Environmental investments</th>
+                                <td class="center tb-unit">KRW 100 million</td>
+                                <td class="p-r-84 right">93.6</td>
+                                <td class="p-r-84 right">215.9</td>
+                                <td class="p-r-84 right or">39.4</td>
+                              </tr>
+                              <tr>
+                                <td class="p-l-44 left">R&D cost</td>
+                                <td class="center tb-unit">KRW 100 million</td>
+                                <td class="p-r-84 right">96.1</td>
+                                <td class="p-r-84 right">50.7</td>
+                                <td class="p-r-84 right or">48.3</td>
+                              </tr>
+                              <tr>
+                                <th class="p-l-44 left">Low-carbon & carbon avoidance products¹⁾</th>
+                                <td class="center tb-unit">KRW 100 million</td>
+                                <td class="p-r-84 right">21,774</td>
+                                <td class="p-r-84 right">25,660</td>
+                                <td class="p-r-84 right or">43,442</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <ol class="refer">
+                          <li><span class="m_desc">1&#41; The sales are calculated for ships with dual-fuel engines.</span></li>
+                        </ol>
+                      </div>
+                      <div class="gt-table in_sec_box" data-table="2">
+                        <div class="table-tit m_h8">Environmental Law Violations</div>
+                        <div class="common-table-wrap m_mt-40">
+                          <table class="common-table">
+                            <caption>Environmental Law Violations Table 표</caption>
+                            <thead>
+                              <tr>
+                                <th colspan="2" class="center">Indicator</th>
+                                <th class="center tb-unit">Unit</th>
+                                <th class="right p-r-84">2021</th>
+                                <th class="right p-r-84">2022</th>
+                                <th class="right p-r-84 or">2023</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th rowspan="2" class="p-l-44 left">Violations of environmental laws <br class="pc">and regulations</th>
+                                <td class="p-l-44 left">Violations</td>
+                                <td class="center tb-unit">Cases</td>
+                                <td class="p-r-84 right">-</td>
+                                <td class="p-r-84 right">-</td>
+                                <td class="p-r-84 right or">-</td>
+                              </tr>
+                              <tr>
+                                <td class="p-l-44 left">Fines and penalties</td>
+                                <td class="center tb-unit">KRW 1 million</td>
+                                <td class="p-r-84 right">-</td>
+                                <td class="p-r-84 right">-</td>
+                                <td class="p-r-84 right or">-</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<%- include('./src/include/footer-en.ejs') %>

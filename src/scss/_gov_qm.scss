@@ -1,0 +1,385 @@
+#QM{
+
+  .common-grid{
+    margin-bottom: 0;
+  }
+  .picture{
+    display: block;
+    img{width: 100%;}
+  }
+
+  .section-qm{
+    margin-bottom: vw(w, 200);
+    &:first-child{
+      margin-top: vw(w, 80);
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+    &.sec-2{
+      .picture{
+        margin-top: vw(w, 100);
+      }
+      .common-table-wrap{
+        margin-top: vw(w, 60);
+        th:first-child{width: vw(w, 528);}
+        td:first-child{width: vw(w, 528);}
+      }
+    }
+    &.sec-3{
+      .dia-title{
+        font-size: vw(w, 20);
+        font-weight: 400;
+        padding: vw(w, 46) vw(w, 32);
+        border-top: 2px solid #151515;
+        border-bottom: 1px solid #e5e5e5;
+        margin-bottom: vw(w, 80);
+        margin-top: vw(w, 28);
+      }
+      .certi_li{
+        margin-top: vw(w, 120);
+        li{
+          display: flex;
+          align-items: end;
+          gap: vw(w, 40);
+          margin-top: vw(w, 60);
+          &:first-child{
+            margin-top: 0;
+          }
+          .inner{
+            width: calc(50% - vw(w, 20));
+            & > strong{
+              display: block;
+              margin-bottom: vw(w, 12);
+            }
+          }
+        }
+      }
+    }
+    &.sec-4{
+      .common-table-wrap{
+        margin-top: vw(w, 120);
+        .p-l-32{padding-right: vw(w, 32); vertical-align: top; line-height: 1.68;}
+        th:first-child, td:first-child{width: vw(w, 376);}
+        th:nth-child(2), td:nth-child(2){width: vw(w, 400);}
+        th:nth-child(3), td:nth-child(3){width: vw(w, 400);}
+        // th:nth-child(4), td:nth-child(4){}
+        .dot_list li{
+          display: flex;
+        }
+        .dot_list li:before{
+          flex: none;
+          position: relative;
+          top: vw(w, 14);
+        }
+      }
+    }
+    &.sec-5{
+      .common-table-wrap{
+        margin-top: vw(w, 120);
+        th:first-child, td:first-child{width: vw(w, 376);}
+        th:nth-child(2), td:nth-child(2){width: vw(w, 400);}
+        th:nth-child(3), td:nth-child(3){width: vw(w, 400);}
+      }
+    }
+    &.sec-6{
+      .common-table-wrap{
+        margin-top: vw(w, 120);
+        .common-table{
+          thead{
+            tr:nth-child(2){border-top: 1px solid #e5e5e5;}
+          }
+          .p-l-32{padding-right: vw(w, 32);}
+        }
+        figcaption{
+          font-size: vw(w, 16);
+          margin-top: vw(w, 20);
+          color: #999;
+        }
+      }
+    }
+    &.sec-7{
+      .picture{
+        margin: 0 auto;
+        margin-top: vw(w, 80);
+        max-width: 1298px;
+      }
+    }
+    &.sec-8{
+      .common-table-wrap{
+        margin-top: vw(w, 120);
+        .p-l-32{padding-right: vw(w, 32);}
+      }
+    }
+    &.sec-10{
+      .picture{
+        margin-top: vw(w, 120);
+      }
+      .sec-title{
+        display: block;
+        margin-top: vw(w, 120);
+      }
+      .pic-li{
+        margin-top: vw(w, 28);
+      }
+    }
+  }
+
+  @include tablet-only{
+    .section-qm{
+      margin-bottom: 126px;
+      &:first-child{
+        margin-top: 50px;
+        .common-grid{ margin-top: 0; }
+      }
+      &.sec-2{
+        .picture{
+          margin-top: 63px;
+        }
+        .common-table-wrap{
+          margin-top: 38px;
+          th:first-child{width: 334px;}
+          td:first-child{width: 334px;}
+        }
+      }
+      &.sec-3{
+        .dia-title{
+          font-size: 12px;
+          padding: 29px 20px;
+          margin-bottom: 50px;
+          margin-top: 18px;
+        }
+        .certi_li{
+          margin-top: 76px;
+          li{
+            gap: 26px;
+            margin-top: 38px;
+            .inner{
+              width: calc(50% - 12px);
+              & > strong{
+                margin-bottom: 8px;
+              }
+            }
+          }
+        }
+      }
+      &.sec-4{
+        .common-table-wrap{
+          margin-top: 76px;
+          .p-l-32{padding-right: 20px; vertical-align: top; line-height: 1.68;}
+          th:first-child, td:first-child{width: 237px;}
+          th:nth-child(2), td:nth-child(2){width: 252px;}
+          th:nth-child(3), td:nth-child(3){width: 252px;}
+          th:nth-child(4), td:nth-child(4){width: 252px;}
+          .dot_list li:before{
+            top: 9px;
+          }
+        }
+      }
+      &.sec-5{
+        .common-table-wrap{
+          margin-top: 76px;
+          th:first-child, td:first-child{width: 237px;}
+          th:nth-child(2), td:nth-child(2){width: 252px;}
+          th:nth-child(3), td:nth-child(3){width: 252px;}
+          th:nth-child(4), td:nth-child(4){width: 252px;}
+        }
+      }
+      &.sec-6{
+        .common-table-wrap{
+          margin-top: 76px;
+          .common-table{
+            .p-l-32{padding-right: 20px;}
+          }
+          figcaption{
+            font-size: 10px;
+            margin-top: 12px;
+          }
+        }
+      }
+      &.sec-7{
+        .picture{
+          margin-top: 50px;
+        }
+      }
+      &.sec-8{
+        .common-table-wrap{
+          margin-top: 76px;
+          .p-l-32{padding-right: 20px;}
+        }
+      }
+      &.sec-10{
+        .picture{
+          margin-top: 76px;
+        }
+        .sec-title{
+          display: block;
+          margin-top: 76px;
+        }
+        .pic-li{
+          margin-top: 18px;
+        }
+      }
+    }
+  }
+
+  @include mobile{
+    .section-qm{
+      margin-bottom: 80px;
+      &:first-child{
+        margin-top: 60px;
+      }
+      &.sec-2{
+        .picture{
+          width: 1480px;
+          margin-top: 60px;
+        }
+        .common-table-wrap{
+          margin-top: 60px;
+          .common-table{ width: 827px; }
+          th{ text-align: left; }
+          th:first-child{width: 200px;}
+          td:first-child{width: 200px;}
+        }
+      }
+      &.sec-3{
+        .dia-title{
+          font-size: 16px;
+          padding: 38px 20px;
+          margin-bottom: 40px;
+          margin-top: 20px;
+        }
+        .picture{
+          max-width: 335px;
+          margin: 0 auto;
+        }
+        .certi_li{
+          margin-top: 60px;
+          li{
+            gap: 15px;
+            margin-top: 40px;
+            .inner{
+              width: calc(50% - 7px);
+              & > strong{
+                margin-bottom: 12px;
+              }
+            }
+          }
+        }
+      }
+      &.sec-4{
+        .common-table-wrap{
+          margin-top: 60px;
+          .common-table{ width: max-content; }
+          .p-l-32{padding-right: 20px; vertical-align: top; line-height: 1.68;}
+          th, td{ width: 200px !important; }
+          .dot_list li:before{
+            top: 9px;
+          }
+        }
+      }
+      &.sec-5{
+        .common-table-wrap{
+          margin-top: 60px;
+          .common-table{ width: max-content; }
+          th:first-child, td:first-child{width: 140px;}
+          th:nth-child(2), td:nth-child(2){width: 140px;}
+          th:nth-child(3), td:nth-child(3){width: 240px;}
+          th:nth-child(4), td:nth-child(4){width: 240px;}
+        }
+      }
+      &.sec-6{
+        .common-table-wrap{
+          margin-top: 60px;
+          .common-table{
+            .p-l-32{padding-right: 20px;}
+          }
+          figcaption{
+            font-size: 16px;
+            margin-top: 16px;
+          }
+        }
+      }
+      &.sec-7{
+        .picture{
+          width: 1002px;
+          margin-top: 60px;
+        }
+      }
+      &.sec-8{
+        .common-table-wrap{
+          margin-top: 60px;
+          .p-l-32{padding-right: 20px;}
+          .p-l-32:first-child{ width: 220px; }
+        }
+      }
+      &.sec-10{
+        .common-grid .picture{
+          margin: 60px -20px;
+        }
+        & > .picture{
+          max-width: 335px;
+          margin: 60px auto;
+        }
+        .sec-title{
+          display: block;
+          margin-top: 60px;
+        }
+        .pic-li{
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+#QM .refer{margin-top: vw(w, 20);}
+#QM .refer .m_desc{font-size: vw(w, 16); color: #999; display: block;}
+
+@include tablet{
+  #QM .refer{margin-top: 12px;}
+}
+
+@include mobile{
+  #QM .refer{margin-top: 16px;}
+  #QM .refer .m_desc{font-size: 14px !important;}
+  #QM .section-qm.sec-10 > .picture{margin-bottom: 0;}
+  #QM .common-grid .title-wrap > .title{font-size: 24px !important;line-height: 1.56 !important;}
+}
+
+html[lang=en] #QM .common-table-wrap .p-l-32{padding-right: vw(w,32);}
+html[lang=en] #QM .sec-8 .dot_list li{padding-left:vw(w,12);margin-left: vw(w,12);}
+html[lang=en] #QM .dot_list li:before{position: absolute;top: vw(w,12);left: 0;}
+html[lang=en] #QM .section-qm.sec-2 .common-table-wrap th:first-child,
+html[lang=en] #QM .section-qm.sec-2 .common-table-wrap td:first-child{width: vw(w,480);}
+html[lang=en] #QM .section-qm.sec-6 .common-table-wrap tr:first-child>th:nth-child(1){width: vw(w,200);}
+html[lang=en] #QM .section-qm.sec-6 .common-table-wrap tr:first-child>th:nth-child(2){width: vw(w,200);}
+html[lang=en] #QM .section-qm.sec-6 .common-table-wrap tr:nth-child(2)>th{width: vw(w,213);}
+html[lang=en] #QM .section-qm.sec-8 .common-table-wrap tr>td:first-child{width: vw(w,576);vertical-align: top;}
+html[lang=en] #QM .section-qm.sec-4 .common-table-wrap .number-list li{display: flex; gap: 4px;}
+
+@include tablet{
+  html[lang=en] #QM .common-table-wrap .p-l-32{padding-right:20px;}
+  html[lang=en] #QM .align-right .dot_list li{padding-left:8px;margin-left:8px;}
+  html[lang=en] #QM .dot_list li:before{top:6px;}
+  html[lang=en] #QM .section-qm.sec-2 .common-table-wrap th:first-child,
+  html[lang=en] #QM .section-qm.sec-2 .common-table-wrap td:first-child{width:calc((100% / 12 * 3) + (100% / 70 * 2))}
+  html[lang=en] #QM .section-qm.sec-6 .common-table-wrap tr:first-child>th:nth-child(1){width:calc((100% / 12 * 1) + (100% / 70 * 2))}
+  html[lang=en] #QM .section-qm.sec-6 .common-table-wrap tr:first-child>th:nth-child(2){width:calc((100% / 12 * 1) + (100% / 70 * 2))}
+  html[lang=en] #QM .section-qm.sec-6 .common-table-wrap tr:nth-child(2)>th{width:calc((100% / 12 * 1) + (100% / 70 * 2));}
+  html[lang=en] #QM .section-qm.sec-6 .common-table-wrap .common-table .p-l-32{padding-right: 0;}
+  html[lang=en] #QM .section-qm.sec-8 .common-table-wrap tr>td:first-child{width:calc(100% / 12 * 4)}
+}
+@include mobile{
+  html[lang=en] #QM .common-table-wrap .p-l-32{padding-right:20px;}
+  html[lang=en] #QM .sec-8 .dot_list li{padding-left:12px;margin-left:12px;}
+  html[lang=en] #QM .dot_list li:before{top:12px;}
+  html[lang=en] #QM .section-qm.sec-2 .common-table-wrap th:first-child,
+  html[lang=en] #QM .section-qm.sec-2 .common-table-wrap td:first-child{width:200px;}
+  html[lang=en] #QM .section-qm.sec-6 .common-table-wrap tr:first-child>th:nth-child(1){width:160px;min-width: 160px;}
+  html[lang=en] #QM .section-qm.sec-6 .common-table-wrap tr:first-child>th:nth-child(2){width:160px;min-width: 160px;}
+  html[lang=en] #QM .section-qm.sec-6 .common-table-wrap tr:nth-child(2)>th{width:130px;min-width: 130px;}
+  html[lang=en] #QM .section-qm.sec-6 .common-table-wrap .common-table .p-l-32{padding-right: 20px;}
+  html[lang=en] #QM .section-qm.sec-8 .common-table-wrap tr>td:first-child{width:220px}
+  html[lang=en] #QM .section-qm.sec-4 .common-table-wrap td{width: 240px !important;}
+}

@@ -1,0 +1,36 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot, thead, tr, th, td, input, textarea, button,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, hgroup, 
+nav, output, ruby, section, summary, time, mark, audio, video{ margin: 0; padding: 0; border: 0;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+ol, ul {list-style: none;}
+h1, h2, h3, h4, h5, h6{font-weight: 400;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: '';content:none;}
+table {border-collapse:collapse;border-spacing:0;}
+a {text-decoration:none;color:inherit;}
+a:hover {text-decoration:none;}
+legend, caption, hr {display:none;}
+th {font-weight: inherit}
+em {font-style:normal;}
+img {vertical-align:top;}
+input {vertical-align:middle;border-radius:0;}
+p,h3,h2,h1{letter-spacing: normal;}
+input,textarea,button,select{font-family: $font-hg ,sans-serif; border-radius:0;background: inherit ; border:none; box-shadow:none; padding:0; overflow:visible;}
+html {height:auto;-webkit-text-size-adjust: none;-moz-text-size-adjust: none;-ms-text-size-adjust: none; word-break: keep-all;word-wrap: break-word;}
+body {font-family: $font-hg ,sans-serif;font-size: vw(w, 20);line-height: vw(w, 20*1.68);color: $default-color; font-weight: 400;}
+
+
+.only_mobile{display: none !important;}
+
+@include tablet {
+  body {font-size: 14px;line-height: 1.68;}
+}
+
+@include mobile {
+  body {font-size: 16px;line-height: 1.72;}
+  .only_mobile{display: block !important;}
+}

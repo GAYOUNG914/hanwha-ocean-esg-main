@@ -1,0 +1,181 @@
+.ip .ip-area{padding-top: vw(w,160);}
+.ip .ip-area .content-box + .content-box{margin-top: vw(w,200);}
+.ip .ip-area .common-grid{margin-top: 0;margin-bottom: 0;}
+.ip .ip-area .common-grid .title-wrap .desc{color:$gray-2;font-weight: 300;}
+.ip .ip-area .common-grid .title-wrap .desc>p{line-height: 1.68;}
+.ip .ip-area .inner{max-width: 1920px;margin-left:auto;margin-right: auto;padding: 0 vw(w,120);box-sizing: border-box;}
+.ip .ip-area .infogram-wrap{position: relative;width: 100%;}
+// .ip .ip-area .infogram-wrap .icon-swipe{opacity: 0;visibility: hidden;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);width:80px;height:80px;background: url("#{$image-path}common/icon_swiper_mouse.png") no-repeat center center / contain;transition: all .5s ease;animation: mouseSwing 2s infinite $fave-ease-cb3;}
+.ip .ip-area .infogram-wrap .icon-swipe.swing{opacity: 1;visibility:visible;}
+.ip .ip-area .infogram-wrap .infogram .graph-img{width: 100%;height: 100%;image-rendering: -webkit-optimize-contrast;}
+.ip .ip-area .infogram-wrap .infogram .graph-txt{position: absolute;top: 0;font-size: 0;}
+.ip .ip-area .infogram-wrap .infogram .graph-txt{position: absolute;top: 0;font-size: 0;}
+.ip .ip-area .img-wrap{position: relative;width: 100%;}
+.ip .ip-area .img-wrap picture{width: 100%;height: 100%;}
+.ip .ip-area .img-wrap picture img{display: block;width: 100%;height: 100%;object-fit: contain;}
+
+.ip .ip-area .cb01 .infogram-wrap{margin-top:vw(w,100);}
+.ip .ip-area .cb01 .infogram-wrap .infogram{margin-top: vw(w,28);}
+.ip .ip-area .cb01 .infogram-wrap .infogram picture{display: block;}
+.ip .ip-area .cb01 .infogram-wrap .infogram img{max-width: 100%;}
+.ip .ip-area .cb01 .infogram-wrap .infogram .graph-img{aspect-ratio: 2520 / 1817;background: url("#{$image-path}gov/ip/ip_infograph-pc.webp") no-repeat center center / contain;}
+.ip .ip-area .cb01 .common-table-wrap{margin-top: vw(w,60);}
+.ip .ip-area .cb01 .common-table tr th,
+.ip .ip-area .cb01 .common-table tr td{border-right: none;vertical-align: top;}
+.ip .ip-area .cb01 .common-table-wrap tbody tr>th:first-child{width: vw(w,400);font-weight: 400;padding-top: vw(w,36);padding-bottom: vw(w,36);}
+.ip .ip-area .cb01 .common-table-wrap tbody tr td{width: vw(w,640);}
+.ip .ip-area .cb01 .common-table-wrap tbody tr td li:first-child{margin-top: 0;}
+.ip .ip-area .cb01 .common-table-wrap tbody tr td li{margin-top: vw(w,8);line-height: 1.5;}
+.ip .ip-area .cb02 .common-grid .desc>div{margin-top: vw(w,100);}
+.ip .ip-area .cb02 .common-table-wrap:first-child{margin-bottom: vw(w,100);}
+.ip .ip-area .cb02 .common-table-wrap .common-table{border-top:2px solid $default-color}
+.ip .ip-area .cb02 .common-table-wrap thead tr>th,
+.ip .ip-area .cb02 .common-table-wrap tbody tr>th:first-child{font-weight: 400;color:$default-color;}
+.ip .ip-area .cb02 .common-table-wrap tr th,
+.ip .ip-area .cb02 .common-table-wrap tr td{width: vw(w,272);padding-top: vw(w,36);padding-bottom: vw(w,36);border-right: none;}
+.ip .ip-area .cb02 .common-table-wrap .table-tit{font-weight: 400;color:$default-color;margin-bottom: vw(w,28);}
+.ip .ip-area .cb02 .list-item .img-wrap{width: vw(w,316);}
+.ip .ip-area .cb02 .list-item .list ol li{position: relative; counter-increment:title; padding-left: vw(w,25);}
+.ip .ip-area .cb02 .list-item .list ol li:before{position: absolute; content:counter(title)"."; top: 0; left: 0;}
+.ip .ip-area .cb02 .list-item .list strong{color:$default-color;margin-bottom: vw(w,28);display: block;}
+.ip .ip-area .cb02 .list-item .list{margin-top: vw(w,40);color:$default-color}
+.ip .ip-area .cb02 .list-item .list + .list{margin-top: vw(w,80);}
+.ip .ip-area .cb02 .news-item strong{display: block;margin-top: vw(w,20);color:$default-color}
+.ip .ip-area .cb03 .common-table-wrap{margin-top: vw(w,120);}
+.ip .ip-area .cb03 .common-table-wrap tbody tr>th:first-child{width: vw(w,376);border-right:none}
+.ip .ip-area .cb03 .common-table-wrap tbody tr th,
+.ip .ip-area .cb03 .common-table-wrap tbody tr td{padding-top: vw(w,36);padding-bottom: vw(w,36);vertical-align: top;line-height: 1.68;}
+.ip .ip-area .cb04 .cert-item{margin-top: vw(w,120);display: flex;width: 100%;flex-wrap: wrap;}
+.ip .ip-area .cb04 .cert-item .cert{width: vw(w,316);}
+.ip .ip-area .cb04 .cert-item .cert:nth-child(2n){margin-left: vw(w,40);}
+.ip .ip-area .cb05 .common-table-wrap{margin-top: vw(w,120);}
+.ip .ip-area .cb05 .common-table-wrap tbody tr>th:first-child{width: vw(w,400);border-right:none}
+.ip .ip-area .cb05 .common-table-wrap tbody td + td{width: vw(w,980);}
+.ip .ip-area .cb05 .common-table-wrap tbody tr th,
+.ip .ip-area .cb05 .common-table-wrap tbody tr td{padding-top: vw(w,36);padding-bottom: vw(w,36);line-height:1.68 ;}
+// .ip .ip-area .cb05 .common-grid .desc{margin-top: 0;}
+.ip .ip-area .cb05 .edu-item{margin-top: vw(w,120);}
+.ip .ip-area .cb05 .edu-item .edu-list{display: flex;flex-wrap: wrap;justify-content: space-between;margin-top: vw(w,40);}
+.ip .ip-area .cb05 .edu-item .edu-list li{width: calc((100% - vw(w,29))/2);}
+.ip .ip-area .cb05 .edu-item .edu-list li:nth-child(n+3){margin-top: vw(w,40);}
+
+.ip .ip-area .cb05 .edu-item .m_h8{color: #151515;}
+
+
+
+
+@include tablet{
+    .ip .ip-area{padding-top: 100px;}
+    .ip .ip-area .cb01 .infogram-wrap{margin-top: 63px;}
+    .ip .ip-area .cb01 .infogram-wrap .infogram{margin-top: 18px;}
+    .ip .ip-area .cb01 .common-table-wrap{margin-top: 38px;}
+    .ip .ip-area .cb01 .common-table-wrap tbody tr>th:first-child{width: 252px; padding-top: 22px; padding-bottom: 22px;}
+    .ip .ip-area .cb01 .common-table-wrap tbody tr td{width: 403px;}
+    .ip .ip-area .content-box + .content-box{margin-top: 126px;}
+
+    .ip .ip-area .cb02 .common-grid .desc > div{margin-top: 63px;}
+    .ip .ip-area .cb02 .common-table-wrap:first-child{margin-bottom: 63px;}
+    .ip .ip-area .cb02 .common-table-wrap tr th,
+    .ip .ip-area .cb02 .common-table-wrap tr td{
+        width: 172px; padding-top: 22px; padding-bottom: 22px; 
+    }
+    .ip .ip-area .cb02 .common-table-wrap .table-tit{margin-bottom: 18px;}
+    .ip .ip-area .cb02 .list-item .img-wrap{width: 200px;}
+    .ip .ip-area .cb02 .list-item .list{margin-top: 26px;}
+    .ip .ip-area .cb02 .list-item .list + .list{margin-top: 50px;}
+    .ip .ip-area .cb02 .list-item .list ol li{padding-left: 16px;}
+    .ip .ip-area .cb02 .list-item .list strong{margin-bottom: 18px;}
+    .ip .ip-area .cb02 .news-item strong{margin-top: 12px;}
+
+    .ip .ip-area .cb03 .common-table-wrap{margin-top: 76px;}
+    .ip .ip-area .cb03 .common-table-wrap tbody tr>th:first-child{width: 236px}
+    .ip .ip-area .cb03 .common-table-wrap tbody tr th,
+    .ip .ip-area .cb03 .common-table-wrap tbody tr td{padding: 20px;} 
+
+    .ip .ip-area .cb04 .cert-item{margin-top: 76px; gap: 24px;}
+    .ip .ip-area .cb04 .cert-item .cert:nth-child(2n){margin-left: 0px}
+    .ip .ip-area .cb04 .cert-item .cert{max-width: 200px; width: 50%; flex: 1;}
+
+    .ip .ip-area .cb05 .common-table-wrap{margin-top: 76px;}
+    .ip .ip-area .cb05 .common-table-wrap tbody tr th,
+    .ip .ip-area .cb05 .common-table-wrap tbody tr td{padding-top: 22px; padding-bottom: 22px;}
+    .ip .ip-area .cb05 .common-table-wrap tbody tr>th:first-child{width: 252px;}
+    .ip .ip-area .cb05 .common-table-wrap tbody td + td{width: 618px;}
+
+    .ip .ip-area .cb05 .edu-item{margin-top: 76px;}
+    .ip .ip-area .cb05 .edu-item .edu-list{margin-top: 26px;}
+    .ip .ip-area .cb05 .edu-item .edu-list li{width: calc((100% - 18px)/2);}
+}
+@include mobile {
+    .ip .sec_inner{padding: 0;}
+    .ip .content-box>.common-grid,
+    .ip .content-box>.common-table-wrap{padding: 0 20px;box-sizing: border-box;}
+    .ip .common-table{width: max-content;}
+    .ip .ip-area{padding-top: 60px;}
+    .ip .common-grid .title-wrap > .title{font-size: 24px !important;}
+    .ip .ip-area .cb01 .infogram-wrap .m_h8{padding: 0 20px;box-sizing: border-box;}
+    .ip .ip-area .cb01 .infogram-wrap{margin-top: 60px;}
+    .ip .ip-area .cb01 .infogram-wrap .infogram{margin-top: 20px;}
+    .ip .ip-area .cb01 .infogram-wrap .infogram .graph-img{background: url("#{$image-path}gov/ip/ip_infograph-mo.png") no-repeat center center / contain; min-width: 1126px;}
+    .ip .ip-area .cb01 .common-table-wrap{margin-top: 60px;}
+    .ip .ip-area .cb01 .common-table-wrap tbody tr > th:first-child{width: 240px; padding: 20px;}
+    .ip .ip-area .cb01 .common-table-wrap tbody tr td{width: 280px;}
+    .ip .ip-area .cb01 .infogram-wrap .infogram picture{width: 1127px;}
+    .ip .ip-area .content-box + .content-box{margin-top: 80px;}
+
+    .ip .ip-area .cb02 .common-table-wrap:first-child{margin-bottom: 60px;}
+    .ip .ip-area .cb02 .common-table-wrap .table-tit{margin-bottom: 20px;}
+    .ip .ip-area .cb02 .common-grid .desc > div{margin-top: 60px;}
+    .ip .ip-area .cb02 .common-table-wrap .common-table{width: 100%;}
+    .ip .ip-area .cb02 .common-table-wrap tr th,
+    .ip .ip-area .cb02 .common-table-wrap tr td{width: calc(100% / 3); padding: 20px; text-align: center;}
+    .ip .ip-area .cb02 .list-item .img-wrap{width: 160px;}
+    .ip .ip-area .cb02 .list-item .list,
+    .ip .ip-area .cb02 .list-item .list + .list{margin-top: 40px;}
+    .ip .ip-area .cb02 .list-item .list strong{margin-bottom: 20px;}
+
+    .ip .ip-area .cb03 .common-table-wrap{margin-top: 60px;}
+    .ip .ip-area .cb03 .common-table-wrap tbody tr > th:first-child{width: 220px;}
+
+    .ip .ip-area .cb04 .cert-item{margin-top: 60px; gap: 0;}
+    .ip .ip-area .cb04 .cert-item .cert:nth-child(2n){margin-left: 15px;}
+    .ip .ip-area .cb04 .cert-item .cert{max-width: 160px; flex: 1;}
+
+    .ip .ip-area .cb05 .common-table-wrap{margin-top: 60px;}
+    .ip .ip-area .cb05 .common-table-wrap tbody tr > th:first-child{width: 160px;}
+    .ip .ip-area .cb05 .common-table-wrap tbody tr td{width: 160px;}
+    .ip .ip-area .cb05 .common-table-wrap tbody td + td{width: 560px;}
+
+    .ip .ip-area .cb05 .edu-item{margin-top: 60px;}
+    .ip .ip-area .cb05 .edu-item .edu-list{margin-top: 20px;}
+    .ip .ip-area .cb05 .edu-item .edu-list li{width: calc((100% - 14px) / 2);}
+    .ip .ip-area .cb05 .edu-item .edu-list li:nth-child(n+3){margin-top: 16px;}
+    .ip .minWidthnone{min-width: 0;}
+    
+
+    .ip .ip-area .cb01 .infogram-wrap .infogram{overflow-x: hidden;}
+    .ip .ip-area .cb02 .list-item .list ol li{font-weight: 400;}
+
+    .ip .ip-area .cb03 .common-table-wrap tbody tr td{width: 460px;} 
+
+}
+
+html[lang=en] .ip .ip-area .cb02 .common-table-wrap thead tr > th{padding:vw(w,36) vw(w,32);}
+html[lang=en] .ip .ip-area .cb02 .list-item .list{width: vw(w, 672); padding-right: vw(w, 20);}
+@include tablet{
+    html[lang=en] .ip .ip-area .cb02 .common-table-wrap thead tr > th{padding:22px 20px;}
+    html[lang=en] .ip .ip-area .cb02 .list-item .list{width: 430px; padding-right: 12px;}
+}
+@include mobile{
+    html[lang=en] .ip .ip-area .cb02 .common-table-wrap thead tr > th{padding:20px;}
+    html[lang=en] .ip .ip-area .cb02 .common-table-wrap:nth-child(1) thead tr > th:nth-child(2){min-width: 240px;}
+    html[lang=en] .ip .ip-area .cb02 .common-table-wrap:nth-child(1) thead tr > th:not(:nth-child(2)){min-width: 180px;}
+
+    html[lang=en] .ip .ip-area .cb02 .common-table-wrap:nth-child(2) thead tr > th:nth-child(1){min-width: 160px;}
+    html[lang=en] .ip .ip-area .cb02 .common-table-wrap:nth-child(2) thead tr > th:nth-child(n+2){min-width: 100px;}
+
+    html[lang=en] .ip .ip-area .cb03 .common-table-wrap thead tr > th:nth-child(n+2){width:460px;}
+    html[lang=en] .ip .ip-area .cb01 .common-table-wrap tr > th, html[lang=en] .ip .ip-area .cb01 .common-table-wrap tr > td{padding-right: 25px;}
+
+    html[lang=en] .ip .ip-area .cb02 .list-item .list{width: 100%; padding-right: 0;}
+}

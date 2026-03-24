@@ -1,0 +1,325 @@
+<section class="button-guide" id="buttonGuide">
+  <style>
+    .button-guide {position: fixed; width: 100%; max-width: 720px; bottom: 60px; left: 110px; visibility: collapse; z-index: 3999;pointer-events: none;}
+    .button-guide .container{display: flex; align-items: flex-start; justify-content: flex-start; flex-wrap: wrap; border: 1px solid silver; background-color: #fff; padding: 24px; box-sizing: border-box; font-size: 12px; line-height: 1.4em; border-radius: 8px;visibility: collapse;display: none;}
+    .button-guide .container div{display: flex; flex-wrap: wrap; flex-direction: column; width: 25%; margin-bottom: 28px;}
+    .button-guide .container span:not(.txt,.icon){width: 100%; font-size: 15px; margin-bottom: 10px; display: block; font-weight: bold;}
+    .button-guide .btn_area {position:absolute ;bottom: 240px;left:-100px;z-index: 3999;}
+    .button-guide .btn_area button{border: 1px solid #ccc;border-radius: 10px;background-color: #ccc;color: #000;padding: 10px;cursor: pointer;pointer-events:all;}
+    .button-guide .btn_area button:hover{background-color: #fff;}
+    .fave .button-guide{visibility: visible}
+    .fave.dev_button .button-guide .container{visibility: visible;display: block;}
+  </style>
+   <div class="btn_area">
+    <button style="display: block; margin-bottom: 5px;"><a href="/_common.html" target="_blank">common</a></button>
+    <button class="toggleBtnGuid">toggle button</button>
+  </div>
+  <div class="container" style="pointer-events: all;">
+    <h4 style="font-size: 15px;width: 100%;text-align:center;margin-bottom: 15px;line-height: 1.4em;">버튼가이드<br>button/a 태그 무방. 디자인에 맞는 속성 추가<br><span style="color: red;"><a href="/fave/" style="text-decoration: underline;">버튼/팝업 가이드 보러가기</a></span></h4>
+    <h5 style="font-size: 13px;width: 100%;text-align:left;margin-bottom: 32px;line-height: 1.4em;">
+      1. 버튼 타입<br>
+      &lt;button class="m_btn" data-btntype="button" hover="ripple" size="l" icon="left" line="squire" color="white"&gt;<br>
+      &nbsp;&nbsp;&lt;span class="icon"&gt;&lt;/span&gt;<br>
+      &nbsp;&nbsp;&lt;span class="txt"&gt;버튼&lt;/span&gt;<br>
+      &lt;/button&gt;<br>
+      <button class="m_btn ex_btn1" data-btntype="button" hover="ripple" size="l" icon="left" line="squire" color="white">
+        <span class="icon"></span>
+        <span class="txt">버튼</span>
+      </button>
+      <a href="#" class="m_btn ex_btn4" data-btntype="button" hover="ripple" size="m" icon="right" line="round" color="black">
+        <span class="txt">버튼</span>
+        <span class="icon"></span>
+      </a>
+      <br><br>
+      2. 텍스트 타입<br>
+      &lt;a class="m_btn ex_btn5" data-btntype="text" icon="left" hover="arrow" bg="w"&gt;<br>
+      &nbsp;&nbsp;&lt;span class="icon"&gt;&lt;/span&gt;<br>
+      &nbsp;&nbsp;&lt;span class="txt" data-txt="버튼"&gt;버튼&lt;/span&gt;<br>
+      &lt;/a&gt;
+      <br><br>
+      <a class="m_btn ex_btn5" data-btntype="text" icon="left" hover="arrow" bg="w">
+        <span class="icon"></span>
+        <span class="txt" data-txt="버튼">버튼</span>
+      </a>
+      <a class="m_btn ex_btn7" data-btntype="text" icon="left" hover="underline">
+        <span class="icon"></span>
+        <span class="txt">버튼</span>
+      </a><br><br>
+      3. 아이콘 타입<br>
+      &lt;a class="m_btn" data-btntype="icon" hover="ripple"&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="txt blind"&gt;버튼&lt;/span&gt;<br>
+      &lt;/a&gt;<br>
+      &lt;button class="m_btn" data-btntype="icon" hover="ripple"&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="txt blind"&gt;버튼&lt;/span&gt;<br>
+      &lt;/button&gt;<br>
+      <a class="m_btn" data-btntype="icon" hover="ripple" class="nse">
+        <span class="txt blind">버튼</span>
+      </a>
+    </h5>
+  
+    
+  </div>
+</section>
+
+<section class="debugger" id="debugger">
+  <style>
+    .debugger {position: fixed;width: 100%;height: 100vh;top: 0;left: 0;visibility: collapse;pointer-events: none;z-index: 3999;}
+    .debugger .btn_area {position:absolute ;bottom: 134px;left:10px;z-index: 3999;}
+    .debugger .btn_area button{border: 1px solid #ccc;border-radius: 10px;background-color: #ccc;color: #000;padding: 10px;cursor: pointer;pointer-events:all;display: block;margin-top: 5px;}
+    .debugger .btn_area button:hover{background-color: #fff;}
+    .debugger .container { position: relative;margin: 0 auto;padding-left: min(6.25vw, 120px);padding-right: min(6.25vw, 120px);max-width: 1680px;visibility: collapse;}
+
+    .debugger .content {background-color: rgba(255,192,203,.15);height: 100vh}
+    .debugger .row {box-sizing: border-box;display: flex;flex: 0 1 auto;flex-direction: row;flex-wrap: wrap;margin-left: calc(100% / 70 * -1);margin-right: calc(100% / 70 * -1);}
+
+
+    .col-1{box-sizing: border-box;flex: 0 0 auto;padding-left: calc(100% / 70 * 1);padding-right: calc(100% / 70 * 1);}
+    .col-1 {
+      flex-basis: calc(100% / 12 * 1);
+      max-width: calc(100% / 12 * 1);
+    }
+    .fave.grid8 .debugger .container { max-width: 1104px;}
+    .fave.grid8 .debugger .row{margin-left:  calc(100% / 46 * -1);margin-right:  calc(100% / 46 * -1);}
+    .fave.grid8 .col-1 {
+      padding-left:  calc(100% / 46 * 1);
+      padding-right:  calc(100% / 46 * 1);
+      flex-basis: calc(100% / 8 * 1);
+      max-width: calc(100% / 8 * 1);
+    }
+    
+    @media all and (max-width: 1200px){
+      /* .debugger .container {padding-left: 50px;padding-right: 50px;}
+      .fave.grid8 .debugger .container { padding: 0 150px;max-width: 1200px;} */
+      
+    }
+    @media all and (max-width: 1023px) {
+      .debugger .container {padding-left: 50px;padding-right: 50px;}
+    }
+    @media all and (max-width: 768px) {
+      .debugger .container {padding-left: 20px;padding-right: 20px;}
+      .col-1{display: none;}
+      .col-1:nth-child(1),.col-1:nth-child(2),
+      .col-1:nth-child(3),.col-1:nth-child(4){display: block;max-width: calc(100% / 4 * 1);flex-basis:calc(100% / 4 * 1);padding-left: 10px;padding-right: 10px;}
+      .debugger .row{margin-left: -10px;margin-right: -10px;}
+      
+    }
+    
+    .fave .debugger{visibility: visible}
+    .fave.dev .debugger .container{visibility: visible}
+
+  </style>
+  <div class="btn_area">
+    <button onclick="document.body.classList.toggle('dev')">toggle grid</button>
+    <button onclick="document.body.classList.remove('grid8')">show grid 12/mobile 4</button>
+    <button onclick="document.body.classList.add('grid8')">show grid 8</button>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-1"><div class="content"></div></div>
+      <div class="col-1"><div class="content"></div></div>
+      <div class="col-1"><div class="content"></div></div>
+      <div class="col-1"><div class="content"></div></div>
+      <div class="col-1"><div class="content"></div></div>
+      <div class="col-1"><div class="content"></div></div>
+      <div class="col-1"><div class="content"></div></div>
+      <div class="col-1"><div class="content"></div></div>
+      <div class="col-1"><div class="content"></div></div>
+      <div class="col-1"><div class="content"></div></div>
+      <div class="col-1"><div class="content"></div></div>
+      <div class="col-1"><div class="content"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="font-guide" id="fontGuide">
+  <style>
+    .font-guide {position: fixed; width: 90%; max-width: 500px; bottom: 20px; left: 110px; visibility: collapse; pointer-events: none; z-index: 3999;}
+    .font-guide .container{display: flex; align-items: flex-start; justify-content: flex-start; flex-wrap: wrap; border: 1px solid silver; background-color: #fff; padding: 24px; box-sizing: border-box; font-size: 12px; line-height: 1.4em; border-radius: 8px;visibility: collapse;display: none;}
+    .font-guide .container div{display: flex; flex-wrap: wrap; flex-direction: column; width: 33.3%; margin-bottom: 28px;}
+    .font-guide .container span{width: 100%; font-size: 15px; margin-bottom: 10px; display: block; font-weight: bold;cursor: pointer;pointer-events: all;}
+    .font-guide .btn_area {position:absolute ;bottom: 240px;left:-100px;z-index: 3999;}
+    .font-guide .btn_area button{border: 1px solid #ccc;border-radius: 10px;background-color: #ccc;color: #000;padding: 10px;cursor: pointer;pointer-events:all;}
+    .font-guide .btn_area button:hover{background-color: #fff;}
+    .fave .font-guide{visibility: visible}
+    .fave.dev_font .font-guide .container{visibility: visible;display: flex;}
+  </style>
+   <div class="btn_area">
+    <button onclick="document.body.classList.toggle('dev_font')">toggle font</button>
+  </div>
+  <div class="container">
+    <h4 style="font-size: 15px;width: 100%;text-align:center;margin-bottom: 32px;line-height: 1.4em;">폰트 가이드<br>기본 20px 168% #151515 <br>해당 클래스 클릭 시 클래스 복사<br><span style="color: red;"><a href="/fave/" style="text-decoration: underline;">버튼/팝업 가이드 보러가기</a></span></h4>
+    <div>
+      <span>.m_hanwhaL</span>
+      family : hanwha<br>
+      weight : Light(200)
+    </div>
+    <div>
+      <span>.m_hanwhaR</span>
+      family : hanwha<br>
+      weight : Regular(400)
+    </div>
+    <div>
+      <span>.m_hanwhaB</span>
+      family : hanwha<br>
+      weight : Bold(700)
+    </div>
+    <div>
+      <span>.m_h1</span>
+      메인용 제목 <br>
+      100px / 134%      
+    </div>
+    <div>
+      <span>.m_h2</span>
+      H2, 페이지 제목 <br>
+      84px / 128%      
+    </div>
+    <div>
+      <span>.m_h3</span>
+      H3, 서브 페이지 타이틀 <br>
+      72px / 132%      
+    </div>
+    <div>
+      <span>.m_h4</span>
+      필요에 따라 H4 <br>
+      60px / 132%
+    </div>
+    <div>
+      <span>.m_h5</span>
+      중간 타이틀<br>
+      52px / 132%      
+    </div>
+    <div>
+      <span>.m_h6</span>
+      보고서 타이틀<br>
+      36px / 152%      
+    </div>
+    <div>
+      <span>.m_h7</span>
+      탭 버튼<br>
+      32px / 160%      
+    </div>
+    <div>
+      <span>.m_h8</span>
+      연혁, 소개/주식 테이블 타이틀<br>
+      28px / 168%      
+    </div>
+    <div>
+      <span>.m_h9</span>
+      게시판 리스트 타이틀<br>
+      24px / 160%      
+    </div>
+    <div>
+      <span>.m_etc</span>
+      기타 필요 시 / body2<br>
+      18px / 140%      
+    </div>
+    <div>
+      <span>.m_desc</span>
+      data, label, description<br>
+      16px / 150%      
+    </div>
+    <div>
+      <span>.m_caption</span>
+      캡션<br>
+      14px / 140%      
+    </div>
+    <div>
+      <span>.m_input_label</span>
+      모바일용<br>
+      (모바일 구간에만 있는 클래스)<br>
+      18px / 156%      
+    </div>
+    <div>
+      <span>.m_point</span>
+      Primary Colors<br>
+      #ED4726
+    </div>
+    <div style="pointer-events: none;cursor: none;">
+      회색 리스트<br>
+      $gray-2 : #4b4b4b<br>
+      $gray-3 : #999999<br>
+      $gray-4 : #b8b8b8<br>
+      $gray-5 : #e5e5e5<br>
+      $gray-6 : #F5f5f5
+    </div>
+    <div style="pointer-events: none;cursor: none;">
+      별도 폰트 호출<br>
+      $font-h: 'Hanwha'<br>
+      $font-hg: 'Hanwha Gothic'<br>
+      $key-color: #ED4726<br>
+      $default-color: #151515
+    </div>
+    <div style="pointer-events: none;cursor: none;">
+      폰트 굵기 정의<br>
+      'Hanwha Gothic'<br>
+      : T(100), EL(200), L(300)<br>
+      : R(400), B(700)
+     
+    </div>
+  </div>
+</section>
+
+
+<script>
+  const dev  = window.location.hostname;
+  const pp = document.querySelector('#buttonGuide')
+
+  if(dev == 'localhost') {
+    document.body.classList.add('fave');
+    faveGuide();
+  }else {
+    document.body.classList.remove('fave');
+    document.querySelector('#debugger').remove();
+    document.querySelector('#fontGuide').remove();
+    document.querySelector('#buttonGuide').remove();
+  }
+
+  function faveGuide(){
+    const fontGuide = document.querySelectorAll('#fontGuide .container div');
+    const textArea = document.createElement('textarea');   
+    fontGuide.forEach((_i) => {
+      _i.addEventListener('click', () => {
+        textArea.textContent = _i.querySelector('span').innerText.split('.')[1]
+        document.body.append(textArea); 
+        textArea.select();
+        document.execCommand('copy');
+        textArea.remove(); 
+      })
+    });
+    const toggleBtnGuid = document.querySelector(".toggleBtnGuid")
+    toggleBtnGuid.addEventListener('click', function(){
+      if(!document.body.classList.contains('dev_button')){
+        document.body.classList.add('dev_button');
+        hoverRippleDev()
+      }else{
+        const btn = document.querySelectorAll("[hover='ripple']")
+
+        btn.forEach(_el => {
+          _el.addEventListener('mouseenter', (e) => {
+            const x = e.pageX - _el.offsetLeft
+            const y = e.pageY - _el.offsetTop
+            _el.style.setProperty('--x', x + 'px')
+            _el.style.setProperty('--y', y + 'px')
+          })
+
+        })
+        document.body.classList.remove('dev_button');
+      }
+    })
+
+    function hoverRippleDev() {
+      const btnP = document.querySelector("#buttonGuide")
+      const btn = btnP.querySelectorAll("[hover='ripple']")
+
+      btn.forEach(_el => {
+        _el.addEventListener('mouseenter', (e) => {
+          const x = e.pageX - _el.offsetLeft - btnP.offsetLeft - window.scrollX
+          const y = e.pageY - _el.offsetTop  - btnP.offsetTop - window.scrollY
+          _el.style.setProperty('--x', x + 'px')
+          _el.style.setProperty('--y', y + 'px')
+        })
+      })
+    }   
+  }
+  
+</script>

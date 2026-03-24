@@ -1,0 +1,277 @@
+#BOD{
+  .common-tab-looking-a-wrap{
+    padding-top: vw(w, 160);
+  }
+  .ct01{
+    margin-top: vw(w, 80);
+    .common-grid{
+      margin-bottom: vw(w, 120);
+    }
+    .table-wrap{
+      margin-top: vw(w, 120);
+      figcaption{
+        margin-top: vw(w, 21);
+        font-size: vw(w, 16);
+        line-height: 1.5;
+        color: #999;
+      }
+      .common-table{
+        thead{
+          th{padding: vw(w, 16) vw(w, 20);}
+        }
+        tbody{
+          tr{
+            td{
+              padding: vw(w, 36) vw(w, 6);
+              &:nth-child(1){width: vw(w, 120);}
+              &:nth-child(2){width: vw(w, 160);}
+              &:nth-child(3){width: vw(w, 80);}
+              &:nth-child(4){width: vw(w, 120);}
+              &:nth-child(5){width: vw(w, 264);}
+              &:nth-child(6){width: vw(w, 160);}
+              &:nth-child(7){width: vw(w, 184);}
+              &:nth-child(8){width: vw(w, 120);}
+              &:nth-child(9){padding-left: vw(w, 40);}
+            }
+          }
+        }
+      }
+    }
+  }
+  .ct02{
+    margin-top: vw(w, 200);
+    .title{font-weight: 400; display: block;}
+    .table-wrap{
+      margin-top: vw(w, 28);
+      thead{
+        tr{
+          font-weight: 400;
+          th{padding: vw(w, 16) 0;}
+          &:first-child{
+            th:first-child{width: vw(w, 300);}
+            th:nth-child(2){border-right: 1px solid #E5E5E5;}
+            th{padding: vw(w, 33) 0;}
+          }
+          &:nth-child(2){
+            border-top: 1px solid #E5E5E5;
+            th{width: vw(w, 153);}
+          }
+        }
+      }
+      tbody{
+        th,td{padding-left: vw(w, 32); padding-right: vw(w, 32);}
+      }
+    }
+    & + .common-grid{
+      margin-bottom: 0;
+      .title-wrap > .desc{
+        margin-top: vw(w, 200);
+      }
+    }
+  }
+
+  @include tablet {
+    .common-tab-looking-a-wrap{ 
+      padding-top: 100px;
+    }
+    .ct01{ 
+      margin-top: 50px;
+      .common-grid{
+        margin-bottom: 76px;
+      }
+      .table-wrap{
+        margin-top: 76px;
+        figcaption{
+          margin-top: 13px;
+          font-size: 10px;
+        }
+        .common-table{
+          thead{
+            th{padding: 10px 12px;}
+          }
+          tbody{
+            tr{
+              td{
+                padding: 22px 4px;
+                &:nth-child(1){width: 76px;}
+                &:nth-child(2){width: 100px;}
+                &:nth-child(3){width: 50px;}
+                &:nth-child(4){width: 76px;}
+                &:nth-child(5){width: 169px;}
+                &:nth-child(6){width: 100px;}
+                &:nth-child(7){width: 118px;}
+                &:nth-child(8){width: 76px;}
+                &:nth-child(9){padding-left: 26px;}
+              }
+            }
+          }
+        }
+      }
+    }
+    .ct02{
+      margin-top: 126px;
+      .table-wrap{
+        margin-top: 18px;
+        thead{
+          tr{
+            th{padding: 10px 0;}
+            &:first-child{
+              th:first-child{width: 189px;}
+              th{padding: 20px 0;}
+            }
+            &:nth-child(2){
+              th{width: 96px;}
+            }
+          }
+        }
+        tbody{
+          th,td{padding-left: 10px; padding-right: 10px;}
+        }
+      }
+      & + .common-grid{
+        margin-top: 0;
+        .title-wrap > .desc{
+          margin-top: 126px;
+        }
+      }
+    }
+  }
+  @include mobile {
+    .common-tab-looking-a-wrap{ 
+      padding-top: 60px !important;
+    }
+    .ct01{ 
+      margin-top: 40px;
+      .common-grid{
+        margin-bottom: 60px;
+        .title{ font-size: 24px !important; }
+      }
+      .table-wrap{
+        margin-top: 60px;
+        figure{ 
+          width: fit-content;
+        }
+        figcaption{
+          margin-top: 16px;
+          font-size: 12px;
+          line-height: 1.68;
+        }
+        .common-table{
+          width: max-content;
+          thead{
+            th{padding: 20px;}
+          }
+          tbody{
+            tr{
+              td{
+                padding: 20px;
+                &:nth-child(1){width: 110px;}
+                &:nth-child(2){width: 92px;}
+                &:nth-child(3){width: 80px;}
+                &:nth-child(4){width: 80px;}
+                &:nth-child(5){width: 218px;}
+                &:nth-child(6){width: 116px;}
+                &:nth-child(7){width: 100px;}
+                &:nth-child(8){width: 96px;}
+                &:nth-child(9){width: 234px; padding-left: 20px;}
+              }
+            }
+          }
+        }
+      }
+    }
+    .ct02{
+      margin-top: 60px;
+      .table-wrap{
+        margin-top: 20px;
+        .common-table{
+          // width: max-content;
+          width: 1170px;
+        }
+        thead{
+          tr{
+            th{padding: 20px 0;}
+            &:first-child{
+              th:first-child{width: 270px; padding: 20px; text-align: left;} 
+            }
+            &:nth-child(2){
+              th{width: 100px;}
+            }
+          }
+        }
+        tbody{
+          th,td{padding-left: 20px; padding-right: 20px;}
+        }
+      }
+      & + .common-grid{
+        .title-wrap > .desc{
+          margin-top: 60px;
+        }
+      }
+    }
+  }
+}
+
+#BOD .refer{margin-top: vw(w, 20);}
+#BOD .refer .m_desc{font-size: vw(w, 16); color: #999; display: block;}
+
+@include tablet{
+  #BOD .refer{margin-top: 12px;}
+}
+
+@include mobile{
+  #BOD .refer{margin-top: 16px;}
+  #BOD .refer .m_desc{font-size: 14px !important; padding: 0 20px;}
+}
+
+html[lang=en] #BOD .ct01 .table-wrap tbody th, 
+html[lang=en] #BOD .ct01 .table-wrap tbody td{word-break: break-all;}
+html[lang=en] #BOD .ct01 .table-wrap .common-table thead th{padding-top: vw(w,36);padding-bottom: vw(w,36);}
+html[lang=en] #BOD .ct01 .table-wrap .common-table thead th:nth-child(3){padding-left:vw(w,6);padding-right: vw(w,6);}
+html[lang=en] #BOD .table-wrap .common-table tbody tr td{word-break: break-word;}
+html[lang=en] #BOD .ct01 .table-wrap .common-table tbody tr td:nth-child(1){padding: vw(w,36);width:vw(w,150);}
+html[lang=en] #BOD .ct01 .table-wrap .common-table tbody tr td:nth-child(2){padding: vw(w,36);}
+html[lang=en] #BOD .ct01 .table-wrap .common-table tbody tr td:nth-child(4){width:vw(w,90);}
+html[lang=en] #BOD .ct01 .table-wrap .common-table tbody tr td:nth-child(8){width: vw(w,170)}
+html[lang=en] #BOD .ct01 .table-wrap .common-table tbody tr:not(:nth-child(1)) td:nth-child(5){padding:vw(w,36);}
+
+html[lang=en] #BOD .ct02 .table-wrap thead tr:nth-child(2) th{padding-left: vw(w,32);padding-right: vw(w,32);}
+html[lang=en] #BOD .ct02 .table-wrap tbody th, 
+html[lang=en] #BOD .ct02 .table-wrap tbody td{word-break: break-all;}
+html[lang=en] #BOD .ct02 .table-wrap tbody tr td.left:nth-child(1){width: vw(w,132)}
+html[lang=en] #BOD .ct02 .table-wrap tbody tr td.left:nth-child(2){width: vw(w,168)}
+
+@include tablet{
+  html[lang=en] #BOD .ct01 .table-wrap .common-table thead th{padding-top: 22px;padding-bottom:22px;}
+  html[lang=en] #BOD .ct01 .table-wrap .common-table thead th:nth-child(3){padding-left:4px;padding-right:4px;}
+  html[lang=en] #BOD .ct01 .table-wrap .common-table tbody tr td:nth-child(1){padding:12px;width:calc(100% / 12 * 1);}
+  html[lang=en] #BOD .ct01 .table-wrap .common-table tbody tr td:nth-child(2){padding:12px;width:calc(100% / 12 * 1);}
+  html[lang=en] #BOD .ct01 .table-wrap .common-table tbody tr td:nth-child(4){width:calc((100% / 12 * 1) - (100% / 70 * 2));}
+  html[lang=en] #BOD .ct01 .table-wrap .common-table tbody tr td:nth-child(5){width:calc((100% / 12 * 2) - (100% / 70 * 2));}
+  html[lang=en] #BOD .ct01 .table-wrap .common-table tbody tr td:nth-child(8){width:calc(100% / 12 * 1)}
+  html[lang=en] #BOD .ct01 .table-wrap .common-table tbody tr td:nth-child(9){width:calc(100% / 12 * 3)}
+  html[lang=en] #BOD .ct01 .table-wrap .common-table tbody tr:not(:nth-child(1)) td:nth-child(5){padding:12px;}
+  
+  html[lang=en] #BOD .ct02 .table-wrap thead tr:nth-child(2) th{padding-left:0;padding-right:0;}
+  html[lang=en] #BOD .ct02 .table-wrap tbody tr td.left:nth-child(1){width:calc(100% / 12 * 1);}
+  html[lang=en] #BOD .ct02 .table-wrap tbody tr td.left:nth-child(2){width:calc((100% / 12 * 1) + (100% / 70 * 1));}
+}
+
+@include mobile{
+  html[lang=en] #BOD .ct01 .table-wrap .common-table thead th{padding-top:20px;padding-bottom:20px;}
+  html[lang=en] #BOD .ct01 .table-wrap .common-table thead th:nth-child(3){padding-left:20px;padding-right:20px;}
+  html[lang=en] #BOD .ct01 .table-wrap .common-table tbody tr td:nth-child(1){padding:20px;width:110px;}
+  html[lang=en] #BOD .ct01 .table-wrap .common-table tbody tr td:nth-child(2){padding:20px;width:130px;}
+  html[lang=en] #BOD .ct01 .table-wrap .common-table tbody tr td:nth-child(3){width:100px;}
+  html[lang=en] #BOD .ct01 .table-wrap .common-table tbody tr td:nth-child(4){width:80px;}
+  html[lang=en] #BOD .ct01 .table-wrap .common-table tbody tr td:nth-child(5){width:218px;}
+  html[lang=en] #BOD .ct01 .table-wrap .common-table tbody tr td:nth-child(6){width:140px;}
+  html[lang=en] #BOD .ct01 .table-wrap .common-table tbody tr td:nth-child(7){width:140px;}
+  html[lang=en] #BOD .ct01 .table-wrap .common-table tbody tr td:nth-child(8){width:120px}
+  html[lang=en] #BOD .ct01 .table-wrap .common-table tbody tr td:nth-child(9){width:234px}
+  html[lang=en] #BOD .ct01 .table-wrap .common-table tbody tr:not(:nth-child(1)) td:nth-child(5){padding:20px;}
+
+  html[lang=en] #BOD .ct02 .table-wrap thead tr:nth-child(2) th{padding-left:20px;padding-right:20px}
+  html[lang=en] #BOD .ct02 .table-wrap tbody tr td.left:nth-child(1){width:130px}
+  html[lang=en] #BOD .ct02 .table-wrap tbody tr td.left:nth-child(2){width:140px}
+}

@@ -1,0 +1,94 @@
+//hse-ov
+.ov .hsemge-ov-area .bg-con{margin: vw(w,200) 0;}
+.ov .hsemge-ov-area .common-grid .desc .intro{margin-bottom: vw(w,98);}
+.ov .hsemge-ov-area .common-grid .key-item .point-box:nth-child(n+2){margin-top: vw(w,28);}
+.ov .hsemge-ov-area .common-grid .key-item .point-box .point{color:$key-color;display: inline-block;margin-left: vw(w,8);}
+.ov .hsemge-ov-area .common-grid .target-item .content-box{margin-top: vw(w,200);}
+.ov .hsemge-ov-area .common-grid .target-item .img-wrap{position: relative;width: vw(w,620);margin-top: vw(w,80);}
+.ov .hsemge-ov-area .common-grid .target-item .img-wrap img{width: 100%;height: 100%;object-fit: contain;display: block;}
+.ov .hsemge-ov-area .common-grid .target-item .target-wrap{margin-top: vw(w,60);}
+.ov .hsemge-ov-area .common-grid .target-item .target-wrap span{color:#818181}
+.ov .hsemge-ov-area .common-grid .target-item .target-wrap ul{margin-top: vw(w,20);}
+.ov .hsemge-ov-area .common-grid .target-item .target-wrap ul li:nth-child(n+2){margin-top: vw(w,12);}
+html[lang=en] .ov .hsemge-ov-area .common-grid .m_hanwhaL{color:$gray-2;}
+html[lang=en] .ov .hsemge-ov-area .common-grid .key-item .point-box .point{margin-left: 0;margin-right: vw(w,8);}
+@include tablet-only{
+  .ov .hsemge-ov-area .bg-con{margin: 126px 0;}
+  .ov .hsemge-ov-area .common-grid .desc .intro{margin-bottom: 62px;}
+  .ov .hsemge-ov-area .common-grid .key-item .point-box:nth-child(n+2){margin-top: 18px;}
+  .ov .hsemge-ov-area .common-grid .key-item .point-box .point{margin-left: 5px;}
+  .ov .hsemge-ov-area .common-grid .target-item .content-box{margin-top: 126px;}
+  .ov .hsemge-ov-area .common-grid .target-item .img-wrap{width: 390px;margin-top: 50px;}
+  .ov .hsemge-ov-area .common-grid .target-item .target-wrap{margin-top: 38px;}
+  .ov .hsemge-ov-area .common-grid .target-item .target-wrap ul{margin-top: 12px;}
+  .ov .hsemge-ov-area .common-grid .target-item .target-wrap ul li:nth-child(n+2){margin-top: 8px;}
+}
+@include mobile{
+  .ov .hsemge-ov-area .bg-con{margin: 80px 0;}
+  .ov .hsemge-ov-area .common-grid .m_h3{ font-size: 24px !important; }
+  .ov .hsemge-ov-area .common-grid .desc .intro{margin-bottom: 40px;}
+  .ov .hsemge-ov-area .common-grid .key-item{ margin-top: 40px; }
+  .ov .hsemge-ov-area .common-grid .key-item .point-box:nth-child(n+2){margin-top: 12px;}
+  .ov .hsemge-ov-area .common-grid .key-item .point-box .point{margin-left: 5px;}
+  .ov .hsemge-ov-area .common-grid .target-item .content-box{margin-top: 80px;}
+  .ov .hsemge-ov-area .common-grid .target-item .content-box:first-child{margin-top: 60px;}
+  .ov .hsemge-ov-area .common-grid .target-item .img-wrap{width: 100%;margin-top: 40px;}
+  .ov .hsemge-ov-area .common-grid .target-item .target-wrap{margin-top: 32px;}
+  .ov .hsemge-ov-area .common-grid .target-item .target-wrap span{ font-size: 14px !important; }
+  .ov .hsemge-ov-area .common-grid .target-item .target-wrap ul{margin-top: 8px;}
+  .ov .hsemge-ov-area .common-grid .target-item .target-wrap ul li:nth-child(n+2){margin-top: 12px;}
+  html[lang=en] .ov .hsemge-ov-area .common-grid .m_hanwhaL{color:$gray-2;font-weight:400!important}
+  html[lang=en] .ov .hsemge-ov-area .common-grid .key-item .point-box .point{margin-left: 0;margin-right:5px;}
+}
+@media (max-width: 374px) {
+  .ov .hsemge-ov-area .common-grid .title-wrap > .desc ol .item p br{display: none;}
+}
+
+
+//hse-sys
+.sys .sys-area .content-box .common-grid .desc{color: $gray-2;font-weight: 300;}
+.sys .sys-area .content-box .infogram-wrap{position: relative;}
+.sys .sys-area .content-box .infogram-wrap .graph-txt{position: absolute;top: 0;font-size: 0;}
+.sys .sys-area .content-box.sys-gp .infogram-wrap{margin-top: vw(w,80);}
+.sys .sys-area .content-box.sys-gp .graph-img{width: 100%;height: vw(w,1132);/* background: url("#{$image-path}hse/hsemge/hsemge_sys-infogram-01.webp") no-repeat center center / contain; */}
+html[lang=en] .sys .sys-area .content-box.sys-process .common-grid .title-wrap {display:block}
+html[lang=en] .sys .sys-area .content-box.sys-process .common-grid .title-wrap > .desc{width: calc(50% - vw(w,24));margin-left: auto;}
+.sys .sys-area .content-box.sys-process .infogram-wrap{margin-top: vw(w,120);}
+.sys .sys-area .content-box.sys-process .graph-img{width: 100%;height: vw(w,822);/* background: url("#{$image-path}hse/hsemge/hsemge_sys-infogram-02.webp") no-repeat center center / contain; */}
+.sys .sys-area .common-table-wrap{margin-top: vw(w,80);display: flex;justify-content: space-between;}
+.sys .sys-area .common-table-wrap .common-table:first-child{width: vw(w,1208);}
+.sys .sys-area .common-table-wrap .common-table + .common-table{width: vw(w,432); margin-left: vw(w, 40);}
+.sys .sys-area .common-table tbody tr th{border-right:0;font-weight: 400;}
+.sys .sys-area .common-table tbody tr td{padding: vw(w,36) vw(w,32);}
+.sys .sys-area .common-table tbody tr td ul li{margin: 0;line-height: 1.68;}
+
+html[lang=en] .sys .sys-area .common-table-wrap .common-table thead th{width: vw(w, 400);}
+
+@include tablet-only{
+  .sys .sys-area .content-box.sys-gp .infogram-wrap{margin-top: 50px;}
+  html[lang=en] .sys .sys-area .content-box.sys-process .common-grid .title-wrap > .desc{width: calc(50% - 24px);}
+  .sys .sys-area .content-box.sys-process .infogram-wrap{margin-top: 76px;}
+  .sys .sys-area .common-table-wrap{margin-top: 50px;}
+  .sys .sys-area .common-table-wrap .common-table:first-child{width: 761px;}
+  .sys .sys-area .common-table-wrap .common-table + .common-table{width: 272px; margin-left: 26px;}
+  .sys .sys-area .common-table tbody tr td{padding: 22px 20px;}
+}
+@include mobile{
+  .sys .sys-area .content-box .m_h3{ font-size: 24px !important; }
+  .sys .sys-area .content-box.sys-gp .infogram-wrap{margin-top: 60px;}
+  .sys .sys-area .content-box.sys-gp .graph-img{ width: auto; height: auto; background: none; }
+  .sys .sys-area .content-box.sys-gp .graph-img picture{width: 1200px;}
+  html[lang=en] .sys .sys-area .content-box.sys-process .common-grid .title-wrap > .desc{width: 100%;}
+  .sys .sys-area .content-box.sys-process{ margin-top: 84px; }
+  .sys .sys-area .content-box.sys-process .infogram-wrap{margin-top: 60px;}
+  .sys .sys-area .content-box.sys-process .graph-img{ width: auto; height: auto; background: none; }
+  .sys .sys-area .content-box.sys-process .graph-img picture{width: 1200px;}
+  .sys .sys-area .common-table-wrap{display: block; margin-top: 60px;}
+  .sys .sys-area .common-table-wrap{overflow: inherit;}
+  .sys .sys-area .common-table-wrap .common-table th:first-child{ width: 110px; }
+  .sys .sys-area .common-table-wrap .common-table:first-child{width: 100%;min-width: 0;}
+  .sys .sys-area .common-table-wrap .common-table + .common-table{width: 100%;min-width: 0;margin-top: 40px; margin-left: 0;}
+  .sys .sys-area .common-table tbody tr td{padding: 22px 20px;}
+
+  html[lang=en] .sys .sys-area .common-table-wrap .common-table thead th{width: 130px;}
+}

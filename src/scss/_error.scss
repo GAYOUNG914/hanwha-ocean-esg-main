@@ -1,0 +1,21 @@
+.ocean_error{}
+.ocean_error .main-inner section{position: relative;padding: vw(w, 240) vw(w, 120) 0;max-width: 1104px;margin: 0 auto;min-height: vw(w, 319); display: flex;flex-direction: column;justify-content: space-between;}
+.ocean_error .main-inner .err_tit{margin-bottom: vw(w, 40);}
+.ocean_error .main-inner .err_txt{font-size: vw(w, 20);line-height: vw(w, 20*1.68); font-weight: 300;}
+.ocean_error .main-inner .err_btn{display: flex;justify-content: flex-end;gap: vw(w, 20);}
+.ocean_error .main-inner .err_btn .m_btn{min-width: vw(w, 240);}
+
+@include tablet {
+  .ocean_error .main-inner section{padding: 112px 50px 0;min-height: 280px;}
+  .ocean_error .main-inner .err_tit{margin-bottom: 37px;}
+  .ocean_error .main-inner .err_txt{font-size: 14px; line-height: 1.68;}
+  .ocean_error .main-inner .err_btn{gap: 20px;}
+  .ocean_error .main-inner .err_btn .m_btn{min-width:95px}
+}
+@include mobile {
+  .ocean_error .main-inner section{padding: 160px 20px 0;min-height: 400px; }
+  .ocean_error .main-inner .err_tit{margin-bottom: 40px; font-size: 24px !important;line-height: 1.6 !important;}
+  .ocean_error .main-inner .err_txt{font-size: 16px;line-height: 1.5;font-weight: 400;color: $gray-2;}
+  .ocean_error .main-inner .err_btn{display: flex;flex-direction: column;justify-content: start;gap: 12px;align-items: center;}
+  .ocean_error .main-inner .err_btn .m_btn{min-width: 158px; width: 158px;}
+}

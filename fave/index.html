@@ -1,0 +1,421 @@
+<%- include('./src/include/header.ejs', { title: 'FAVE' }) %>
+<style>
+  #GUIDE{max-width: 1280px;margin: 0 auto;}
+  #GUIDE .main-inner{padding-top: 100px;}
+  #GUIDE h2{font-size: 50px;text-align: center;padding-bottom: 50px;}
+  #GUIDE h2 a, #GUIDE h3 a{display: inline-block;font-size: 12px;margin: 0 5px;}
+  #GUIDE h2 a:hover, #GUIDE h3 a:hover{text-decoration: underline;}
+  #GUIDE h3{font-size: 30px;text-align: center;padding-bottom: 30px;}
+  #GUIDE h4{font-size: 20px;padding-bottom: 18px;}
+  #GUIDE em{color: #ED4726;font-weight: bold;}
+  #GUIDE .fave_type{padding-bottom: 50px;}
+  #GUIDE .fave_btn_info{display: flex;align-items: stretch;justify-content: flex-start; flex-wrap: wrap;border: 1px solid #ccc;box-sizing: border-box;margin-bottom: 50px;}
+  #GUIDE .fave_btn_info>div{width: 25%;border: 1px solid #ccc;box-sizing: border-box;padding: 15px;font-size: 14px;transition: all 0.2s;}
+  #GUIDE .fave_btn_info>div:hover{background-color:rgba(86, 63, 135,.3);}
+  #GUIDE .fave_btn_info>div span{display: block;font-weight: bold;color: #000;font-size: 15px;margin-bottom: 10px;}
+  #GUIDE .fave_code_txt{font-size: 15px;margin-bottom: 15px;}
+  #GUIDE .btn_popup{padding:10px ;font-size: 14px;border:1px solid #ccc;margin-bottom: 15px;}
+  #GUIDE .btn_popup:hover{background-color: #000;color: #fff;border-color: #000;}
+</style>
+<main id="GUIDE" class="main">
+  <div class="main-inner">
+    <h2>
+      Fave Guide Page 
+      <a href="#BTN">[각종 버튼]</a>
+      <a href="#POP">[팝업 가이드]</a>
+    </h2>
+    <div class="" id="BTN">
+      <h3>각종 버튼 가이드
+        <a href="#BTN">[각종 버튼]</a>
+      <a href="#POP">[팝업 가이드]</a>
+      </h3>
+      <div class="fave_btn_info">
+        <div>
+          <span>class="m_btn"</span>
+           [공통 클래스]<br>
+           - a / button 태그
+        </div>
+        <div>
+          <span>data-btntype="button"</span>
+          [버튼 디자인] <br>
+          - button : button 타입<br>
+          - text : text 타입<br>
+          - icon : icon 타입
+        </div>
+        <div>
+          <span>hover="ripple"</span>
+          [마우스 오버 효과] <br>
+          - ripple : 마우스에 따른 파장 효과<br>
+          - none : 효과 없음 <em>text type 용</em><br>
+          - arrow : 아이콘 이동, 텍스트 체인지 <em>text type 용</em><br>
+          - underline : 아이콘 bg 체인지, 텍스트 라인 <em>text type 용</em>
+        </div>
+        <div>
+          <span>size="l"</span>
+          [button type : 높이 기준 사이즈] <br>
+          - l : 높이 48px <br>
+          - m : 높이 56px <br>
+          - h : 높이 64px 
+        </div>
+        <div>
+          <span>line="squire"</span>
+          [button type : 모양] <br>
+          - squire : 사각형 버튼<br>
+          - round : 라운드 버튼
+        </div>
+        <div>
+          <span>color="black"</span>
+          [button type : bg color] <br>
+          - black : 검은색 배경 버튼<br>
+          - white : 흰색 배경 버튼<br>
+          - none : Disable 버튼
+        </div>
+        <div>
+          <span>icon="left"</span>
+          [아이콘 위치] <br>
+          - left : 왼쪽 아이콘 <br>
+          - right : 오른쪽 아이콘<br>
+          ※ 위치에 따라 span.icon 의 돔 위치가 다름 <br>
+          ※ 아이콘의 bg, 사이즈 등 기타 스타일 적용 필요
+        </div>
+        <div>
+          <span>bg="w"</span>
+          [text type : 돔 bg] <br>
+          ※ 돔 BG에 맞는 컬러 입력 <br>
+          ※ 돔 BG에 따라 아이콘 라인 컬러가 다름 <br>
+          - w : 돔 bg white → 아이콘 라인 투명도 X<br>
+          - b : 돔 bg black → 아이콘 라인 투명도 O
+        </div>
+        <div>
+          <span>data-txt="버튼"</span>
+          [text type : 버튼 copy] <br>
+          ※ hover arrow 용 <br>
+          ※ span.txt 에 추가 <br>
+          - 버튼 카피와 동일하게 내용 작성<br>
+          - 호버 용 카피 
+        </div>
+        <div>
+          <span></span>
+          
+        </div>
+        <div>
+          <span></span>
+          
+        </div>
+        <div>
+          <span></span>
+          
+        </div>
+        
+      </div>
+      <div class="fave_type fave_type1">
+        <h4>1. 버튼 타입</h4>
+        <div class="fave_code_txt">
+          (((( 예시 코드 ))))<br><br>
+          &lt;button class="m_btn" data-btntype="button" hover="ripple" size="l" icon="left" line="squire" color="white"&gt;<br>
+      &nbsp;&nbsp;&lt;span class="icon"&gt;&lt;/span&gt;<br>
+      &nbsp;&nbsp;&lt;span class="txt"&gt;버튼&lt;/span&gt;<br>
+      &lt;/button&gt;<br><br>
+      &lt;a href="#" class="m_btn" data-btntype="button" hover="ripple" size="m" icon="right" line="round" color="black"&gt;<br>
+      &nbsp;&nbsp;&lt;span class="txt"&gt;버튼&lt;/span&gt;<br>
+      &nbsp;&nbsp;&lt;span class="icon"&gt;&lt;/span&gt;<br>
+      &lt;/a&gt;<br><br>
+      &lt;a href="#" class="m_btn" data-btntype="button" size="h" line="round" color="none"&gt;<br>
+      &nbsp;&nbsp;&lt;span class="txt"&gt;버튼&lt;/span&gt;<br>
+      &lt;/a&gt;<br>
+        </div>
+        <div class="fave_sample">
+          <button class="m_btn ex_btn1" data-btntype="button" hover="ripple" size="l" icon="left" line="squire" color="white">
+            <span class="icon"></span>
+            <span class="txt">버튼</span>
+          </button>
+          <button class="m_btn ex_btn2" data-btntype="button" hover="ripple" size="l" icon="right" line="squire" color="white">
+            <span class="txt">버튼</span>
+            <span class="icon"></span>
+          </button>
+          <a href="#" class="m_btn ex_btn3" data-btntype="button" hover="ripple" size="m" icon="left" line="round" color="black">
+            <span class="icon"></span>
+            <span class="txt">버튼</span>
+          </a>
+          <a href="#" class="m_btn ex_btn4" data-btntype="button" hover="ripple" size="m" icon="right" line="round" color="black">
+            <span class="txt">버튼</span>
+            <span class="icon"></span>
+          </a>
+          <a href="#" class="m_btn" data-btntype="button" size="h" line="round" color="none">
+            <span class="txt">버튼</span>
+          </a>
+        </div>
+      </div>
+      <div class="fave_type fave_type2">
+        <h4>2. 텍스트 타입</h4>
+        <div class="fave_code_txt">
+          (((( 예시 코드 ))))<br><br>
+          &lt;a class="m_btn ex_btn1" data-btntype="text" icon="left" hover="none"&gt;<br>
+          &nbsp;&nbsp;&lt;span class="icon"&gt;&lt;/span&gt;<br>
+          &nbsp;&nbsp;&lt;span class="txt"&gt;버튼&lt;/span&gt;<br>
+          &lt;/a&gt;<br><br>
+          &lt;a class="m_btn ex_btn5" data-btntype="text" icon="left" hover="arrow" bg="w"&gt;<br>
+          &nbsp;&nbsp;&lt;span class="icon"&gt;&lt;/span&gt;<br>
+          &nbsp;&nbsp;&lt;span class="txt" data-txt="버튼"&gt;버튼&lt;/span&gt;<br>
+          &lt;/a&gt;<br><br>
+          &lt;a class="m_btn ex_btn7" data-btntype="text" icon="left" hover="underline"&gt;<br>
+          &nbsp;&nbsp;&lt;span class="icon"&gt;&lt;/span&gt;<br>
+          &nbsp;&nbsp;&lt;span class="txt"&gt;버튼&lt;/span&gt;<br>
+          &lt;/a&gt;
+
+
+        </div>
+        <div class="fave_sample">
+          <a class="m_btn ex_btn1" data-btntype="text" icon="left" hover="none">
+            <span class="icon"></span>
+            <span class="txt">버튼</span>
+          </a>
+          <a class="m_btn ex_btn5" data-btntype="text" icon="left" hover="arrow" bg="w">
+            <span class="icon"></span>
+            <span class="txt" data-txt="버튼">버튼</span>
+          </a>
+          <a class="m_btn ex_btn5" data-btntype="text" icon="left" hover="arrow" bg="b">
+            <span class="icon"></span>
+            <span class="txt" data-txt="버튼">버튼</span>
+          </a>
+          <a class="m_btn ex_btn7" data-btntype="text" icon="left" hover="underline">
+            <span class="icon"></span>
+            <span class="txt">버튼</span>
+          </a>
+          <hr style="display: block;">
+          <button class="m_btn ex_btn2" data-btntype="text" icon="right" hover="none">
+            <span class="txt">버튼</span>
+            <span class="icon"></span>
+          </button>
+          <button class="m_btn ex_btn6" data-btntype="text" icon="right" hover="arrow" bg="w">
+            <span class="txt" data-txt="버튼">버튼</span>
+            <span class="icon"></span>
+          </button>
+          <button class="m_btn ex_btn6" data-btntype="text" icon="right" hover="arrow" bg="b">
+            <span class="txt" data-txt="버튼">버튼</span>
+            <span class="icon"></span>
+          </button>
+          <button class="m_btn ex_btn8" data-btntype="text" icon="right" hover="underline">
+            <span class="txt">버튼</span>
+            <span class="icon"></span>
+          </button>
+        </div>
+      </div>
+      <div class="fave_type fave_type3">
+        <h4>3. 아이콘 타입</h4>
+        <div class="fave_code_txt">
+          (((( 예시 코드 ))))<br><br>
+          &lt;a class="m_btn" data-btntype="icon" hover="ripple"&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="txt blind"&gt;버튼&lt;/span&gt;<br>
+      &lt;/a&gt;<br><br>
+      &lt;button class="m_btn" data-btntype="icon" hover="ripple"&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="txt blind"&gt;버튼&lt;/span&gt;<br>
+      &lt;/button&gt;
+        </div>
+        <div class="fave_sample">
+          <a class="m_btn" data-btntype="icon" hover="ripple">
+            <span class="txt blind">버튼</span>
+          </a>
+          <button class="m_btn" data-btntype="icon" hover="ripple">
+            <span class="txt blind">버튼</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="" id="POP">
+      <h3>
+        팝업 가이드
+        <a href="#BTN">[각종 버튼]</a>
+      <a href="#POP">[팝업 가이드]</a>
+      </h3>
+      <div class="">
+
+        <div class="fave_btn_info">
+          <div>
+            <span>팝업 필수 항목</span>
+            1. class = "m_popup"<br>
+            2. id 필수 작성<br>
+            3. class="pop_cnt_main" 에 <br>
+            data-lenis-prevent 필수 <br>
+            → lenis 스크롤 해제 영역
+          </div>
+          <div>
+            <span>팝업 열기 버튼</span>
+            [ data-popup="POPUPSAMPLE" ] 속성 필수<br>
+            ※ POPUPSAMPLE = 팝업 아이디
+          </div>
+          <div>
+            <span>팝업 닫기 버튼</span>
+            [ class="m_pop_close" ] 필수 클래스<br>
+            [ class="btn_close_pop" ] 닫기 아이콘 필수 클래스
+          </div>
+          <div>
+            <span>그 외</span>
+            [ class="m_pop_close-only" ] m_popup 두 개 이상 열렸는데 맨 앞의 한개만 닫고 싶을 때 (샘플팝업 2 참고)<br>
+            [ class="dim none-click" ] 팝업 외 바깥 요소 눌러도 안 닫히게 해야할 떄 
+          </div>
+
+          
+        </div>
+        <button class="btn_popup m_pop_show1" data-popup="POPUPSAMPLE">샘플 팝업1 열기 버튼</button>
+        <button class="btn_popup m_pop_show2" data-popup="POPUP">샘플 팝업2 열기 버튼</button>
+        <div class="fave_code_txt">
+
+          (((( 팝업 코드 가이드 ))))<br><br>
+
+&lt;div <span style="color:red">id="POPUPSAMPLE" class="m_popup"</span>&gt;<br>
+&nbsp;&nbsp;&lt;div class="dim"&gt;&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;div class="pop_inner"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="pop_contents"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button <span style="color:red">class="btn_close_pop m_pop_close"</span> title="팝업 닫기"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="/resources/images/common/icon_close_b_36x36.png" alt="닫기 아이콘"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/button&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="pop_cnt_inner"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="pop_detail_box"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="pop_cnt_head"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="pop_cnt_head_tit m_h8"&gt;익명 제보 이용안내&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="pop_cnt_main" <span style="color:red">data-lenis-prevent</span>&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="pop_foot"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="m_btn m_pop_close" data-btntype="button" hover="ripple" size="m" line="round" color="white"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="txt"&gt;닫기&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/button&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="m_btn" data-btntype="button" hover="ripple" size="m" line="round" color="black"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="txt"&gt;확인&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/button&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;/div&gt;<br>
+&lt;/div&gt;<br>
+
+        </div>
+
+        <div id="POPUPSAMPLE" class="m_popup">
+          <div class="dim"></div>
+          <div class="pop_inner">
+            <div class="pop_contents">
+              <button class="btn_close_pop m_pop_close" title="팝업 닫기">
+                <img src="/resources/images/common/icon_close_b_36x36.png" alt="닫기 아이콘">
+              </button>
+              <div class="pop_cnt_inner">
+                <div class="pop_detail_box">
+                  <div class="pop_cnt_head">
+                    <div class="pop_cnt_head_tit m_h8">익명 제보 이용안내</div>
+                  </div>
+                  <div class="pop_cnt_main" data-lenis-prevent>
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                  </div>
+                  <div class="pop_foot">
+                    <button class="m_btn m_pop_close" data-btntype="button" hover="ripple" size="m" line="round" color="white">
+                      <span class="txt">닫기</span>
+                    </button>
+                    <button class="m_btn" data-btntype="button" hover="ripple" size="m" line="round" color="black">
+                      <span class="txt">확인</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="POPUP" class="m_popup">
+          <div class="dim none-click"></div>
+          <div class="pop_inner">
+            <div class="pop_contents">
+              <button class="btn_close_pop" data-popup="POPUP33" title="팝업 닫기">
+                <img src="/resources/images/common/icon_close_b_36x36.png" alt="닫기 아이콘">
+              </button>
+              <div class="pop_cnt_inner">
+                <div class="pop_detail_box">
+                  <div class="pop_cnt_head">
+                    <div class="pop_cnt_head_tit m_h8">익명 제보 이용안내</div>
+                  </div>
+                  <div class="pop_cnt_main" data-lenis-prevent>
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결  시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결  시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결  시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                    익명 제보 시 근거없는 비방 및 험담 등은 통보 없이 종결 
+                  </div>
+                  <div class="pop_foot">
+                    <button class="m_btn btn_cancel" data-popup="POPUP33" data-btntype="button" hover="ripple" size="m" line="round" color="white">
+                      <span class="txt">닫기</span>
+                    </button>
+                    <!-- <button class="m_btn btn_cancel" data-btntype="button" hover="ripple" size="m" line="round" color="black">
+                      <span class="txt">확인</span>
+                    </button> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="POPUP33" class="m_popup">
+          <div class="dim none-click"></div>
+          <div class="pop_inner">
+            <div class="pop_contents">
+              <button class="btn_close_pop m_pop_close-only" title="팝업 닫기">
+                <img src="/resources/images/common/icon_close_b_36x36.png" alt="닫기 아이콘">
+              </button>
+              <div class="pop_cnt_inner">
+                <div class="pop_detail_box">
+                  <div class="pop_cnt_head">
+                    <div class="pop_cnt_head_tit m_h8">진짜?</div>
+                  </div>
+                  <div class="pop_cnt_main" data-lenis-prevent>
+                    찐으로 닫을건가요?
+                  </div>
+                  <div class="pop_foot">
+                    <button class="m_btn m_pop_close-only" data-btntype="button" hover="ripple" size="m" line="round" color="white">
+                      <span class="txt">취소</span>
+                    </button>
+                    <button class="m_btn m_pop_close" data-btntype="button" hover="ripple" size="m" line="round" color="black">
+                      <span class="txt">넹</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+</main>
+
+
+<%- include('./src/include/footer.ejs') %>

@@ -1,0 +1,22 @@
+<%- include('./src/include/header.ejs', { title: '' }) %>
+
+<main id="ERRORPAGE" class="ocean_error error_page">
+  <div class="main-inner">
+    <section>
+      <div class="err_copy in_sec_box_area">
+        <h2 class="m_h6 err_tit in_sec_box">페이지를 찾을 수 없거나 접근이 허용되지 않는 페이지입니다.</h2>
+        <p class="err_txt in_sec_box">죄송합니다. 요청하신 페이지가 존재하지 않거나 접근할 수 있는 권한이 없습니다. <br>입력하신 페이지의 주소를 다시 한번 확인해 주세요.</p>
+      </div>
+      <div class="err_btn in_sec_box_area">
+        <button onclick="history.back();" class="m_btn in_sec_box" data-btntype="button" hover="ripple" size="m" line="round" color="white">
+          <span class="txt">이전으로 이동</span>
+        </button>
+        <a href="/" class="m_btn in_sec_box" data-btntype="button" hover="ripple" size="m" line="round" color="black">
+          <span class="txt">메인으로 이동</span>
+        </a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<%- include('./src/include/footer.ejs') %>

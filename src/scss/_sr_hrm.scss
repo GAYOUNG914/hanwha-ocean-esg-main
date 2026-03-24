@@ -1,0 +1,146 @@
+.hrm .common-tab-looking-a-wrap .line-tab { padding-top: vw(w,131); }
+.hrm .common-grid{margin-top: 0;}
+.hrm .common-grid .common-fixed-wrap + .title-wrap {margin-top: vw(w,200);}
+.hrm .common-fixed-wrap {margin-top: vw(w,200);}
+.hrm .common-grid .title-wrap.benefit-con {margin-top: 0; column-gap: vw(w,48);}
+.hrm .common-grid .title-wrap.benefit-con + .benefit-con {margin-top: vw(w,160);}
+.hrm .common-grid {margin-bottom: 0;}
+
+// [ hr ONLY ]
+.hrm.hr .common-grid .title-wrap {margin-top: vw(w,160);}
+.hrm.hr .benefit-con .benefit-item + .benefit-item {margin-top: vw(w,40);}
+.hrm.hr .benefit-con .benefit-item p {margin-top: vw(w,20); font-weight: 300;}
+.hrm.hr .benefit-con .benefit-title .benefit-icon {display: inline-block; width: vw(w,120); height: vw(w,120); margin-top: vw(w,40);}
+.hrm.hr .benefit-con .benefit-title .benefit-icon.house {
+  background: url('#{$image-path}sr/hrm/hr/hr_benefit_icon_house.svg') no-repeat center center / contain;
+}
+.hrm.hr .benefit-con .benefit-title .benefit-icon.family {
+  background: url('#{$image-path}sr/hrm/hr/hr_benefit_icon_family.svg') no-repeat center center / contain;
+}
+.hrm.hr .benefit-con .benefit-title .benefit-icon.leisure {
+  background: url('#{$image-path}sr/hrm/hr/hr_benefit_icon_leisure.svg') no-repeat center center / contain;
+}
+.hrm.hr .benefit-con .benefit-title .benefit-icon.etc {
+  background: url('#{$image-path}sr/hrm/hr/hr_benefit_icon_etc.svg') no-repeat center center / contain;
+}
+.hrm.hr .sec_inner:last-child .common-grid {margin-bottom: 0;}
+.hrm.hr .common-table-wrap {margin-top: vw(w,120); margin-bottom: vw(w,200);}
+
+.hrm.hr table[data-table="1"] tr > *:nth-child(1) {min-width: vw(w,320)}
+.hrm.hr table[data-table="1"] tr > *:nth-child(2) {min-width: vw(w,224)}
+.hrm.hr table[data-table="1"] tr > *:nth-child(3) {min-width: vw(w,284)}
+.hrm.hr table[data-table="1"] tr > *:nth-child(4) {min-width: vw(w,284)}
+.hrm.hr table[data-table="1"] tr > *:nth-child(5) {min-width: vw(w,284)}
+.hrm.hr table[data-table="1"] tr > *:nth-child(6) {min-width: vw(w,284)}
+
+// [ hm ONLY ]
+.hrm.hm .common-grid .title-wrap {margin-top: vw(w,160);}
+.hrm.hm .sec_inner:not(:first-child) .common-grid .title-wrap > .desc {margin-top: 0;}
+.hrm.hm .common-table-wrap {margin-top: vw(w,120); margin-bottom: vw(w,120);}
+
+.hrm.hm table[data-table="1"] tr > *:nth-child(1) {min-width: vw(w,528)}
+.hrm.hm table[data-table="1"] tr > *:nth-child(2) {min-width: vw(w,1152)}
+
+
+@include tablet {
+  .hrm .common-tab-looking-a-wrap .line-tab { padding-top: 84px; }
+  .hrm .common-grid .common-fixed-wrap + .title-wrap {margin-top: 126px; }
+  .hrm .common-fixed-wrap {margin-top: 126px;}
+  .hrm .common-grid .title-wrap.benefit-con {margin-top: 0; column-gap: 30px}
+  .hrm .common-grid .title-wrap.benefit-con + .benefit-con {margin-top: 100px}
+
+  // [ hr ONLY ]
+  .hrm.hr .common-grid .title-wrap {margin-top: 100px;}
+  .hrm.hr .benefit-con .benefit-item + .benefit-item {margin-top: 26px;}
+  .hrm.hr .benefit-con .benefit-item p {margin-top: 12px; font-weight: 300;}
+  .hrm.hr .benefit-con .benefit-title .benefit-icon {width: 76px; height: 76px; margin-top: 26px;}
+  .hrm.hr .common-table-wrap {margin-top: 76px; margin-bottom: 126px;}
+
+  .hrm.hr table[data-table="1"] tr > *:nth-child(1) {min-width: calc((100% / 12 * 2) + (100% / 70 * 1));}
+  .hrm.hr table[data-table="1"] tr > *:nth-child(2) {min-width: calc((100% / 12 * 2) - (100% / 70 * 2));}
+  .hrm.hr table[data-table="1"] tr > *:nth-child(n+3) {min-width: calc(100% / 12 * 2)}
+
+  // [ hm ONLY ]
+  .hrm.hm .common-grid .title-wrap {margin-top: 100px;}
+  .hrm.hm .sec_inner:not(:first-child) .common-grid {margin-top: 0;}
+  .hrm.hm .common-table-wrap {margin-top: 76px; margin-bottom: 76px;}
+
+  .hrm.hm table[data-table="1"] tr > *:nth-child(1) {min-width:calc((100% / 12 * 4) - (100% / 70 * 2))}
+  .hrm.hm table[data-table="1"] tr > *:nth-child(2) {min-width: calc(100% / 12 * 8)}
+}
+
+
+@include mobile {
+  .hrm .common-grid .title-wrap > .title {font-size: 24px !important; line-height: 1.56 !important;}
+  .hrm .sec_inner:first-child .common-grid .title-wrap {margin-top: 40px;}
+  .hrm .common-grid .title-wrap > .desc > .item p {font-weight: 400;}
+  .hrm .common-tab-looking-a-wrap .line-tab { padding-top: 60px; }
+  .hrm .common-grid .common-fixed-wrap + .title-wrap {margin-top: 80px; }
+  .hrm .common-fixed-wrap {margin-top: 80px;}
+  .hrm .common-grid .title-wrap.benefit-con {margin-top: 60px;}
+  .hrm .common-grid .title-wrap.benefit-con + .benefit-con {margin-top: 60px}
+  .hrm .common-tab-looking-a-wrap .line-tab{padding-top: 0;}
+  .hrm .common-tab-looking-a-wrap{padding-top: 60px !important;}
+
+  // [ hr ONLY ]
+  .hrm.hr .common-grid .title-wrap {margin-top: 80px;}
+  .hrm.hr .main-inner .top_kv_area img {object-position: 22%;}
+  .hrm.hr .sec_inner:first-child .common-grid .title-wrap > .desc {margin-top: 60px;}
+  .hrm.hr .benefit-con .benefit-list {margin-top: 24px;}
+  .hrm.hr .benefit-con .benefit-item + .benefit-item {margin-top: 32px;}
+  .hrm.hr .benefit-con .benefit-item .m_h8 {font-size: 16px !important; line-height: 172% !important; font-weight: 700;}
+  .hrm.hr .benefit-con .benefit-item p {margin-top: 8px; font-weight: 400; font-size: 16px; line-height: 1.5; font-weight: 400;}
+  .hrm.hr .benefit-con .benefit-title .benefit-icon {width: 60px; height: 60px; margin-top: 20px;}
+  .hrm.hr .benefit-con .benefit-title .benefit-icon.house {
+    background: url('#{$image-path}sr/hrm/hr/hr_benefit_icon_house-mo.svg') no-repeat center center / contain;
+  }
+  .hrm.hr .benefit-con .benefit-title .benefit-icon.family {
+    background: url('#{$image-path}sr/hrm/hr/hr_benefit_icon_family-mo.svg') no-repeat center center / contain;
+  }
+  .hrm.hr .benefit-con .benefit-title .benefit-icon.leisure {
+    background: url('#{$image-path}sr/hrm/hr/hr_benefit_icon_leisure-mo.svg') no-repeat center center / contain;
+  }
+  .hrm.hr .benefit-con .benefit-title .benefit-icon.etc {
+    background: url('#{$image-path}sr/hrm/hr/hr_benefit_icon_etc-mo.svg') no-repeat center center / contain;
+  }
+  .hrm.hr .common-table-wrap {margin-top: 60px; margin-bottom: 60px;}
+  .hrm.hr .common-table {min-width: 790px}
+
+  .hrm.hr table[data-table="1"] tr > *:nth-child(1) {min-width: 150px}
+  .hrm.hr table[data-table="1"] tr > *:nth-child(2) {min-width: 80px;}
+  .hrm.hr table[data-table="1"] tr > *:nth-child(3) {min-width: 140px}
+  .hrm.hr table[data-table="1"] tr > *:nth-child(4) {min-width: 140px}
+  .hrm.hr table[data-table="1"] tr > *:nth-child(5) {min-width: 140px}
+  .hrm.hr table[data-table="1"] tr > *:nth-child(6) {min-width: 140px}
+
+  // [ hm ONLY ]
+  .hrm.hm .common-grid .title-wrap {margin-top: 40px;}
+  .hrm.hm .common-table-wrap {margin-top: 60px; margin-bottom: 60px;}
+  .hrm.hm .common-table {min-width: 580px}
+
+  .hrm.hm table[data-table="1"] tr > *:nth-child(1) {min-width: 220px}
+  .hrm.hm table[data-table="1"] tr > *:nth-child(2) {min-width: 360px}
+
+}
+
+html[lang=en] .hrm.hr .common-grid .title-wrap > .title{max-width: none;}
+@include mobile{
+  html[lang=en] .hrm.hr table[data-table="1"] tr > *:nth-child(1) {min-width:170px}
+  html[lang=en] .hrm.hr table[data-table="1"] tr > *:nth-child(2) {min-width:120px}
+  html[lang=en] .hrm.hr table[data-table="1"] tr > *:nth-child(n+3) {min-width:140px}
+}
+
+
+html[lang=en] .hrm.hm table[data-table="1"] thead tr > *:nth-child(1){padding-left: vw(w,44);padding-right: vw(w,44);}
+html[lang=en] .hrm.hm table[data-table="1"] tr > *:nth-child(1){min-width: vw(w,672);}
+html[lang=en] .hrm.hm table[data-table="1"] tr > *:nth-child(2){min-width: vw(w,1008);}
+@include tablet{
+  html[lang=en] .hrm.hm table[data-table="1"] thead tr > *:nth-child(1){padding-left:28px;padding-right: 28px;}
+  html[lang=en] .hrm.hm table[data-table="1"] tr > *:nth-child(1){min-width: calc((100% / 12 * 5) - (100% / 70 *2))}
+  html[lang=en] .hrm.hm table[data-table="1"] tr > *:nth-child(2){min-width: calc(100% / 12 * 7)}
+}
+@include mobile{
+  html[lang=en] .hrm.hm table[data-table="1"] thead tr > *:nth-child(1){padding-left:20px;padding-right: 20px;}
+  html[lang=en] .hrm.hm table[data-table="1"] tr > *:nth-child(1){min-width:270px}
+  html[lang=en] .hrm.hm table[data-table="1"] tr > *:nth-child(2){min-width:480px}
+}

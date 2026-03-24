@@ -1,0 +1,32 @@
+{
+  "name": "hanwha-esg-dev",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 2013 --open=/",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 2014 --open=/"
+  },
+  "devDependencies": {
+    "vite": "^5.3.1"
+  },
+  "dependencies": {
+    "@studio-freight/lenis": "^1.0.42",
+    "chart": "^0.1.2",
+    "chart.js": "^4.4.3",
+    "ejs": "^3.1.10",
+    "gsap": "^3.12.5",
+    "lenis": "^1.1.5",
+    "lottie-web": "^5.12.2",
+    "odometer": "^0.4.8",
+    "pace-js": "^1.2.4",
+    "photoswipe": "^5.4.4",
+    "photoswipe-deep-zoom-plugin": "^1.1.2",
+    "sass": "^1.77.6",
+    "swiper": "^11.1.4",
+    "three": "^0.166.0",
+    "vite-plugin-beautify": "^1.0.0",
+    "vite-plugin-ejs": "^1.7.0"
+  }
+}

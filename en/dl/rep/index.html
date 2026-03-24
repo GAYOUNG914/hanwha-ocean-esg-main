@@ -1,0 +1,101 @@
+<%- include('./src/include/header-en.ejs', { title: 'Report' }) %>
+
+<main id="REP" class="dl rep">
+  <div class="main-inner" data-path="rep">
+    
+    <div class="sub_top top_img">
+      <div class="top_tit_area sticky">
+
+        <div class="top_tit-inner static">
+          <h2 class="sub_top_tit m_h2">Report</h2>
+        </div>
+
+        <div class="top_tit-inner absol">
+          <h2 class="sub_top_tit m_h2">Report</h2>
+        </div>
+
+      </div>
+   
+      <div class="overflow-ct">
+        <div class="top_kv_area">
+          <div class="core-wrap">
+            <picture class="core-wrap-inner dim">
+                <source media="(min-width: 769px)" srcset="/resources/images/dl/dl_rep_kv-pc.webp">
+                <source media="(max-width: 768px)" srcset="/resources/images/dl/dl_rep_kv-mo.webp">
+                <img class="core" src="/resources/images/dl/dl_rep_kv-pc.webp" alt="Key Visaul">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="sub_container">
+      <div class="sec_inner">
+          <div class="dl-area rep-area">
+              <div class="rep-con">
+                  <div class="content-box">
+                    <div class="common-grid">
+                      <div class="title-wrap">
+                        <div class="title m_h3 in_sec_copy">Report</div>
+                        <div class="desc">
+                          <div class="report-wrap">
+                          <!--download명 :: .download 클래스 안의 <span class="txt"> 에 적용-->
+                          <!-- 업로드명 :: .download 클래스 안의 <a download="업로드명"> 에 적용-->
+                            <ul class="report-list in_sec_box_area">
+                              <li class="report in_sec_box">
+                                <div class="name m_h6">Sustainability report</div>
+                                <div class="brochure">
+                                  <div class="cover">
+                                    <picture>
+                                        <source media="(min-width: 769px)" srcset="/resources/images/dl/dl_rep_brochure-01-pc.webp">
+                                        <source media="(max-width: 768px)" srcset="/resources/images/dl/dl_rep_brochure-01-pc.webp">
+                                        <img src="/resources/images/dl/dl_rep_brochure-01-pc.webp" alt="Images">
+                                    </picture>
+                                  </div>
+                                  <div class="download">
+                                    <!-- <span class="txt">Download Sustainability report 2023</span> -->
+                                    <a href="#" class="m_btn" data-btntype="text" type="text" hover="underline" icon="right" download="">
+                                      <span class="txt" data-txt="download">Download Sustainability report 2023</span>
+                                      <span class="icon"></span>
+                                    </a>
+                                  </div>
+                                </div>
+                              </li>
+                              <!-- <li class="report in_sec_box" >
+                                <div class="name m_h6">Corporate Governance report</div>
+                                <div class="brochure">
+                                  <div class="cover">
+                                    <picture>
+                                        <source media="(min-width: 769px)" srcset="/resources/images/dl/dl_rep_brochure-02-pc.webp">
+                                        <source media="(max-width: 768px)" srcset="/resources/images/dl/dl_rep_brochure-02-pc.webp">
+                                        <img src="/resources/images/dl/dl_rep_brochure-02-pc.webp" alt="Images">
+                                    </picture>
+                                  </div>
+                                  <div class="download">
+                                    <span class="txt">Download Corporate Governance report</span>
+                                    <a href="#" class="m_btn" data-btntype="text" type="text" hover="underline" icon="right" download="">
+                                      <span class="txt" data-txt="download">download</span>
+                                      <span class="icon"></span>
+                                    </a>
+                                  </div>
+                                </div>
+                              </li> -->
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                 
+                 
+                 
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<%- include('./src/include/footer-en.ejs') %>

@@ -1,0 +1,53 @@
+.eco .eco-con{max-width: 1920px;padding: 0 vw(w,120);box-sizing: border-box;margin-left: auto;margin-right: auto;}
+.eco .eco-con .common-grid .list-item .title{margin-bottom: vw(w,40);}
+.eco .eco-con .common-grid .list-item .infogram-wrap .infogram{position: relative;}
+.eco .eco-con .common-grid .list-item .infogram-wrap .infogram .tit{position: absolute;top: vw(w,24);left: 50%;transform: translateX(-50%);color:$key-color}
+.eco .eco-con .common-grid .list-item .infogram-wrap .infogram .sub-tit{position: absolute;bottom: vw(w,24);right: vw(w,24);color:$gray-2}
+.eco .eco-con .common-grid .list-item .infogram-wrap .infogram .graph-img{width: 100%;height: vw(w,487);background: url("#{$image-path}hse/eco/eco_list_01-pc.webp") no-repeat center center / contain;}
+.eco .eco-con .common-grid .list-item p{margin-top: vw(w,40);color:$gray-2;font-weight: 300;}
+.eco .eco-con .common-grid .list-item .refer{margin-top: vw(w,40);color:$gray-3}
+.eco .eco-con .common-grid .list-item ul li:nth-child(n+2){margin-top: vw(w,120);}
+.eco .eco-con .table-wrap{margin-top: vw(w,80);}
+.eco .eco-con .table-wrap .common-table-wrap{padding: 0;}
+.eco .eco-con .table-wrap table{border-collapse: separate;border-spacing: 20px;}
+.eco .eco-con .table-wrap tr th{border:1px solid $default-color;border-radius: vw(w,4);}
+.eco .eco-con .table-wrap thead{border:none}
+.eco .eco-con .table-wrap thead tr th:nth-child(n+2){background-color: $key-color;color:#fff;border:none}
+.eco .eco-con .table-wrap tbody tr th{width: vw(w,268);font-weight: 400;}
+.eco .eco-con .table-wrap tbody tr td{background-color: $gray-7;padding: vw(w,24);box-sizing: border-box;width: vw(w,450);vertical-align: top;border-radius: vw(w,4);}
+.eco .eco-con .table-wrap tbody tr td .tit{padding-bottom: vw(w,20);font-weight: 400;color:$default-color;text-align: center;}
+.eco .eco-con .table-wrap tbody tr td ul{border-top:1px solid #D9D9D9;padding-top: vw(w,20);padding-left: vw(w,12);}
+.eco .eco-con .table-wrap tbody tr td ul li{margin-top: 0;line-height: 1.68;}
+.eco .eco-con:last-child .common-grid .list-item{margin-top:vw(w,120);}
+.eco .bg-con{margin: vw(w,200) 0;}
+
+@include tablet{
+    .eco .eco-con .common-grid .list-item .title{margin-bottom: 26px;}
+    .eco .eco-con .common-grid .list-item p,
+    .eco .eco-con .common-grid .list-item .refer{margin-top: 26px;}
+    .eco .eco-con .common-grid .list-item ul li:nth-child(n+2){margin-top: 76px;}
+    .eco .bg-con{margin: 126px 0;}
+    .eco ul.common-circle-list > li::before{top: 9px;}
+    .eco .eco-con .table-wrap tbody tr td .tit{min-height: 161px;}
+}
+@include mobile {
+    .eco .common-grid .title-wrap > .title{font-size: 24px !important;}
+    .eco .hse-area .content-box .title-wrap > .desc.mgt_60{margin-top: 60px;}
+    .eco .eco-con .common-grid .list-item .title{margin-bottom: 20px;}
+    .eco .eco-con .common-grid .list-item .title .m_etc{font-size: 10px !important;}
+    .eco .eco-con .common-grid .list-item .refer{margin-top: 20px;}
+    .eco .eco-con .common-grid .list-item ul li:nth-child(n+2){margin-top: 60px;}
+    .eco .bg-con{margin: 80px 0;}
+    .eco .eco-con .table-wrap table{width: max-content;}
+    .eco .eco-con .table-wrap{margin-top: 40px; position: relative;}
+    .eco .eco-con .table-wrap .picture{width: 1678px;}
+    .eco .eco-con .table-wrap tr th{font-size: 20px !important; line-height: 1.56 !important;}
+    .eco .eco-con .table-wrap tbody tr th{width: 268px;}
+    .eco .eco-con .table-wrap tbody tr td{width: 450px; padding: 24px;}
+    .eco .eco-con .table-wrap tbody tr td .tit{min-height: auto; font-size: 24px !important; line-height: 1.6 !important; padding-bottom: 20px;}
+    .eco .eco-con .table-wrap thead tr th:nth-child(n+2){font-size: 28px !important;}
+    .eco .eco-con .table-wrap tbody tr td ul{padding-top: 20px;}
+    .eco .eco-con .table-wrap tbody tr td ul li{font-size: 20px;}
+    .eco ul.common-circle-list > li::before{top: 15px;}
+    .eco .eco-con:last-child .common-grid .list-item{margin-top: 60px;}
+}

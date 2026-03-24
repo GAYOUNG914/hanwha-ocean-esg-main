@@ -1,0 +1,150 @@
+.cs .common-grid {margin: 0; }
+.cs .sec_inner:first-child {margin-top: vw(w,160);}
+.cs .sec_inner:not(:first-child) .common-grid .title-wrap > .desc {margin-top: 0;}
+.cs .sec_inner:not(:first-child) .common-grid .title-wrap .title + .desc {margin-top: vw(w,80);}
+.cs .common-table-wrap {margin-top: vw(w,120);}
+.cs .common-table-wrap + .sec_inner {margin-top: vw(w,120);}
+.cs .common-grid .title-wrap:has(.title) {margin-top: vw(w,200);}
+
+.cs .social-process-wrap {position: relative; margin: 0 auto; max-width: 1680px; height: 100%; padding: 0 vw(w,120); margin-top: vw(w,120);}
+.cs .social-process-img { background: url('#{$image-path}sr/cs/cs_diagram.webp') no-repeat; background-size: cover;
+  width: 100%; height: vw(w,1320);
+}
+.cs .social-process-txt {position: absolute; top:0; font-size: 0;}
+.cs .common-caption-text {margin: vw(w,20) auto vw(w,120); padding: 0 vw(w,120); max-width: 1680px;}
+
+.cs .icon-swipe {display: none;}
+
+.cs table[data-table="1"] thead tr > *:nth-child(1) {min-width: vw(w,576)}
+.cs table[data-table="1"] thead tr > *:nth-child(2) {min-width: vw(w,276)}
+.cs table[data-table="1"] thead tr > *:nth-child(3) {min-width: vw(w,276)}
+.cs table[data-table="1"] thead tr > *:nth-child(4) {min-width: vw(w,276)}
+.cs table[data-table="1"] tbody tr:nth-child(1) > *:nth-child(1) {min-width: vw(w,304)}
+.cs table[data-table="1"] tbody tr:nth-child(1) > *:nth-child(2) {min-width: vw(w,272)}
+.cs table[data-table="1"] tbody tr:nth-child(1) > *:nth-child(3) {min-width: vw(w,276)}
+.cs table[data-table="1"] tbody tr:nth-child(1) > *:nth-child(4) {min-width: vw(w,276)}
+.cs table[data-table="1"] tbody tr:nth-child(1) > *:nth-child(5) {min-width: vw(w,276)}
+.cs table[data-table="1"] tbody tr:nth-child(1) > *:nth-child(6) {min-width: vw(w,276)}
+
+.cs table[data-table="2"] tr > *:nth-child(1) {min-width: vw(w,304)}
+.cs table[data-table="2"] tr > *:nth-child(2) {min-width: vw(w,688)}
+.cs table[data-table="2"] tr > *:nth-child(3) {min-width: vw(w,688)}
+
+
+@include tablet {
+  .cs .sec_inner:first-child {margin-top: 100px;}
+  .cs .sec_inner:not(:first-child) .common-grid .title-wrap .title + .desc {margin-top: 50px}
+  .cs .common-table-wrap {margin-top: 76px;}
+  .cs .common-table-wrap + .sec_inner {margin-top: 76px;}
+  .cs .common-grid .title-wrap:has(.title) {margin-top: 126px;}
+
+  .cs .social-process-wrap { padding-left: 50px; padding-right: 50px; width: 100%; box-sizing: border-box; }
+  .cs .social-process-img { background: url('#{$image-path}sr/cs/cs_diagram.webp') no-repeat; background-size: cover;
+  width: 100%; height: vw(w,1320);
+  }
+  .cs .common-caption-text {margin: 12px 50px 76px; padding: 0;}
+
+  .cs .social-process-txt {position: absolute; top:0; font-size: 0;}
+
+  .cs table[data-table="1"] thead tr > *:nth-child(1) {min-width:calc(100% / 12 * 4)}
+  .cs table[data-table="1"] thead tr > *:nth-child(n+2) {min-width:calc(100% / 12 * 2)}
+  .cs table[data-table="1"] tbody tr:nth-child(1) > *:nth-child(1) {min-width: calc(100% / 12 * 2)}
+  .cs table[data-table="1"] tbody tr:nth-child(1) > *:nth-child(2) {min-width: calc((100% / 12 * 2) - (100% / 70 * 1))}
+  .cs table[data-table="1"] tbody tr:nth-child(1) > *:nth-child(n+3){min-width:calc((100% / 12 * 2) - (100% / 70 * 1))}
+
+  .cs table[data-table="2"] tr > *:nth-child(1) {min-width:calc(100% / 12 * 2)}
+  .cs table[data-table="2"] tr > *:nth-child(n+2){min-width: calc((100% / 12 * 5) - (100% / 70 * 2))}
+}
+
+@include mobile {
+  .cs .sec_inner:first-child .common-grid .title-wrap > .desc {margin-top: 60px;}
+  .cs .common-grid .title-wrap > .title.m_h3 {font-size: 24px !important; line-height: 1.56 !important;}
+  .cs .sec_inner:first-child {margin-top: 60px;}
+  .cs .sec_inner:not(:first-child) .common-grid .title-wrap .title + .desc {margin-top: 20px}
+  .cs .common-table-wrap {margin-top: 60px;}
+  .cs .common-table-wrap + .sec_inner {margin-top: 60px;}
+  .cs .common-grid .title-wrap:has(.title) {margin-top: 80px;}
+  
+  .cs .social-process-wrap {overflow-x: auto; padding: 0 20px; margin-top: 60px;
+    &::-webkit-scrollbar{
+      height: 3px;
+    }
+    &::-webkit-scrollbar-thumb{
+      background-color: $gray-6;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-track{
+      margin-left: 20px; margin-right: 20px;
+    }
+  }
+  .cs .common-caption-text {margin: 16px 20px 60px; padding: 0;}
+
+  .cs .social-process-wrap{overflow-y:hidden;}
+  .cs .social-process-img { position: relative; width: 100%; height: 100%; min-width: 1030px; height: 812px;}
+  
+  .cs .icon-swipe {
+    position: absolute; 
+    width: 80px; height: 80px;
+    transform: translate(-50%, -50%); top: 50%; left: 50%; z-index: 99;
+    background: url('#{$image-path}common/icon_swipe.svg') no-repeat center center / contain;
+
+    &.on {
+      display: block;
+      animation: swiper-ic 2s 1 cubic-bezier(0.41, 0.2, 0.53, 0.84) forwards;
+    }
+  }
+  @keyframes swiper-ic {
+    0%{transform: translate(-20%, -50%);}
+    33%{transform: translate(-80%, -50%);}
+    66%{transform: translate(-20%, -50%); opacity: 1;}
+    100%{transform: translate(-80%, -50%); opacity: 0;}
+  }
+
+  .cs table[data-table="1"] thead tr > *:nth-child(1) {min-width: 250px}
+  .cs table[data-table="1"] thead tr > *:nth-child(2) {min-width: 100px}
+  .cs table[data-table="1"] thead tr > *:nth-child(3) {min-width: 100px}
+  .cs table[data-table="1"] thead tr > *:nth-child(4) {min-width: 100px}
+  .cs table[data-table="1"] tbody tr:nth-child(1) > *:nth-child(1) {min-width: 130px}
+  .cs table[data-table="1"] tbody tr:nth-child(1) > *:nth-child(2) {min-width: 120px}
+  .cs table[data-table="1"] tbody tr:nth-child(1) > *:nth-child(3) {min-width: 100px}
+  .cs table[data-table="1"] tbody tr:nth-child(1) > *:nth-child(4) {min-width: 100px}
+  .cs table[data-table="1"] tbody tr:nth-child(1) > *:nth-child(5) {min-width: 100px}
+  .cs table[data-table="1"] tbody tr:nth-child(1) > *:nth-child(6) {min-width: 100px}
+
+  .cs table[data-table="2"] tr > *:nth-child(1) {min-width: 150px}
+  .cs table[data-table="2"] tr > *:nth-child(2) {min-width: 270px}
+  .cs table[data-table="2"] tr > *:nth-child(3) {min-width: 270px}
+}
+
+.cs .refer{
+  max-width: 1680px;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+  padding-left: vw(w,120);
+  padding-right: vw(w,120);
+  margin-top: vw(w, 20);
+  margin-bottom: vw(w, 120);
+}
+
+.cs .refer .m_desc{font-size: vw(w, 16); color: #999; display: block;}
+.cs .m_desc.unit{color: #999; margin-bottom: vw(w, 20); margin-top: vw(w, 120);}
+
+@include tablet{
+  .cs .refer{margin-top: 12px; padding-left: 50px; padding-right: 50px;}
+  .cs .m_desc.unit{ margin-bottom: 24px; margin-top: 76px;}
+}
+
+@include mobile{
+  .cs .refer{margin-top: 16px; padding-left: 20px; padding-right: 20px; margin-bottom: 60px;}
+  .cs .refer .m_desc{font-size: 14px !important;}
+  .cs .m_desc.unit{ margin-bottom: 24px; margin-top: 60px;}
+}
+
+.cs .common-table-wrap.mt-0 {margin-top: 0;}
+
+html[lang=en] .cs .common-grid .title-wrap > .title{max-width: none;}
+html[lang=en] .cs .social-process-img {height:auto;aspect-ratio:315/277 ; background: url('#{$image-path}sr/cs/en_cs_diagram.webp') no-repeat; background-size: cover;}
+@include mobile{
+  html[lang=en] .cs table[data-table="2"] tr > *:nth-child(3){vertical-align: top;}
+}

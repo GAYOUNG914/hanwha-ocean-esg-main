@@ -1,0 +1,267 @@
+.ce{
+  .main_content{
+    margin-top: vw(w, 80);
+  }
+  .common-tab-looking-a-wrap{
+    padding-top: vw(w, 160);
+    .outlink-icon{
+      display: inline-block;
+      width: vw(w, 27); height: vw(w, 27); margin-left: vw(w, 4);
+      background: url('#{$image-path}common/outlink_gray.svg') no-repeat center/contain;
+      font-size: 0;
+      transition: background 0.3s;
+    }
+    .tab-item:hover .outlink-icon{background: url('#{$image-path}common/outlink.svg') no-repeat center/contain;}
+  }
+  .dot_list{
+    li{
+      position: relative;
+      margin-top: vw(w, 8);
+      &:first-child{margin-top: 0;}
+      &:before{
+        content: '';
+        display: inline-block;
+        width: vw(w, 4); height: vw(w, 4);
+        border-radius: 100%;
+        margin-right: vw(w, 12);
+        background: #4b4b4b;
+        vertical-align: middle;
+      }
+    }
+    .hypen_list{margin-left: vw(w, 4);}
+  }
+  .hypen_list{
+    li{
+      position: relative;
+      margin-top: vw(w, 8);
+      display: flex;
+      &:first-child{margin-top: 0;}
+      &:before{
+        content: '';
+        position: relative;
+        top: vw(w, 12);
+        display: inline-block;
+        width: vw(w, 5);
+        height: vw(w, 1);
+        margin-right: vw(w, 8);
+        background: #4b4b4b;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  @include tablet{
+    .common-tab-looking-a-wrap{
+      padding-top: 100px !important;
+      .outlink-icon{
+        width: 17px; height: 17px; margin-left: 4px;
+      }
+    }
+    .dot_list{
+      li{
+        margin-top: 5px;
+        &:before{
+          width: 4px; height: 4px;
+          margin-right: 8px;
+        }
+      }
+      .hypen_list{margin-left: 4px}
+    }
+    .hypen_list{
+      li{
+        margin-top: 5px;
+        &:before{
+          top: 8px;
+          width: 3px;
+          height: 1px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  @include mobile {
+    .main_content{
+      margin-top: 40px;
+    }
+    .common-tab-looking-a-wrap{
+      padding-top: 60px !important;
+      .outlink-icon{
+        width: 22px; height: 22px;
+      }
+    }
+    .dot_list{
+      li{
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+#CEA{
+  .item:nth-of-type(1){padding-bottom: vw(w, 34);}
+  .item:nth-of-type(2){padding-bottom: vw(w, 20);}
+  .docum{
+    margin-top: vw(w, 60);
+    padding: vw(w, 60) vw(w, 40);
+    background-color: #f5f5f5;
+    strong{text-align: center; display: block;}
+    p{margin-top: vw(w,20); font-size: vw(w, 20); line-height: 1.68; font-weight: 300; color: #151515;}
+    ol{
+      margin-top: vw(w, 20); font-size: vw(w, 20); line-height: 1.68;
+      li{
+        span{display: inline-block;min-width:vw(w,29);text-align: right;}
+        display: flex; gap: vw(w, 4); font-weight: 300;
+      }
+    }
+    & > div{margin-top: vw(w, 40); font-size: vw(w, 20); line-height: 1.68; font-weight: 400; color: #151515; text-align: center;
+      p{
+        margin-top: vw(w, 4);
+        color: #151515;
+        font-weight: 400;
+        & > span{color: #4b4b4b; display: inline-block; margin-left: vw(w, 4);}
+      }
+    }
+  }
+  .common-grid{
+    margin-bottom: vw(w, 120);
+  }
+  .content-box{
+    margin-top: vw(w, 80);
+    table{
+      thead tr th{
+        padding: vw(w, 36) vw(w, 32);
+        &:nth-child(1){width: vw(w,480);}
+        &:nth-child(2){width: vw(w,600);}
+        &:nth-child(3){width: vw(w,600);}
+      }
+      tbody tr td{
+        padding: vw(w, 36) vw(w, 32);
+        strong{
+          display: block;
+          margin-bottom: vw(w, 8);
+        }
+      }
+    }
+    & + .common-grid{
+      margin-bottom: 0; 
+      margin-top: vw(w, 120);
+      .title-wrap > .desc{
+        margin-top: 0;
+      }
+    }
+  }
+
+  @include tablet{
+    .item:nth-of-type(1){padding-bottom: 22px;}
+    .item:nth-of-type(2){padding-bottom: 12px;}
+    .common-grid{
+      margin-bottom: 76px;
+    }
+    .docum{
+      margin-top: 38px;
+      padding: 38px 26px;
+      p{margin-top: 12px; font-size: 12px;}
+      ol{
+        margin-top: 12px; font-size: 12px;
+        li{
+          span{min-width:17px;}
+          gap: 4px;
+        }
+      }
+      & > div{margin-top: 26px; font-size: 12px;
+        p{
+          margin-top: 4px;
+          & > span{margin-left: 4px;}
+        }
+      }
+    }
+    .content-box{
+      margin-top: 50px;
+      table{
+        thead tr th{
+          padding: 22px 20px;
+          &:nth-child(1){width: 302px;}
+          &:nth-child(2){width: 378px;}
+          &:nth-child(3){width: 378px;}
+        }
+        tbody tr td{
+          padding: 22px 20px;
+          strong{
+            margin-bottom: 5px;
+          }
+        }
+      }
+      & + .common-grid{
+        margin-top: 76px;
+      }
+    }
+  }
+  @include mobile {
+    .item:nth-of-type(1),
+    .item:nth-of-type(2){padding-bottom: 0;}
+    .title.m_h3{
+      font-size: 24px !important;
+    }
+    .common-grid{
+      margin-bottom: 60px;
+    }
+    .docum{
+      margin-top: 60px; padding: 40px 20px; width: calc(100% + 40px); position: relative; left: -20px; box-sizing: border-box;
+      strong{font-size: 24px !important;}
+      p{margin-top: 28px; font-size: 16px;}
+      ol{
+        margin-top: 20px; font-size: 16px;
+        li{
+          span{min-width:23px;}
+          gap: 4px;
+        }
+      }
+      & > div{margin-top: 28px; font-size: 16px;
+        p{
+          margin-top: 4px;
+          & > span{margin-left: 4px;}
+        }
+      }
+    }
+    .content-box{
+      margin-top: 60px;
+      table{
+        width: max-content;
+        thead tr th{
+          padding: 20px;
+          &:nth-child(1){width: 280px;}
+          &:nth-child(2){width: 367px;}
+          &:nth-child(3){width: 180px;}
+        }
+        tbody tr td{
+          padding: 20px;
+          strong{
+            margin-bottom: 8px;
+          }
+        }
+      }
+      & + .common-grid{
+        margin-top: 60px;
+      }
+    }
+  }
+}
+
+html[lang=en] .common-grid .title-wrap > .title{max-width: none;}
+html[lang=en] .ce .dot_list li{padding-left: vw(w,12);}
+html[lang=en] .ce .dot_list li:before{position: absolute;left: 0;top: vw(w,12);}
+html[lang=en] .ce .dot_list .hypen_list{margin-left: 0;transform: translateX(calc(vw(w, 12) * -1));}
+
+@include tablet{
+  html[lang=en] .ce .dot_list li{padding-left: 8px;}
+  html[lang=en] .ce .dot_list li:before{top:8px}
+  html[lang=en] .ce .dot_list .hypen_list{transform: translateX(-8px);}
+}
+@include mobile{
+  html[lang=en] .ce .dot_list li{padding-left:12px;}
+  html[lang=en] .ce .dot_list li:before{top: 10px}
+  html[lang=en] .ce .dot_list .hypen_list{transform: translateX(-12px);}
+  html[lang=en] .ce .hypen_list li:before{flex: none; width: 4px; top: 10px;}
+
+  html[lang=en] #CEA .content-box table tbody tr td:last-child{width: 290px;}
+}
